@@ -80,6 +80,13 @@
   src: local(""), url("../fonts/Pretendard-Black.eot") format("embedded-opentype"), url("../fonts/Pretendard-Black.woff2") format("woff2"), url("../fonts/Pretendard-Black.woff") format("woff"), url("../fonts/Pretendard-Black.ttf") format("truetype"), url("../fonts/Pretendard-Black.svg") format("svg");
   /* Legacy iOS */
 }
+@font-face {
+  font-family: "jalnan";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Jalnan.eot");
+  src: local(""), url("../fonts/Jalnan.eot") format("embedded-opentype"), url("../fonts/Jalnan.woff2") format("woff2"), url("../fonts/Jalnan.woff") format("woff"), url("../fonts/Jalnan.ttf") format("truetype"), url("../fonts/Jalnan.svg") format("svg");
+}
 /********* reset.css **********/
 html, body, div, span, applet, object, iframe, h1, h2, h3,
 h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -366,11 +373,12 @@ header .container .logo_sch .search .search_bar {
   background-clip: content-box, border-box;
 }
 header .container .logo_sch .search .search_bar button {
-  width: 21px;
-  height: 21px;
+  width: 24px;
+  height: 24px;
   padding: 0;
   border: none;
   background: url(../images/search_ico.png) no-repeat center;
+  background-size: 100%;
   margin-left: 28px;
   cursor: pointer;
 }
@@ -380,7 +388,8 @@ header .container .logo_sch .search .search_bar input {
   outline: 0;
   border: 1px solid transparent;
   background: transparent;
-  padding: 0 15px;
+  padding: 0 14px;
+  font-weight: 400;
 }
 header .container .info {
   display: flex;
@@ -405,34 +414,35 @@ footer {
 }
 
 .sns_state {
-  background: rgb(255, 243, 243);
+  background: rgb(138, 133, 133);
 }
-.sns_state .container {
-  padding: 20px 0;
-}
-.sns_state .container .tit {
+
+.container .tit_wrap {
+  padding: 80px 0 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.sns_state .container .tit h3 {
-  padding: 20px 0;
+.container .tit_wrap h3.tit {
+  font-weight: 700;
+  font-size: 2.5em;
+  font-family: "jalnan";
+  color: #fff;
 }
-.sns_state .container .tit .list_tab ul {
+.container .tit_wrap .list_tab ul {
   display: flex;
 }
-.sns_state .container .embassy_list ul {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.container .embassy_list ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
 }
-.sns_state .container .embassy_list ul li {
+.container .embassy_list ul li {
   border: 1px solid #000;
-  width: 24%;
-  height: 200px;
-  margin-bottom: 20px;
+  height: 152px;
+  margin-bottom: 24px;
 }
-.sns_state .container .embassy_list ul li a {
+.container .embassy_list ul li a {
   display: block;
   width: 100%;
   height: 100%;
@@ -445,14 +455,16 @@ footer {
 .contents .container {
   position: relative;
 }
-.contents .container .tit {
+.contents .container .tit_wrap {
   display: flex;
+  justify-content: flex-start;
+  gap: 56px;
 }
-.contents .container .tit h3 {
-  padding: 20px 20px 20px 0;
+.contents .container .tit_wrap h3 {
+  color: #C6CBD0;
 }
-.contents .container .tit h3.on {
-  font-weight: 600;
+.contents .container .tit_wrap h3.on {
+  color: #000000;
 }
 .contents .container .slide_tab {
   position: relative;
@@ -648,10 +660,4 @@ footer {
 .modal .modalContents .close {
   position: absolute;
   right: 0;
-}
-
-@media screen and (max-width: 1420px) {
-  .container {
-    padding: 20px !important;
-  }
 }/*# sourceMappingURL=default.css.map */

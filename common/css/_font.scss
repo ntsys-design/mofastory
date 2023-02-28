@@ -168,3 +168,16 @@
     url('../fonts/Pretendard-Black.svg') format('svg');
   /* Legacy iOS */
 }
+
+@font-face {
+  font-family: 'jalnan';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Jalnan.eot');
+  src: local(''),
+    url('../fonts/Jalnan.eot') format('embedded-opentype'),
+    url('../fonts/Jalnan.woff2') format('woff2'),
+    url('../fonts/Jalnan.woff') format('woff'),
+    url('../fonts/Jalnan.ttf') format('truetype'),
+    url('../fonts/Jalnan.svg') format('svg');
+}
