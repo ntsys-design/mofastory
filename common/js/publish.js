@@ -1,4 +1,4 @@
-$('.tabmenu h3').click(function(e){
+$('.tabmenu h3').on('click',function(e){
 let idx=$(this).index()
 e.preventDefault()
 $('.tabmenu h3').removeClass('on')
@@ -6,8 +6,11 @@ $(this).addClass('on')
 $('.content_wrap').hide()
 $('.content_wrap').eq(idx).show()
 
+})
 
-
+$('.new_tab ul li').on('click',function(){
+$('.new_tab ul li').removeClass('on')
+$(this).addClass('on')
 })
 
 var swiper = new Swiper(".pop_content", {
@@ -36,7 +39,7 @@ $(document).ready(function() {
     itemSelector: '.element-item',
     // layoutMode: 'fitRows',
     masonry: {
-      gutter: 8
+      gutter: 32
     },
     
   });
@@ -78,7 +81,7 @@ $(document).ready(function() {
   //****************************
   // Isotope Load more button
   //****************************
-  var initShow = 5; //number of items loaded on init & onclick load more button
+  var initShow = 12; //number of items loaded on init & onclick load more button
   var counter = initShow; //counter for load more button
   var iso = $container.data('isotope'); // get Isotope instance
 
