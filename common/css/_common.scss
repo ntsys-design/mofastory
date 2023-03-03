@@ -21,7 +21,7 @@ header{
       .logo{
         width: 88px; 
         height: 100%;
-        background: #b4b4b4;
+        border: 1px solid #b4b4b4;
         margin-right: 48px;
       }
       .search{
@@ -80,8 +80,56 @@ header{
   }
 }
 footer{
-  height: 200px;
-  background: #AAB0B8;
+  height: 117px;
+  background: #181818 ;
+  .container{
+    height: 100%;
+    justify-content: space-between;
+    .ft_logo{
+      
+      img{
+        opacity: 0.6;
+      }
+      ul{
+        margin-left: 52px;
+        li{
+          font-weight: 300;
+          font-size: 0.875em;
+          padding-right: 16px;
+          color: #fff;
+          &:last-child{
+            color: #AAB0B8;
+            padding-left: 16px; 
+            position: relative;
+            &::before{
+              content: '';
+              position: absolute;
+              width: 1px;height: 12px;
+              background:#79818C ;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+    p{
+      color: #fff;
+      font-weight: 400;
+      font-size: 0.875em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.top_btn{
+  position: fixed;
+  bottom: 130px;
+  right: 150px;
+  display: none;
+  z-index: 999;
+  
 }
 
 .flex{

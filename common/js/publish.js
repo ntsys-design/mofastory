@@ -1,3 +1,22 @@
+// 메인 sns현황 대륙
+$('.embassy_list ul li').on('click',function(){
+  $('.embassy_list ul li').removeClass('on')
+  $(this).addClass('on')
+  })
+
+//메인 sns현황 지도/목록 버튼
+$('.list_tab ul li ').on('click',function(e){
+  let idx=$(this).index()
+  e.preventDefault()
+  $('.list_tab ul li').removeClass('on')
+  $(this).addClass('on')
+  $('.embassy_list').hide()
+  $('.embassy_list').eq(idx).show()
+  
+  })
+
+    
+// 메인 인기 콘텐츠 이달의 우수사례 탭
 $('.tabmenu h3').on('click',function(e){
 let idx=$(this).index()
 e.preventDefault()
@@ -8,13 +27,11 @@ $('.content_wrap').eq(idx).show()
 
 })
 
-$('.new_tab ul li').on('click',function(){
-$('.new_tab ul li').removeClass('on')
-$(this).addClass('on')
-})
 
+
+// 인기 콘텐츠 슬라이드
 var swiper = new Swiper(".pop_content", {
-  slidesPerView: 5,
+  slidesPerView: 2,
   spaceBetween: 30,
   loop: true,
   loopFillGroupWithBlank: true,
@@ -26,25 +43,45 @@ var swiper = new Swiper(".pop_content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
-
-
-
-
-
-$(document).ready(function() {
-
-  // init Isotope
-  var $container = $('.isotope').isotope({
-    itemSelector: '.element-item',
-    // layoutMode: 'fitRows',
-    masonry: {
-      gutter: 32
+  breakpoints: {
+    501: {
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
     
+    721: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+   
+
+
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },
+    
+  }
+});
+
+// 최신 sns 탭메뉴
+$('.new_tab ul li').on('click',function(){
+$('.new_tab ul li').removeClass('on')
+$(this).addClass('on')
+})
+
+
+
+// 최신 sns
+$(document).ready(function() {
+
+  var $container = $('.isotope').isotope({
+    itemSelector: '.element-item',
+    masonry: {
+      gutter: 32
+    },  
   });
 
-  // filter functions
   var filterFns = {
     // // show if number is greater than 50
     // numberGreaterThan50: function() {
@@ -58,10 +95,8 @@ $(document).ready(function() {
     // }
   };
 
-  // bind filter button click
   $('#filters').on('click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
-    // use filterFn if matches value
     filterValue = filterFns[filterValue] || filterValue;
     $container.isotope({
       filter: filterValue
@@ -69,7 +104,6 @@ $(document).ready(function() {
   });
 
 
-  // change is-checked class on buttons
   $('.button-group').each(function(i, buttonGroup) {
     var $buttonGroup = $(buttonGroup);
     $buttonGroup.on('click', 'button', function() {
@@ -135,6 +169,7 @@ $(document).ready(function() {
   
 });
 
+// 메인 모달
 $(window).scroll(function () {
   let scrTop = $(this).scrollTop()
   $('.element-item').click(function(){
@@ -145,7 +180,17 @@ $(window).scroll(function () {
   
   $('.close').click(function(){
   $('.modal').fadeOut()
-  $('body').css({'overflow' : 'scroll'})
+  $('body').css({'overflow-y' : 'scroll'})
   })
+})
+
+// top버튼
+$(window).scroll(function () {
+  let scrTop = $(this).scrollTop()
+  if(scrTop >200){
+    $('.top_btn').show();
+  }else{
+    $('.top_btn').hide();
+  }
 })
   
