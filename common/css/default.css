@@ -329,7 +329,6 @@ input, select, textarea {
 /*아이템 정렬*/
 .wrapper {
   width: 100%;
-  height: 100%;
 }
 
 .container {
@@ -464,6 +463,11 @@ footer .container p {
   align-items: center;
 }
 
+.georgia33 {
+  background: url(../images/georgia33.svg) no-repeat center;
+  background-size: 100%;
+}
+
 .sns_state {
   background: url(../images/sns_stateBg.png) no-repeat;
   background-size: cover;
@@ -561,34 +565,164 @@ footer .container p {
   padding-bottom: 73px;
 }
 .container .list_wrap .embassy_map .map {
-  background: url(../images/sns_map.png) no-repeat center;
+  background: url(../images/sns_map.png);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 76%;
   position: relative;
   padding-bottom: 36%;
+  transition: 0.3s;
+}
+.container .list_wrap .embassy_map .map .marker {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .list_wrap .embassy_map .map .marker button {
+  width: 36px;
+  height: 50px;
+  background: url(../images/map_marker.png);
+  position: relative;
+}
+.container .list_wrap .embassy_map .map .marker button:before {
+  content: "";
+  font-weight: 500;
+  font-size: 0.875em;
+  background: #fff;
+  padding: 5px 12px;
+  border-radius: 999px;
+  position: absolute;
+  top: -70%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  display: none;
+  z-index: 1;
+}
+.container .list_wrap .embassy_map .map .marker:hover button {
+  background: url(../images/marker_on.png);
+}
+.container .list_wrap .embassy_map .map .marker.txt_2 button:before {
+  top: -100%;
+}
+.container .list_wrap .embassy_map .map .marker.middle_east_north_africa_marker {
+  top: 44%;
+  left: 46%;
+}
+.container .list_wrap .embassy_map .map .marker.middle_east_north_africa_marker button:before {
+  content: "중동 북아프리카";
+  display: none;
+}
+.container .list_wrap .embassy_map .map .marker.middle_east_north_africa_marker:hover button:before {
+  display: block;
+}
+.container .list_wrap .embassy_map .map .marker.southwest_asia_pacific_marker {
+  top: 37%;
+  left: 63%;
+}
+.container .list_wrap .embassy_map .map .marker.southwest_asia_pacific_marker button:before {
+  content: "동남아시아 \a서남아시아태평양";
+  white-space: pre;
+  display: none;
+}
+.container .list_wrap .embassy_map .map .marker.southwest_asia_pacific_marker:hover button:before {
+  display: block;
+}
+.container .list_wrap .embassy_map .map .marker.north_east_aisa_marker {
+  top: 34%;
+  left: 68%;
+}
+.container .list_wrap .embassy_map .map .marker.north_east_aisa_marker button:before {
+  content: "동북아시아";
+  display: none;
+}
+.container .list_wrap .embassy_map .map .marker.north_east_aisa_marker:hover button:before {
+  display: block;
+}
+.container .list_wrap .embassy_map .map .marker.sub_saharan_africa_marker {
+  top: 65%;
+  left: 52%;
+}
+.container .list_wrap .embassy_map .map .marker.sub_saharan_africa_marker button:before {
+  content: "사하라 \a이남 아프리카";
+  white-space: pre;
+  display: none;
+}
+.container .list_wrap .embassy_map .map .marker.sub_saharan_africa_marker:hover button:before {
+  display: block;
+}
+.container .list_wrap .embassy_map .map .marker.northamerica_marker {
+  top: 22%;
+  left: 24%;
+}
+.container .list_wrap .embassy_map .map .marker.northamerica_marker button:before {
+  content: "북미";
+  display: none;
+  width: 80px;
+}
+.container .list_wrap .embassy_map .map .marker.northamerica_marker:hover button:before {
+  display: block;
+}
+.container .list_wrap .embassy_map .map .marker.russia_central_asia_marker {
+  top: 16%;
+  left: 67%;
+}
+.container .list_wrap .embassy_map .map .marker.russia_central_asia_marker button:before {
+  content: "러시아 중앙아시아";
+  display: none;
+}
+.container .list_wrap .embassy_map .map .marker.russia_central_asia_marker:hover button:before {
+  display: block;
+}
+.container .list_wrap .embassy_map .map .marker.europe_marker {
+  top: 22%;
+  left: 52%;
+}
+.container .list_wrap .embassy_map .map .marker.europe_marker button:before {
+  content: "유럽";
+  display: none;
+  width: 80px;
+}
+.container .list_wrap .embassy_map .map .marker.europe_marker:hover button:before {
+  display: block;
+}
+.container .list_wrap .embassy_map .map .marker.central_south_america_marker {
+  top: 58%;
+  left: 32%;
+}
+.container .list_wrap .embassy_map .map .marker.central_south_america_marker button:before {
+  content: "중남미";
+  display: none;
+  width: 80px;
+}
+.container .list_wrap .embassy_map .map .marker.central_south_america_marker:hover button:before {
+  display: block;
 }
 
-.contents {
+.popular_contents {
   background: #F2F4F5;
 }
-.contents .container {
+.popular_contents .container {
   position: relative;
   padding-bottom: 20%;
   min-height: 510px;
 }
-.contents .container .tit_wrap {
+.popular_contents .container .tit_wrap {
   display: flex;
   justify-content: flex-start;
   gap: 3.5em;
   padding-bottom: 64px;
 }
-.contents .container .tit_wrap h3 {
+.popular_contents .container .tit_wrap h3 {
   color: #C6CBD0;
   position: relative;
 }
-.contents .container .tit_wrap h3.on {
+.popular_contents .container .tit_wrap h3.on {
   color: #000000;
 }
-.contents .container .tit_wrap h3.on:before {
+.popular_contents .container .tit_wrap h3.on:before {
   content: "";
   position: absolute;
   width: 0.4em;
@@ -598,23 +732,23 @@ footer .container p {
   top: -16px;
   left: 0;
 }
-.contents .container .slide_tab {
+.popular_contents .container .slide_tab {
   position: relative;
 }
-.contents .container .slide_tab .content_wrap {
+.popular_contents .container .slide_tab .content_wrap {
   position: absolute;
   width: 100%;
 }
-.contents .container .slide_tab .content_wrap:last-child {
+.popular_contents .container .slide_tab .content_wrap:last-child {
   display: none;
 }
-.contents .container .slide_tab .content_wrap .swiper-slide .img_wrap {
+.popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 24px;
   position: relative;
 }
-.contents .container .slide_tab .content_wrap .swiper-slide .img_wrap .hover {
+.popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap .hover {
   display: none;
   position: absolute;
   top: 50%;
@@ -623,17 +757,17 @@ footer .container p {
   z-index: 2;
   color: #fff;
 }
-.contents .container .slide_tab .content_wrap .swiper-slide .img_wrap .hover span {
+.popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap .hover span {
   font-size: 1.375em;
   font-weight: 500;
 }
-.contents .container .slide_tab .content_wrap .swiper-slide .img_wrap .hover img {
+.popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap .hover img {
   margin-left: 8px;
 }
-.contents .container .slide_tab .content_wrap .swiper-slide .img_wrap > img {
+.popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap > img {
   width: 100%;
 }
-.contents .container .slide_tab .content_wrap .swiper-slide .img_wrap:hover:after {
+.popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap:hover:after {
   content: "";
   position: absolute;
   left: 0;
@@ -643,60 +777,60 @@ footer .container p {
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-.contents .container .slide_tab .content_wrap .swiper-slide .img_wrap:hover .hover {
+.popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap:hover .hover {
   display: block;
 }
-.contents .container .slide_tab .content_wrap .swiper-slide span.office {
+.popular_contents .container .slide_tab .content_wrap .swiper-slide span.office {
   display: block;
   text-align: center;
   font-size: 1.125em;
 }
-.contents .container .slide_tab .content_wrap .swiper-button {
+.popular_contents .container .slide_tab .content_wrap .swiper-button {
   position: absolute;
   width: 40px;
   height: 40px;
 }
-.contents .container .slide_tab .content_wrap .swiper-button-next {
+.popular_contents .container .slide_tab .content_wrap .swiper-button-next {
   right: -72px;
   width: 40px;
   height: 40px;
   top: 42%;
 }
-.contents .container .slide_tab .content_wrap .swiper-button-next:after {
+.popular_contents .container .slide_tab .content_wrap .swiper-button-next:after {
   content: "";
   width: 100%;
   height: 100%;
   background: url(../images/next_btn.png) no-repeat 100%;
 }
-.contents .container .slide_tab .content_wrap .swiper-button-prev {
+.popular_contents .container .slide_tab .content_wrap .swiper-button-prev {
   left: -72px;
   width: 40px;
   height: 40px;
   top: 42%;
 }
-.contents .container .slide_tab .content_wrap .swiper-button-prev:after {
+.popular_contents .container .slide_tab .content_wrap .swiper-button-prev:after {
   content: "";
   width: 100%;
   height: 100%;
   color: #000;
   background: url(../images/prev_btn.png) no-repeat 100%;
 }
-.contents .container .slide_tab .content_wrap .monthly_content {
+.popular_contents .container .slide_tab .content_wrap .monthly_content {
   display: flex;
   gap: 29px;
 }
-.contents .container .slide_tab .content_wrap .monthly_content div {
+.popular_contents .container .slide_tab .content_wrap .monthly_content div {
   flex: 1;
 }
-.contents .container .slide_tab .content_wrap .monthly_content div a {
+.popular_contents .container .slide_tab .content_wrap .monthly_content div a {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
 }
-.contents .container .slide_tab .content_wrap .monthly_content div a img {
+.popular_contents .container .slide_tab .content_wrap .monthly_content div a img {
   width: 100%;
 }
-.contents .container .slide_tab .content_wrap .monthly_content div a span.flex {
+.popular_contents .container .slide_tab .content_wrap .monthly_content div a span.flex {
   position: absolute;
   width: 100%;
   padding: 24px;
@@ -707,14 +841,14 @@ footer .container p {
   left: 0;
   z-index: 10;
 }
-.contents .container .slide_tab .content_wrap .monthly_content div a span.flex img {
+.popular_contents .container .slide_tab .content_wrap .monthly_content div a span.flex img {
   width: 24px;
   margin-right: 18px;
 }
-.contents .container .slide_tab .content_wrap .monthly_content div a .hover {
+.popular_contents .container .slide_tab .content_wrap .monthly_content div a .hover {
   display: none;
 }
-.contents .container .slide_tab .content_wrap .monthly_content div a:hover .hover {
+.popular_contents .container .slide_tab .content_wrap .monthly_content div a:hover .hover {
   display: block;
   position: absolute;
   width: 40px;
@@ -723,7 +857,7 @@ footer .container p {
   top: 24px;
   z-index: 20;
 }
-.contents .container .slide_tab .content_wrap .monthly_content div a:hover:after {
+.popular_contents .container .slide_tab .content_wrap .monthly_content div a:hover:after {
   content: "";
   width: 100%;
   height: 100%;
@@ -733,84 +867,90 @@ footer .container p {
   top: 0;
 }
 
-.new_sns .new_top {
+.sns_list {
+  margin-top: 16px;
+}
+.sns_list.sns_main {
+  margin-top: 0;
+}
+.sns_list .sns_top {
   border-bottom: 1px solid #eee;
 }
-.new_sns .new_top .container .tit_wrap {
+.sns_list .sns_top .container .tit_wrap {
   padding: 96px 0 56px;
 }
-.new_sns .new_top .container .tit_wrap h3.tit {
+.sns_list .sns_top .container .tit_wrap h3.tit {
   color: #000;
 }
-.new_sns .new_top .container .new_tab {
+.sns_list .sns_top .container .sns_tab {
   padding-bottom: 8px;
 }
-.new_sns .new_top .container .new_tab ul {
+.sns_list .sns_top .container .sns_tab ul {
   display: flex;
   gap: 24px;
 }
-.new_sns .new_top .container .new_tab ul li button.all_btn {
+.sns_list .sns_top .container .sns_tab ul li button.all_btn {
   width: 40px;
   height: 40px;
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -103px -108px;
 }
-.new_sns .new_top .container .new_tab ul li button.facebook_btn {
+.sns_list .sns_top .container .sns_tab ul li button.facebook_btn {
   width: 110px;
   height: 40px;
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -167px -108px;
 }
-.new_sns .new_top .container .new_tab ul li button.twt_btn {
+.sns_list .sns_top .container .sns_tab ul li button.twt_btn {
   width: 90px;
   height: 40px;
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -301px -108px;
 }
-.new_sns .new_top .container .new_tab ul li button.insta_btn {
+.sns_list .sns_top .container .sns_tab ul li button.insta_btn {
   width: 115px;
   height: 40px;
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -415px -108px;
 }
-.new_sns .new_top .container .new_tab ul li button.youtube_btn {
+.sns_list .sns_top .container .sns_tab ul li button.youtube_btn {
   width: 105px;
   height: 40px;
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -554px -108px;
 }
-.new_sns .new_top .container .new_tab ul li.on button.all_btn {
+.sns_list .sns_top .container .sns_tab ul li.on button.all_btn {
   width: 40px;
   height: 40px;
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -103px -38px;
 }
-.new_sns .new_top .container .new_tab ul li.on button.facebook_btn {
+.sns_list .sns_top .container .sns_tab ul li.on button.facebook_btn {
   width: 110px;
   height: 40px;
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -167px -38px;
 }
-.new_sns .new_top .container .new_tab ul li.on button.twt_btn {
+.sns_list .sns_top .container .sns_tab ul li.on button.twt_btn {
   width: 90px;
   height: 40px;
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -301px -38px;
 }
-.new_sns .new_top .container .new_tab ul li.on button.insta_btn {
+.sns_list .sns_top .container .sns_tab ul li.on button.insta_btn {
   width: 115px;
   height: 40px;
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -415px -38px;
 }
-.new_sns .new_top .container .new_tab ul li.on button.youtube_btn {
+.sns_list .sns_top .container .sns_tab ul li.on button.youtube_btn {
   width: 105px;
   height: 40px;
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -554px -38px;
 }
 
-.newsns_con .container {
+.sns_con .container {
   position: relative;
 }
 
@@ -863,16 +1003,40 @@ footer .container p {
   background: #1A3857;
   margin-right: 20px;
 }
-.element-item .img_wrap {
+.element-item > span .flag.sns_amrc {
+  background: url(../images/sns_america.png);
+}
+.element-item > span .flag.sns_chile {
+  background: url(../images/sns_chile.png);
+}
+.element-item > span .flag.sns_china {
+  background: url(../images/sns_china.png);
+}
+.element-item > span .flag.sns_ecd {
+  background: url(../images/sns_ecuador.png);
+}
+.element-item a:hover .img_wrap .hover {
+  display: block;
+}
+.element-item a:hover .img_wrap:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.element-item a .img_wrap {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
 }
-.element-item .img_wrap img {
+.element-item a .img_wrap img {
   width: 100%;
   display: block;
 }
-.element-item .img_wrap .hover {
+.element-item a .img_wrap .hover {
   display: none;
   position: absolute;
   top: 50%;
@@ -883,23 +1047,26 @@ footer .container p {
   font-size: 1.375em;
   color: #fff;
 }
-.element-item .img_wrap .hover img {
+.element-item a .img_wrap .hover img {
   margin-left: 8px;
   width: 24px;
 }
-.element-item .img_wrap:hover .hover {
-  display: block;
-}
-.element-item .img_wrap:hover:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+.element-item a .img_wrap.video_wrap .play_time {
   position: absolute;
-  left: 0;
-  top: 0;
+  right: 16px;
+  bottom: 12px;
+  background: #000;
+  border-radius: 4px;
 }
-.element-item p {
+.element-item a .img_wrap.video_wrap .play_time span {
+  color: #fff;
+  display: block;
+  padding: 0 8px;
+  font-weight: 500;
+  font-size: 0.75em;
+  letter-spacing: 0;
+}
+.element-item a p {
   margin: 16px 0;
   font-weight: 300;
   text-overflow: ellipsis;
@@ -980,10 +1147,10 @@ footer .container p {
   .content_wrap .swiper {
     width: 87%;
   }
-  .contents .container .slide_tab .content_wrap .swiper-button-next {
+  .popular_contents .container .slide_tab .content_wrap .swiper-button-next {
     right: 0;
   }
-  .contents .container .slide_tab .content_wrap .swiper-button-prev {
+  .popular_contents .container .slide_tab .content_wrap .swiper-button-prev {
     left: 0;
   }
   .top_btn {
@@ -1011,4 +1178,80 @@ footer .container p {
   .element-item {
     width: 47%;
   }
+}
+.sub_sns_state {
+  background: url(../images/sub_sns_state_bg.png);
+  background-position-y: 25%;
+  background-size: 100%;
+  position: relative;
+}
+.sub_sns_state .container .tit_wrap {
+  padding: 48px 0 56px;
+}
+.sub_sns_state .container .select_wrap {
+  padding-bottom: 40px;
+}
+.sub_sns_state .container .select_wrap > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.sub_sns_state .container .select_wrap > ul > li {
+  flex: 0 1 48%;
+  font-weight: 500;
+  color: #fff;
+}
+.sub_sns_state .container .select_wrap > ul.select_box li.select {
+  background: url(../images/down_btn.png) no-repeat 100% center;
+  position: relative;
+  font-weight: 600;
+  font-size: 1.25em;
+  color: #fff;
+  padding: 8px 4px;
+  border-bottom: 1.5px solid #fff;
+}
+.sub_sns_state .container .select_wrap > ul.select_box li.select span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sub_sns_state .container .select_wrap > ul.select_box li.select span .select_flag {
+  width: 33px;
+  height: 22px;
+}
+.sub_sns_state .option_wrap {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  padding: 16px;
+}
+.sub_sns_state .option_wrap ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 14px 24px;
+}
+.sub_sns_state .option_wrap ul li {
+  border: 1.5px solid #EAEAEA;
+  border-radius: 4px;
+  height: 56px;
+}
+.sub_sns_state .option_wrap ul li a {
+  color: #484B51;
+  width: 100%;
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+}
+.wrapper .dim {
+  position: absolute;
+  top: 380px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=default.css.map */

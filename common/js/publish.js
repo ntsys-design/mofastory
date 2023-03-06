@@ -15,7 +15,23 @@ $('.list_tab ul li ').on('click',function(e){
   
   })
 
-    
+// 메인 지도 Bg
+
+$('.marker').mouseenter(function(){
+
+let bgImg=$(this).attr('data-bg');
+
+$('.map').css({'background':'url('+bgImg+')','background-repeat':'no-repeat','background-position':'center','background-size':'76%'})
+$('.marker').removeClass('on')
+$(this).addClass('on')
+
+})
+$('.marker').mouseleave(function(){
+  $('.map').css({'background':'url(/common/images/sns_map.png)','background-repeat':'no-repeat','background-position':'center','background-size':'76%'})
+})
+
+
+
 // 메인 인기 콘텐츠 이달의 우수사례 탭
 $('.tabmenu h3').on('click',function(e){
 let idx=$(this).index()

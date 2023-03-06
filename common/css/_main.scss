@@ -74,71 +74,301 @@
     }
   }
 
- .list_wrap{ 
+  .list_wrap {
+    .embassy_list {
+      padding-top: 56px;
+      padding-bottom: 120px;
+      display: none;
 
-   .embassy_list {
-    padding-top: 56px;
-    padding-bottom: 120px;
-    display: none;
-    &:last-child{
-      display: block;
-    }
-    ul {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 24px;
+      &:last-child {
+        display: block;
+      }
 
-      li {
-        border: 2px solid #fff;
-        height: 152px;
-        border-radius: 8px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 24px;
 
-        a {
-          display: block;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          span {
-            font-weight: 500;
-            font-size: 1.375em;
-            color: #fff;
-            text-align: center;
-          }
-        }
-
-        &:hover, &.on {
-          background: #BCD4F0;
-          border: 2px solid transparent;
+        li {
+          border: 2px solid #fff;
+          height: 152px;
+          border-radius: 8px;
 
           a {
-            span {
-              font-weight: 600;
+            display: block;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-              color: #000;
+            span {
+              font-weight: 500;
+              font-size: 1.375em;
+              color: #fff;
+              text-align: center;
+            }
+          }
+
+          &:hover,
+          &.on {
+            background: #BCD4F0;
+            border: 2px solid transparent;
+
+            a {
+              span {
+                font-weight: 600;
+
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .embassy_map {
+      padding-top: 0;
+      padding-bottom: 73px;
+
+      .map {
+        background: url(../images/sns_map.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 76%;
+        position: relative;
+        padding-bottom: 36%;
+        transition: .3s;
+
+        .marker {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          button {
+            width: 36px;
+            height: 50px;
+            background: url(../images/map_marker.png);
+            position: relative;
+
+            &:before {
+              content: '';
+              font-weight: 500;
+              font-size: 0.875em;
+              background: #fff;
+              padding: 5px 12px;
+              border-radius: 999px;
+              position: absolute;
+              top: -70%;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 110px;
+              display: none;
+              z-index: 1;
+            }
+          }
+          &:hover{
+              button{
+                background: url(../images/marker_on.png);
+              }
+            }
+
+          &.txt_2 {
+            button{
+              &:before {
+              top: -100%;
+            }
+            }
+            
+          }
+
+          // 중동북아프리카 마커
+          &.middle_east_north_africa_marker {
+            top: 44%;
+            left: 46%;
+
+            button {
+              &:before {
+                content: '중동 북아프리카';
+                display: none;
+              }
+            }
+
+            &:hover {
+              button {
+                &:before {
+                  display: block;
+                }
+              }
+            }
+            
+          }
+
+          // 동남아시아 서남아시아태평양 마커
+          &.southwest_asia_pacific_marker {
+            top: 37%;
+            left: 63%;
+
+            button {
+              &:before {
+                content: '동남아시아 \A 서남아시아태평양';
+                white-space: pre;
+                display: none;
+              }
+            }
+
+            &:hover {
+              button {
+                &:before {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          // 동북아시아 마커
+          &.north_east_aisa_marker {
+            top: 34%;
+            left: 68%;
+
+            button {
+              &:before {
+                content: '동북아시아';
+                display: none;
+              }
+            }
+
+            &:hover {
+              button {
+                &:before {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          // 사하라 이남아프리카 마커
+          &.sub_saharan_africa_marker {
+            top: 65%;
+            left: 52%;
+
+            button {
+              &:before {
+                content: '사하라 \A 이남 아프리카';
+                white-space: pre;
+                display: none;
+              }
+            }
+
+            &:hover {
+              button {
+                &:before {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          // 북미 마커
+          &.northamerica_marker {
+            top: 22%;
+            left: 24%;
+
+            button {
+              &:before {
+                content: '북미';
+                display: none;
+                width: 80px;
+              }
+            }
+
+            &:hover {
+              button {
+                &:before {
+                  display: block;
+
+                }
+              }
+            }
+          }
+
+          // 러시아 중앙아시아 마커
+          &.russia_central_asia_marker {
+            top: 16%;
+            left: 67%;
+
+            button {
+              &:before {
+                content: '러시아 중앙아시아';
+                display: none;
+              }
+            }
+
+            &:hover {
+              button {
+                &:before {
+                  display: block;
+
+                }
+              }
+            }
+          }
+
+          // 유럽 마커
+          &.europe_marker {
+            top: 22%;
+            left: 52%;
+
+            button {
+              &:before {
+                content: '유럽';
+                display: none;
+                width: 80px;
+              }
+            }
+
+            &:hover {
+              button {
+                &:before {
+                  display: block;
+
+                }
+              }
+            }
+          }
+
+          // 유럽 마커
+          &.central_south_america_marker {
+            top: 58%;
+            left: 32%;
+
+            button {
+              &:before {
+                content: '중남미';
+                display: none;
+                width: 80px;
+              }
+            }
+
+            &:hover {
+              button {
+                &:before {
+                  display: block;
+
+                }
+              }
             }
           }
         }
       }
     }
   }
-  .embassy_map{
-    padding-top: 0;
-    padding-bottom: 73px;
-    .map{
-      background: url(../images/sns_map.png)no-repeat center;
-      background-size: 76%;
-      position: relative;
-      padding-bottom: 36%;
-    }
-  }
-}
 }
 
 
-.contents {
+.popular_contents {
   background: #F2F4F5;
   //height: 260px;
 
@@ -200,11 +430,12 @@
               left: 53%;
               transform: translate(-50%, -50%);
               z-index: 2;
-              
+
               color: #fff;
-              span{
-               font-size: 1.375em;
-              font-weight: 500;
+
+              span {
+                font-size: 1.375em;
+                font-weight: 500;
               }
 
               img {
@@ -307,7 +538,7 @@
                 bottom: 0;
                 left: 0;
                 z-index: 10;
-               
+
 
                 img {
                   width: 24px;
@@ -315,7 +546,7 @@
                 }
               }
 
-            .hover {
+              .hover {
                 display: none;
               }
 
@@ -347,8 +578,15 @@
   }
 }
 
-.new_sns {
-  .new_top {
+.sns_list {
+
+  margin-top: 16px;
+
+  &.sns_main {
+    margin-top: 0;
+  }
+
+  .sns_top {
     border-bottom: 1px solid #eee;
 
     .container {
@@ -360,7 +598,7 @@
         }
       }
 
-      .new_tab {
+      .sns_tab {
         padding-bottom: 8px;
 
         ul {
@@ -451,7 +689,7 @@
   }
 }
 
-.newsns_con {
+.sns_con {
   .container {
     position: relative;
 
@@ -483,13 +721,13 @@
 .isotope {
   margin: 80px 0;
   // border: 1px solid #000;
-  
+
   /* clear fix */
   &:after {
-  content: '';
-  display: block;
-  clear: both;
-}
+    content: '';
+    display: block;
+    clear: both;
+  }
 
 }
 
@@ -503,110 +741,166 @@
   width: 23%;
   color: #262524;
   margin-bottom: 48px;
+
   >span {
     font-weight: 500;
     font-size: 1.25em;
     margin-bottom: 24px;
-    .flag{
+
+    .flag {
       width: 32px;
       height: 32px;
       border-radius: 50%;
       background: #1A3857;
       margin-right: 20px;
+      &.sns_amrc{
+        background: url(../images/sns_america.png);
+      }
+      &.sns_chile{
+        background: url(../images/sns_chile.png);
+      }
+      &.sns_china{
+        background: url(../images/sns_china.png);
+      }
+      &.sns_ecd{
+        background: url(../images/sns_ecuador.png);
+      }
     }
   }
 
-  .img_wrap {
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
+  a {
+    &:hover {
+      .img_wrap {
+        .hover {
+          display: block;
 
-    img {
-      width: 100%;
-      display: block;
-    }
-    
-   .hover {
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 53%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      font-weight: 500;
-      font-size: 1.375em;
-      color: #fff;
+        }
 
-      img {
-        margin-left: 8px;
-        width: 24px;
+        &:after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.4);
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
       }
     }
 
-    &:hover .hover {
-      display: block;
-     
+    .img_wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      .hover {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        font-weight: 500;
+        font-size: 1.375em;
+        color: #fff;
+
+        img {
+          margin-left: 8px;
+          width: 24px;
+        }
+      }
+
+
+
+      &.video_wrap {
+        .play_time {
+          position: absolute;
+          right: 16px;
+          bottom: 12px;
+          background: #000;
+          border-radius: 4px;
+
+          span {
+            color: #fff;
+            display: block;
+            padding: 0 8px;
+            font-weight: 500;
+            font-size: 0.75em;
+            letter-spacing: 0;
+          }
+        }
+      }
     }
 
-    &:hover:after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      position: absolute;
-      left: 0;
-      top: 0;
+    p {
+      margin: 16px 0;
+      font-weight: 300;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
   }
-  p{
-   margin: 16px 0;
-    font-weight: 300;
-    text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
-  }
-  .like_wrap{
+
+  .like_wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
-    .icon_wrap{
+
+    .icon_wrap {
       display: flex;
       align-items: center;
       gap: 16px;
-       .icon{
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: #822899;
-      &.fb_ico{
-        background: url(../images/facebook_ico.png);
+
+      .icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #822899;
+
+        &.fb_ico {
+          background: url(../images/facebook_ico.png);
+        }
+
+        &.insta_ico {
+          background: url(../images/insta_ico.png);
+        }
+
+        &.twt_ico {
+          background: url(../images/twt_ico.png);
+        }
+
+        &.youtube_ico {
+          background: url(../images/youtube_ico.png);
+        }
       }
-      &.insta_ico{
-        background: url(../images/insta_ico.png);
-      }
-      &.twt_ico{
-        background: url(../images/twt_ico.png);
-      }
-      &.youtube_ico{
-        background: url(../images/youtube_ico.png);
+
+      .date {
+        font-weight: 400;
+        color: #696E76;
       }
     }
-    .date{
-      font-weight: 400;
-      color: #696E76;
-    }
-    }
-    .like{ border: 1px solid #DDE1E4;
+
+    .like {
+      border: 1px solid #DDE1E4;
       border-radius: 8px;
       padding: 0 12px;
-      height:32px;
+      height: 32px;
       font-weight: 400;
-      .heart{
+
+      .heart {
         color: rgba(245, 16, 58, 0.95);
         margin-right: 16px;
       }
 
     }
-   
+
 
   }
 }
@@ -640,42 +934,50 @@
   }
 
 }
-@media screen and (max-width:1420px){
-  .content_wrap .swiper{
+
+@media screen and (max-width:1420px) {
+  .content_wrap .swiper {
     width: 87%;
   }
-  .contents .container .slide_tab .content_wrap .swiper-button-next{
+
+  .popular_contents .container .slide_tab .content_wrap .swiper-button-next {
     right: 0;
   }
-  .contents .container .slide_tab .content_wrap .swiper-button-prev{
+
+  .popular_contents .container .slide_tab .content_wrap .swiper-button-prev {
     left: 0;
   }
-  .top_btn{
+
+  .top_btn {
     right: 2%;
     width: 100px;
   }
 }
 
-@media screen and (max-width:1200px){
-  header .container{padding: 20px;}
-  .container{
-    padding:0 20px;
+@media screen and (max-width:1200px) {
+  header .container {
+    padding: 20px;
   }
-  .element-item{
-    width:22%;
+
+  .container {
+    padding: 0 20px;
   }
-  
- 
+
+  .element-item {
+    width: 22%;
+  }
+
+
 }
 
-@media screen and (max-width:1080px){
-  .element-item{
+@media screen and (max-width:1080px) {
+  .element-item {
     width: 30%;
   }
 }
 
-@media screen and (max-width:720px){
-  .element-item{
+@media screen and (max-width:720px) {
+  .element-item {
     width: 47%;
   }
 }
