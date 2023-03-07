@@ -339,7 +339,7 @@
             }
           }
 
-          // 유럽 마커
+          // 중남미 마커
           &.central_south_america_marker {
             top: 58%;
             left: 32%;
@@ -387,7 +387,7 @@
         color: #C6CBD0;
         position: relative;
 
-        &.on {
+        &.on,&:hover {
           color: #000000;
 
           &:before {
@@ -514,7 +514,7 @@
           display: flex;
           gap: 29px;
 
-          div {
+          >div {
             flex: 1;
 
             a {
@@ -540,9 +540,8 @@
                 z-index: 10;
 
 
-                img {
-                  width: 24px;
-                  margin-right: 18px;
+                .flag24{
+                  margin-right: 12px;
                 }
               }
 
@@ -643,7 +642,7 @@
               }
             }
 
-            &.on {
+            &.on, &:hover{
               button {
                 &.all_btn {
                   width: 40px;

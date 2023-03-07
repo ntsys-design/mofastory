@@ -210,3 +210,25 @@ $(window).scroll(function () {
   }
 })
   
+//---------------------서브----------------------------
+
+// 대륙별 sns 현황 셀렉트박스
+
+$('.select_box li').on('click',function(){
+  let idx=$(this).index()
+  let active=$(this).children('button').hasClass('up_btn');
+  if(active){
+    $('.option_container .option_wrap').hide()
+    $(this).children('button').removeClass('up_btn');
+    $('.dim').removeClass('on')
+  }else{
+$('.select_box li button').removeClass('up_btn')
+  $(this).children('button').addClass('up_btn')
+  $('.option_container .option_wrap').hide()
+  $('.option_container .option_wrap').eq(idx).show()
+  $('.dim').addClass('on')
+  }
+  
+})
+
+

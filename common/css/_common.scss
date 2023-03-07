@@ -1,111 +1,132 @@
-.wrapper{width: 100%;}
-.container{
+.wrapper {
+  width: 100%;
+}
+
+.container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
 }
 
-header{
+header {
   height: 104px;
-  .container{
+
+  .container {
     height: 100%;
-    padding: 20px 0  ;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .logo_sch{
+
+    .logo_sch {
       display: flex;
       align-items: center;
       height: 100%;
       width: 83%;
-      .logo{
-        width: 88px; 
+
+      .logo {
+        width: 88px;
         height: 100%;
         border: 1px solid #b4b4b4;
         margin-right: 48px;
       }
-      .search{
-      width: calc( 100% - 138px);
-      .search_bar{
-        height: 48px;
-        display: flex;
-      align-items: center;
-      border:2px solid transparent;
-        border-radius:48px;
-        background-image:linear-gradient(#fff, #fff),linear-gradient(90deg, #005EAC 0%, #EB1C23 100%);
-        background-origin: border-box;
-        background-clip: content-box, border-box;
-        
-        button{
-          width: 24px;
-          height: 24px;
-         padding: 0;
-          border: none;
-          background: url(../images/search_ico.png) no-repeat center;
-          background-size: 100%;
-          margin-left: 28px;
-          cursor: pointer;
-        }
-        input{
-          width: 90%;
-          height: 48px;
-          outline: 0;
-          border: 1px solid transparent;;
-         background: transparent;
-         padding: 0 14px;
-         font-weight: 400;
 
-       
+      .search {
+        width: calc(100% - 138px);
+
+        .search_bar {
+          height: 48px;
+          display: flex;
+          align-items: center;
+          border: 2px solid transparent;
+          border-radius: 48px;
+          background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #005EAC 0%, #EB1C23 100%);
+          background-origin: border-box;
+          background-clip: content-box, border-box;
+
+          button {
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            border: none;
+            background: url(../images/search_ico.png) no-repeat center;
+            background-size: 100%;
+            margin-left: 28px;
+            cursor: pointer;
+          }
+
+          input {
+            width: 90%;
+            height: 48px;
+            outline: 0;
+            border: 1px solid transparent;
+            ;
+            background: transparent;
+            padding: 0 14px;
+            font-weight: 400;
+
+
+          }
+        }
+
       }
-      }
-      
     }
-    }
-    
-    .info{
+
+    .info {
       display: flex;
       align-items: center;
-      a{
+
+      a {
         font-weight: 500;
-        color:#050505;
+        color: #050505;
         text-decoration: underline;
-        text-underline-position : under;
+        text-underline-position: under;
       }
-      button{
-          margin-left: 8px;
-          width: 6px;height: 12px;
-          background: url(../images/arrow.png);
-        }
+
+      button {
+        margin-left: 8px;
+        width: 6px;
+        height: 12px;
+        background: url(../images/arrow.png);
+      }
     }
   }
 }
-footer{
+
+footer {
   height: 117px;
-  background: #181818 ;
-  .container{
+  background: #181818;
+
+  .container {
     height: 100%;
     justify-content: space-between;
-    .ft_logo{
-      
-      img{
+
+    .ft_logo {
+
+      img {
         opacity: 0.6;
       }
-      ul{
+
+      ul {
         margin-left: 52px;
-        li{
+
+        li {
           font-weight: 300;
           font-size: 0.875em;
           padding-right: 16px;
           color: #fff;
-          &:last-child{
+
+          &:last-child {
             color: #AAB0B8;
-            padding-left: 16px; 
+            padding-left: 16px;
             position: relative;
-            &::before{
+
+            &::before {
               content: '';
               position: absolute;
-              width: 1px;height: 12px;
-              background:#79818C ;
+              width: 1px;
+              height: 12px;
+              background: #79818C;
               left: 0;
               top: 50%;
               transform: translateY(-50%);
@@ -114,7 +135,8 @@ footer{
         }
       }
     }
-    p{
+
+    p {
       color: #fff;
       font-weight: 400;
       font-size: 0.875em;
@@ -123,21 +145,81 @@ footer{
   }
 }
 
-.top_btn{
+.top_btn {
   position: fixed;
   bottom: 130px;
   right: 150px;
   display: none;
   z-index: 999;
-  
+
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
 }
 
-.georgia33{
-  background: url(../images/georgia33.svg)no-repeat center;
-  background-size: 100%;
+.flag24 {
+  width: 30px;
+  height: 22px;
+  background: #79818C;
+
+  &.sgp {
+    background: url(../images/sgp.svg)no-repeat center;
+
+  }
+
+  &.svk {
+    background: url(../images/svk.svg)no-repeat center;
+  }
+
+  &.nld {
+    background: url(../images/nld.svg)no-repeat center;
+  }
+
+  &.jpn {
+    background: url(../images/jpn.svg)no-repeat center;
+  }
+}
+
+.option {
+  .flag24 {
+    width: 30px;
+    height: 22px;
+    background: #79818C;
+
+    &.sgp {
+      background: url(../images/sgp.svg)no-repeat center;
+      background-size: 100%;
+
+    }
+
+    &.svk {
+      background: url(../images/svk.svg)no-repeat center;
+      background-size: 100%;
+    }
+
+    &.nld {
+      background: url(../images/nld.svg)no-repeat center;
+      background-size: 100%;
+    }
+
+    &.jpn {
+      background: url(../images/jpn.svg)no-repeat center;
+      background-size: 100%;
+    }
+  }
+}
+
+.flag33 {
+  width: 39px;
+  height: 28px;
+
+  &.geo {
+    background: url(../images/geo.svg)no-repeat center;
+  }
+  &.jpn {
+    background: url(../images/jpn.svg)no-repeat center;
+  }
+
 }
