@@ -27,7 +27,7 @@ $(this).addClass('on')
 
 })
 $('.marker').mouseleave(function(){
-  $('.map').css({'background':'url(/common/images/sns_map.png)','background-repeat':'no-repeat','background-position':'center','background-size':'76%'})
+  $('.map').css({'background':'url(../common/images/sns_map.png)','background-repeat':'no-repeat','background-position':'center','background-size':'76%'})
 })
 
 
