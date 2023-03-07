@@ -94,13 +94,12 @@ header {
 }
 
 footer {
-  height: 117px;
   background: #181818;
 
   .container {
     height: 100%;
     justify-content: space-between;
-
+padding: 42px 0;
     .ft_logo {
 
       img {
@@ -222,4 +221,40 @@ footer {
     background: url(../images/jpn.svg)no-repeat center;
   }
 
+}
+
+@media screen and (max-width:1080px) {
+  footer {
+    .container{
+      flex-direction: column;        
+      padding: 48px 0;
+
+      .ft_logo{
+        flex-direction: column;
+        ul{
+          padding: 24px 0;
+          margin: 0;
+          flex-direction: column;
+          gap: 8px;
+          li{
+            padding: 0;
+            &:last-child{
+              padding-left: 0;
+            }
+            &::before{
+              display: none;
+            }
+          }
+        }
+      }
+      p{
+        width: 207px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+a{
+  font-family:'pretendard', 'Noto Sans','sans-serif';
 }

@@ -371,11 +371,12 @@
 .popular_contents {
   background: #F2F4F5;
   //height: 260px;
-
+max-height: 580px;
   .container {
     position: relative;
     padding-bottom: 20%;
     min-height: 510px;
+    
 
     .tit_wrap {
       display: flex;

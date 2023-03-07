@@ -409,12 +409,12 @@ header .container .info button {
 }
 
 footer {
-  height: 117px;
   background: #181818;
 }
 footer .container {
   height: 100%;
   justify-content: space-between;
+  padding: 42px 0;
 }
 footer .container .ft_logo img {
   opacity: 0.6;
@@ -512,6 +512,38 @@ footer .container p {
 }
 .flag33.jpn {
   background: url(../images/jpn.svg) no-repeat center;
+}
+
+@media screen and (max-width: 1080px) {
+  footer .container {
+    flex-direction: column;
+    padding: 48px 0;
+  }
+  footer .container .ft_logo {
+    flex-direction: column;
+  }
+  footer .container .ft_logo ul {
+    padding: 24px 0;
+    margin: 0;
+    flex-direction: column;
+    gap: 8px;
+  }
+  footer .container .ft_logo ul li {
+    padding: 0;
+  }
+  footer .container .ft_logo ul li:last-child {
+    padding-left: 0;
+  }
+  footer .container .ft_logo ul li::before {
+    display: none;
+  }
+  footer .container p {
+    width: 207px;
+    text-align: center;
+  }
+}
+a {
+  font-family: "pretendard", "Noto Sans", "sans-serif";
 }
 
 .sns_state {
@@ -749,6 +781,7 @@ footer .container p {
 
 .popular_contents {
   background: #F2F4F5;
+  max-height: 580px;
 }
 .popular_contents .container {
   position: relative;
@@ -1285,7 +1318,7 @@ footer .container p {
 }
 .sub_sns_state .option_wrap ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 14px 24px;
 }
 .sub_sns_state .option_wrap ul li {
@@ -1319,4 +1352,107 @@ footer .container p {
 }
 .wrapper .dim.on {
   display: block;
+}
+
+.office_info {
+  background: url(../images/office_info.png) no-repeat;
+  background-size: cover;
+}
+
+.ofiice_info_con {
+  padding: 5.5% 0 4.6%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.ofiice_info_con .slide_wrap {
+  width: 50%;
+  margin: 64px 0;
+}
+.ofiice_info_con .slide_wrap .office_slide {
+  width: 61%;
+  margin: 0 0 0 auto;
+}
+.ofiice_info_con .slide_wrap .office_slide .img_wrap {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.ofiice_info_con .slide_wrap .office_slide .swiper-button-next {
+  top: 54%;
+  right: 3%;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+}
+.ofiice_info_con .slide_wrap .office_slide .swiper-button-next:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/office_next_btn.png);
+}
+.ofiice_info_con .slide_wrap .office_slide .swiper-button-prev {
+  top: 54%;
+  left: 3%;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+}
+.ofiice_info_con .slide_wrap .office_slide .swiper-button-prev:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/office_prev_btn.png);
+}
+.ofiice_info_con .bg {
+  position: absolute;
+  width: 68%;
+  height: 74%;
+  top: 51%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #212E40;
+  z-index: -1;
+}
+.ofiice_info_con .office_info_txt {
+  margin: 65px 32px 73px;
+  color: #fff;
+}
+.ofiice_info_con .office_info_txt .office_name {
+  display: block;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 28px;
+}
+.ofiice_info_con .office_info_txt .address, .ofiice_info_con .office_info_txt .po_box, .ofiice_info_con .office_info_txt .tell {
+  padding-bottom: 16px;
+}
+.ofiice_info_con .office_info_txt .address span, .ofiice_info_con .office_info_txt .po_box span, .ofiice_info_con .office_info_txt .tell span {
+  font-weight: 500;
+  display: flex;
+  font-size: 1.25em;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.ofiice_info_con .office_info_txt .address span .address_icon, .ofiice_info_con .office_info_txt .po_box span .address_icon, .ofiice_info_con .office_info_txt .tell span .address_icon {
+  width: 24px;
+  height: 24px;
+  background: url(../images/address_ico.png);
+}
+.ofiice_info_con .office_info_txt .address span .po_icon, .ofiice_info_con .office_info_txt .po_box span .po_icon, .ofiice_info_con .office_info_txt .tell span .po_icon {
+  width: 24px;
+  height: 24px;
+  background: url(../images/po_ico.png);
+}
+.ofiice_info_con .office_info_txt .address span .tell_icon, .ofiice_info_con .office_info_txt .po_box span .tell_icon, .ofiice_info_con .office_info_txt .tell span .tell_icon {
+  width: 24px;
+  height: 24px;
+  background: url(../images/tell_ico.png);
+}
+.ofiice_info_con .office_info_txt .address p, .ofiice_info_con .office_info_txt .po_box p, .ofiice_info_con .office_info_txt .tell p {
+  font-weight: 400;
+  font-size: 1.125em;
+  color: #868B95;
+}
+.ofiice_info_con .office_info_txt .tell {
+  padding-bottom: 0;
 }/*# sourceMappingURL=default.css.map */

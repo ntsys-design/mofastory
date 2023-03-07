@@ -64,7 +64,7 @@
         display: none;
         ul{
             display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-gap:14px 24px;
         li{
             border: 1.5px solid #EAEAEA;
@@ -99,4 +99,105 @@ border-radius: 4px;
             display: block;
         }
     }
+}
+
+// 공관소개
+.office_info{
+    background: url(../images/office_info.png)no-repeat;
+    background-size: cover;
+}
+
+.ofiice_info_con{
+    padding: 5.5% 0 4.6%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    .slide_wrap{
+        width: 50%;
+        margin: 64px 0;
+        .office_slide{
+            width: 61%;
+            margin: 0 0 0 auto;
+            .img_wrap{
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            .swiper-button-next{top: 54%;
+                    right: 3%;width: 32px;height: 32px;
+                    transform: translateY(-50%);
+                &:after{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: url(../images/office_next_btn.png);
+                    
+                }
+            }
+            .swiper-button-prev{top: 54%;
+                left: 3%;width: 32px;height: 32px;
+                transform: translateY(-50%);
+            &:after{
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: url(../images/office_prev_btn.png);
+                
+            }
+        }
+        }
+    }
+    .bg{
+        position: absolute;
+        width: 68%;
+        height: 74%;
+        top: 51%;
+        right: 0;
+        transform: translateY(-50%);
+        background:#212E40 ;
+        z-index: -1;
+    }
+    .office_info_txt{
+       margin: 65px 32px 73px; 
+       color: #fff;
+       .office_name{
+        display: block;
+        font-weight: 600;
+        font-size: 1.5em;
+        margin-bottom: 28px;
+       }
+       .address, .po_box, .tell{
+        padding-bottom: 16px;
+        span{
+            font-weight: 500;
+            display: flex;
+            font-size: 1.25em;
+            gap: 8px;
+            margin-bottom: 8px;
+            .address_icon{
+                width: 24px;
+                height: 24px;
+                background: url(../images/address_ico.png);
+            }
+            .po_icon{
+                width: 24px;
+                height: 24px;
+                background: url(../images/po_ico.png);
+            }
+            .tell_icon{
+                width: 24px;
+                height: 24px;
+                background: url(../images/tell_ico.png);
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 1.125em;
+            color: #868B95;
+        }
+       }
+       .tell{
+        padding-bottom: 0;
+    }
+    }
+    
 }

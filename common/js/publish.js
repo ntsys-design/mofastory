@@ -186,19 +186,19 @@ $(document).ready(function() {
 });
 
 // 메인 모달
-$(window).scroll(function () {
-  let scrTop = $(this).scrollTop()
-  $('.element-item').click(function(){
-  $('.modal').fadeIn()
-  $('.modal').css({'top' : scrTop + 'px'})
-  $('body').css({'overflow' : 'hidden'})
-  })
+// $(window).scroll(function () {
+//   let scrTop = $(this).scrollTop()
+//   $('.element-item').click(function(){
+//   $('.modal').fadeIn()
+//   $('.modal').css({'top' : scrTop + 'px'})
+//   $('body').css({'overflow' : 'hidden'})
+//   })
   
-  $('.close').click(function(){
-  $('.modal').fadeOut()
-  $('body').css({'overflow-y' : 'scroll'})
-  })
-})
+//   $('.close').click(function(){
+//   $('.modal').fadeOut()
+//   $('body').css({'overflow-y' : 'scroll'})
+//   })
+// })
 
 // top버튼
 $(window).scroll(function () {
@@ -231,4 +231,12 @@ $('.select_box li button').removeClass('up_btn')
   
 })
 
-
+// 공관소개 이미지 슬라이드
+var swiper2 = new Swiper(".office_slide", {
+  
+  navigation: {
+    nextEl: ".office_slide .swiper-button-next",
+    prevEl: ".office_slide .swiper-button-prev",
+  },
+  
+});
