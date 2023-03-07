@@ -793,6 +793,9 @@ footer .container p {
   overflow: hidden;
   margin-bottom: 24px;
   position: relative;
+  max-width: 216px;
+  height: auto;
+  padding-bottom: 100%;
 }
 .popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap .hover {
   display: none;
@@ -812,6 +815,7 @@ footer .container p {
 }
 .popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap > img {
   width: 100%;
+  position: absolute;
 }
 .popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap:hover:after {
   content: "";
@@ -872,9 +876,11 @@ footer .container p {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
+  padding-bottom: 66.5%;
 }
 .popular_contents .container .slide_tab .content_wrap .monthly_content > div a img {
   width: 100%;
+  position: absolute;
 }
 .popular_contents .container .slide_tab .content_wrap .monthly_content > div a span.flex {
   position: absolute;

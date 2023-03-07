@@ -422,6 +422,9 @@
             overflow: hidden;
             margin-bottom: 24px;
             position: relative;
+            max-width: 216px;
+            height: auto;
+            padding-bottom: 100%;
 
             .hover {
               display: none;
@@ -445,6 +448,7 @@
 
             >img {
               width: 100%;
+              position: absolute;
             }
 
             &:hover {
@@ -521,9 +525,10 @@
               border-radius: 16px;
               overflow: hidden;
               position: relative;
-
+              padding-bottom: 66.5%;
               img {
                 width: 100%;
+                position: absolute;
               }
 
 
