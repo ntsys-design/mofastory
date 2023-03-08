@@ -80,8 +80,15 @@ border-radius: 4px;
             .flag24{
                 margin-right: 16px;
             }
+            &.fs_09{
+                font-size: 0.9em;
+            }
             }
             
+            &:hover,&.on{
+                border: 1.5px solid #000;
+
+            }
         }
         }
         
@@ -92,9 +99,11 @@ border-radius: 4px;
     .dim{
         position: absolute;
         top: 380px;left: 0;
-        width: 100%;height: 100%;
+        width: 100%;
+        height: calc(100% - 380px);
         background: rgba(0,0,0,0.6);
         display: none;
+        z-index: 1;
         &.on{
             display: block;
         }

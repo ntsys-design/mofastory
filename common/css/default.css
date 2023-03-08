@@ -359,6 +359,10 @@ header .container .logo_sch .logo {
   border: 1px solid #b4b4b4;
   margin-right: 48px;
 }
+header .container .logo_sch .logo a {
+  width: 100%;
+  height: 100%;
+}
 header .container .logo_sch .search {
   width: calc(100% - 138px);
 }
@@ -506,6 +510,7 @@ footer .container p {
 .flag33 {
   width: 39px;
   height: 28px;
+  background: #79818C;
 }
 .flag33.geo {
   background: url(../images/geo.svg) no-repeat center;
@@ -1337,6 +1342,12 @@ a {
 .sub_sns_state .option_wrap ul li a .flag24 {
   margin-right: 16px;
 }
+.sub_sns_state .option_wrap ul li a.fs_09 {
+  font-size: 0.9em;
+}
+.sub_sns_state .option_wrap ul li:hover, .sub_sns_state .option_wrap ul li.on {
+  border: 1.5px solid #000;
+}
 
 .wrapper {
   position: relative;
@@ -1346,9 +1357,10 @@ a {
   top: 380px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 380px);
   background: rgba(0, 0, 0, 0.6);
   display: none;
+  z-index: 1;
 }
 .wrapper .dim.on {
   display: block;

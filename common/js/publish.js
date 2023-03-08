@@ -231,6 +231,20 @@ $('.select_box li button').removeClass('up_btn')
   
 })
 
+// 셀렉트박스 옵션 
+$('.continent_option .option li a').on('click',function(){
+  $('.continent_option .option li a').closest('li').removeClass('on')
+  $(this).closest('li').addClass('on')
+
+
+})
+$('.office_option .option li a').on('click',function(){
+  $('.office_option .option li a').closest('li').removeClass('on')
+  $(this).closest('li').addClass('on')
+
+
+})
+
 // 공관소개 이미지 슬라이드
 var swiper2 = new Swiper(".office_slide", {
   
