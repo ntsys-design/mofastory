@@ -80,9 +80,9 @@ var swiper = new Swiper(".pop_content", {
   }
 });
 
-// 최신 sns 탭메뉴
-$('.new_tab ul li').on('click',function(){
-$('.new_tab ul li').removeClass('on')
+//  sns 탭메뉴
+$('.sns_tab ul li').on('click',function(){
+$('.sns_tab ul li').removeClass('on')
 $(this).addClass('on')
 })
 
@@ -94,7 +94,10 @@ $(document).ready(function() {
   var $container = $('.isotope').isotope({
     itemSelector: '.element-item',
     masonry: {
-      gutter: 32
+      gutter: 32,
+      //horizontalOrder: true,
+
+      
     },  
   });
 
@@ -131,11 +134,11 @@ $(document).ready(function() {
   //****************************
   // Isotope Load more button
   //****************************
-  var initShow = 12; //number of items loaded on init & onclick load more button
-  var counter = initShow; //counter for load more button
-  var iso = $container.data('isotope'); // get Isotope instance
+  var initShow = 12;
+  var counter = initShow;
+  var iso = $container.data('isotope'); 
 
-  loadMore(initShow); //execute function onload
+  loadMore(initShow); 
 
   function loadMore(toShow) {
     $container.find(".hidden").removeClass("hidden");

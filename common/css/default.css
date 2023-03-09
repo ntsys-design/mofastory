@@ -547,10 +547,6 @@ footer .container p {
     text-align: center;
   }
 }
-a {
-  font-family: "pretendard", "Noto Sans", "sans-serif";
-}
-
 .sns_state {
   background: url(../images/sns_stateBg.png) no-repeat;
   background-size: cover;
