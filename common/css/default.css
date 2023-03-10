@@ -356,7 +356,6 @@ header .container .logo_sch {
 header .container .logo_sch .logo {
   width: 88px;
   height: 100%;
-  border: 1px solid #b4b4b4;
   margin-right: 48px;
 }
 header .container .logo_sch .logo a {
@@ -410,6 +409,9 @@ header .container .info button {
   width: 6px;
   height: 12px;
   background: url(../images/arrow.png);
+}
+header.sch_hd {
+  background: #212E40;
 }
 
 footer {
@@ -1463,4 +1465,15 @@ footer .container p {
 }
 .ofiice_info_con .office_info_txt .tell {
   padding-bottom: 0;
+}
+
+.sch_wrap {
+  background: linear-gradient(to bottom, #212E40 80%, #fff 20%);
+}
+.sch_wrap .container .tit_wrap {
+  display: block;
+  padding: 40px 0;
+}
+.sch_wrap .container .tit_wrap .tit {
+  text-align: center;
 }/*# sourceMappingURL=default.css.map */

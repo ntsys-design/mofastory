@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- 0308 html lang ko로 수정 -->
 <html lang="ko">
 
 <head>
@@ -13,289 +12,37 @@
 
 <body>
   <div class="wrapper">
-    <header id="header">
+    <header id="header" class="sch_hd">
       <div class="container">
         <div class="logo_sch">
           <h1 class="logo">
             <a href="./main.html"><img src="../common/images/logo.png" alt="로고"></a>
           </h1>
-          <div class="search">
-            <label for="main_search" class="hide">검색</label>
-            <div class="search_bar">
-
-              <button onclick="window.open('sub_통합검색.html')"></button>
-              <label for="main_search" class="hide">검색</label>
-              <input type="text" name="search" id="main_search" placeholder="검색어를 입력하세요 ">
-            </div>
-          </div>
+          
         </div>
-        <!-- 0308 공관소개 페이지명 변경 -->
         <div class="info">
           <a href="./sub_공관소개_동북아시아.html">공관소개 </a>
           <button></button>
         </div>
       </div>
     </header>
-    <div class="sns_state">
+    
+    <div class="sch_wrap">
       <div class="container">
         <div class="tit_wrap">
-          <h3 class="tit">SNS 현황</h3>
-          <div class="list_tab">
-            <ul>
-              <li><a href="#"><span class="hide">목록</span></a></li>
-              <li class="on"><a href="#"><span class="hide">지도</span></a></li>
-            </ul>
-          </div>
+          <h3 class="tit">통합검색</h3>         
         </div>
-        <!-- 0308 페이지명 수정 -->
-        <div class="list_wrap">
-          <div class="embassy_list embassy_map">
-            <div class="map">
-              <!-- 중동북아프리카 -->
-              <div class="marker middle_east_north_africa_marker" data-bg="../common/images/middle_east_north_africa.png">
-                <button onclick="location.href='sub_sns현황_중동북아프리카.html'"></button>
-              </div>
-              <!-- 동남아시아 서남아시아 태평양 -->
-              <div class="marker southwest_asia_pacific_marker txt_2" data-bg="../common/images/southwest_asia_pacific.png">
-                <button onclick="location.href='sub_sns현황_동남아시아서남아시아태평양.html'"></button>
-              </div>
-              <!-- 동북아시아 -->
-              <div class="marker north_east_aisa_marker" data-bg="../common/images/north_east_asia.png">
-                <button onclick="location.href='sub_sns현황_동북아시아.html'"></button>
-              </div>
-              <!-- 사하라 이남아프리카 -->
-              <div class="marker sub_saharan_africa_marker txt_2" data-bg="../common/images/sub_saharan_africa.png">
-                <button onclick="location.href='sub_sns현황_사하라이남아프리카.html'"></button>
-              </div>
-              <!-- 북미 -->
-              <div class="marker northamerica_marker" data-bg="../common/images/northamerica.png">
-                <button onclick="location.href='sub_sns현황_북미.html'"></button>
-              </div>
-              <!-- 러시아 중앙아시아 -->
-              <div class="marker russia_central_asia_marker" data-bg="../common/images/russia_central_asia.png">
-                <button onclick="location.href='sub_sns현황_러시아중앙아시아.html'"></button>
-              </div>
-              <!-- 유럽-->
-              <div class="marker europe_marker" data-bg="../common/images/europe.png">
-                <button onclick="location.href='sub_sns현황_유럽.html'"></button>
-              </div>
-              <!--중남미-->
-              <div class="marker central_south_america_marker" data-bg="../common/images/central_south_america.png">
-                <button onclick="location.href='sub_sns현황_중남미.html'"></button>
-              </div>
-            </div>
-          </div>
-          <div class="embassy_list">
-            <ul>
-              <li><a href="./sub_sns현황_동북아시아.html"><span>동북아시아</span></a></li>
-              <li><a href="./sub_sns현황_동남아시아서남아시아태평양.html"><span>동남아시아 <br>
-                    서남아시아태평양</span></a></li>
-              <li><a href="./sub_sns현황_북미.html"><span>북미 </span></a></li>
-              <li><a href="./sub_sns현황_중남미.html"><span>중남미</span></a></li>
-              <li><a href="./sub_sns현황_유럽.html"><span>유럽</span></a></li>
-              <li><a href="./sub_sns현황_사하라이남아프리카.html"><span>사하라 이남 아프리카</span></a></li>
-              <li><a href="./sub_sns현황_중동북아프리카.html"><span>중동 북아프리카</span></a></li>
-              <li><a href="./sub_sns현황_러시아중앙아시아.html"><span>러시아 중앙아시아</span></a></li>
-            </ul>
-          </div>
-
-        </div>
-         <!--// 0308 페이지명 수정 -->
+        
       </div>
+      
     </div>
 
     <div class="contents_wrap">
+     
       
-      <div class="popular_contents">
-        
-        <div class="container">
-      
-          <div class="tit_wrap tabmenu">
-            <h3 class="tit on"><a href="#">인기 콘텐츠</a></h3>
-            <h3 class="tit"><a href="#">이달의 우수사례</a></h3>
-          </div>
-          <div class="slide_tab">
-            <div class="content_wrap">
-              <div class="swiper pop_content">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <div class="img_wrap">
-                        <img src="../common/images/popular_1.png" alt="인기 콘텐츠 이미지">
-                        <div class="hover">
-                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                          </span>
-                        </div>
-                      </div>
-                      <span class="office">
-                        주시애틀총영사관
-                      </span>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <div class="img_wrap">
-                        <img src="../common/images/popular_2.png" alt="인기 콘텐츠 이미지">
-                        <div class="hover">
-                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                          </span>
-                        </div>
-                      </div>
-                      <span class="office">
-                        주중국대사관
-                      </span>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <div class="img_wrap">
-                        <img src="../common/images/popular_3.png" alt="인기 콘텐츠 이미지">
-                        <div class="hover">
-                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                          </span>
-                        </div>
-                      </div>
-                      <span class="office">
-                        주네덜란드 대한민국대사관
-                      </span>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <div class="img_wrap">
-                        <img src="../common/images/popular_4.png" alt="인기 콘텐츠 이미지">
-                        <div class="hover">
-                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                          </span>
-                        </div>
-                      </div>
-                      <span class="office">
-                        주캐나다대사관
-                      </span>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <div class="img_wrap">
-                        <img src="../common/images/popular_5.png" alt="인기 콘텐츠 이미지">
-                        <div class="hover">
-                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                          </span>
-                        </div>
-                      </div>
-                      <span class="office">
-                        주프랑스 대한민국대사관
-                      </span>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <div class="img_wrap">
-                        <img src="../common/images/popular_1.png" alt="인기 콘텐츠 이미지">
-                        <div class="hover">
-                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                          </span>
-                        </div>
-                      </div>
-                      <span class="office">
-                        주시애틀총영사관
-                      </span>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <div class="img_wrap">
-                        <img src="../common/images/popular_2.png" alt="인기 콘텐츠 이미지">
-                        <div class="hover">
-                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                          </span>
-                        </div>
-                      </div>
-                      <span class="office">
-                        주중국대사관
-                      </span>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <div class="img_wrap">
-                        <img src="../common/images/popular_3.png" alt="인기 콘텐츠 이미지">
-                        <div class="hover">
-                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                          </span>
-                        </div>
-                      </div>
-                      <span class="office">
-                        주네덜란드 대한민국대사관
-                      </span>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <div class="img_wrap">
-                        <img src="../common/images/popular_4.png" alt="인기 콘텐츠 이미지">
-                        <div class="hover">
-                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                          </span>
-                        </div>
-                      </div>
-                      <span class="office">
-                        주캐나다대사관
-                      </span>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#" target="_blank">
-                      <div class="img_wrap">
-                        <img src="../common/images/popular_5.png" alt="인기 콘텐츠 이미지">
-                        <div class="hover">
-                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                          </span>
-                        </div>
-                      </div>
-                      <span class="office">
-                        주프랑스 대한민국대사관
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-            <div class="content_wrap">
-              <div class="monthly_content">
-                <div>
-                  <a href="#" target="_blank">
-                    <img src="../common/images/monthly_1.png" alt="이달의 우수사례 이미지">
-                    <span class="flex"><div class="flag24 sgp"></div> 주싱가포르 대한민국대사관</span>
-                    <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" target="_blank"><img src="../common/images/monthly_2.png" alt="이달의 우수사례 이미지">
-                    <span class="flex"><div class="flag24 svk"></div> 주슬로바키아대사관 </span>
-                    <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" target="_blank"><img src="../common/images/monthly_3.png" alt="이달의 우수사례 이미지">
-                    <span class="flex"><div class="flag24 nld"></div> 주네덜란드 대한민국대사관</span>
-                    <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-      </div>
-
-      <div class="sns_list sns_main">
+      <div class="sns_list">
         <div class="sns_top">
           <div class="container">
-            <div class="tit_wrap">
-              <h3 class="tit">최신 SNS</h3>
-            </div>
             <div class="sns_tab">
               <ul id="filters">
                 <li class="on"><button class="all_btn" data-filter="*"><span class="hide">all</span></button></li>
@@ -784,14 +531,16 @@
             <li>Email. mofastory@mofa.go.kr</li>
           </ul>
         </div>
-        <p class="copy">Copyright 2023 MOFA Story. All Rights Reserved. <div class="test33"></div><div class="test3322"></div><div class="test22"></div></p>
+        <p class="copy">Copyright 2023 MOFA Story. All Rights Reserved.</p>
       </div>
     </footer>
     <div class="top_btn">
       <a href="#header"><img src="../common/images/top_btn.png" alt="top 이동 버튼"></a>
     </div>
-
+<div class="dim"></div>
   </div>
+
+
 
   <script src="../common/js/jquery-3.6.2.min.js"></script>
   <script src="../common/js/swiper-bundle.min.js"></script>

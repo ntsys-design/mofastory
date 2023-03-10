@@ -27,7 +27,7 @@ header {
       .logo {
         width: 88px;
         height: 100%;
-        border: 1px solid #b4b4b4;
+        
         margin-right: 48px;
         a{width: 100%;
         height: 100%;}
@@ -92,6 +92,10 @@ header {
         background: url(../images/arrow.png);
       }
     }
+  }
+  // 통합검색 헤더
+  &.sch_hd{
+    background: #212E40;
   }
 }
 

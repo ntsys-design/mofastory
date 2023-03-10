@@ -1,45 +1,45 @@
 // 메인 sns현황 대륙
-$('.embassy_list ul li').on('click',function(){
+$('.embassy_list ul li').on('click', function () {
   $('.embassy_list ul li').removeClass('on')
   $(this).addClass('on')
-  })
+})
 
 //메인 sns현황 지도/목록 버튼
-$('.list_tab ul li ').on('click',function(e){
-  let idx=$(this).index()
+$('.list_tab ul li ').on('click', function (e) {
+  let idx = $(this).index()
   e.preventDefault()
   $('.list_tab ul li').removeClass('on')
   $(this).addClass('on')
   $('.embassy_list').hide()
   $('.embassy_list').eq(idx).show()
-  
-  })
+
+})
 
 // 메인 지도 Bg
 
-$('.marker').mouseenter(function(){
+$('.marker').mouseenter(function () {
 
-let bgImg=$(this).attr('data-bg');
+  let bgImg = $(this).attr('data-bg');
 
-$('.map').css({'background':'url('+bgImg+')','background-repeat':'no-repeat','background-position':'center','background-size':'76%'})
-$('.marker').removeClass('on')
-$(this).addClass('on')
+  $('.map').css({ 'background': 'url(' + bgImg + ')', 'background-repeat': 'no-repeat', 'background-position': 'center', 'background-size': '76%' })
+  $('.marker').removeClass('on')
+  $(this).addClass('on')
 
 })
-$('.marker').mouseleave(function(){
-  $('.map').css({'background':'url(../common/images/sns_map.png)','background-repeat':'no-repeat','background-position':'center','background-size':'76%'})
+$('.marker').mouseleave(function () {
+  $('.map').css({ 'background': 'url(../common/images/sns_map.png)', 'background-repeat': 'no-repeat', 'background-position': 'center', 'background-size': '76%' })
 })
 
 
 
 // 메인 인기 콘텐츠 이달의 우수사례 탭
-$('.tabmenu h3').on('click',function(e){
-let idx=$(this).index()
-e.preventDefault()
-$('.tabmenu h3').removeClass('on')
-$(this).addClass('on')
-$('.content_wrap').hide()
-$('.content_wrap').eq(idx).show()
+$('.tabmenu h3').on('click', function (e) {
+  let idx = $(this).index()
+  e.preventDefault()
+  $('.tabmenu h3').removeClass('on')
+  $(this).addClass('on')
+  $('.content_wrap').hide()
+  $('.content_wrap').eq(idx).show()
 
 })
 
@@ -64,32 +64,32 @@ var swiper = new Swiper(".pop_content", {
       slidesPerView: 3,
       spaceBetween: 20,
     },
-    
+
     721: {
       slidesPerView: 4,
       spaceBetween: 20,
     },
-   
+
 
 
     1200: {
       slidesPerView: 5,
       spaceBetween: 30,
     },
-    
+
   }
 });
 
 //  sns 탭메뉴
-$('.sns_tab ul li').on('click',function(){
-$('.sns_tab ul li').removeClass('on')
-$(this).addClass('on')
+$('.sns_tab ul li').on('click', function () {
+  $('.sns_tab ul li').removeClass('on')
+  $(this).addClass('on')
 })
 
 
 
 // 최신 sns
-$(document).ready(function() {
+$(document).ready(function () {
 
   var $container = $('.isotope').isotope({
     itemSelector: '.element-item',
@@ -97,8 +97,8 @@ $(document).ready(function() {
       gutter: 32,
       //horizontalOrder: true,
 
-      
-    },  
+
+    },
   });
 
   var filterFns = {
@@ -114,7 +114,7 @@ $(document).ready(function() {
     // }
   };
 
-  $('#filters').on('click', 'button', function() {
+  $('#filters').on('click', 'button', function () {
     var filterValue = $(this).attr('data-filter');
     filterValue = filterFns[filterValue] || filterValue;
     $container.isotope({
@@ -123,9 +123,9 @@ $(document).ready(function() {
   });
 
 
-  $('.button-group').each(function(i, buttonGroup) {
+  $('.button-group').each(function (i, buttonGroup) {
     var $buttonGroup = $(buttonGroup);
-    $buttonGroup.on('click', 'button', function() {
+    $buttonGroup.on('click', 'button', function () {
       $buttonGroup.find('.is-checked').removeClass('is-checked');
       $(this).addClass('is-checked');
     });
@@ -136,14 +136,14 @@ $(document).ready(function() {
   //****************************
   var initShow = 12;
   var counter = initShow;
-  var iso = $container.data('isotope'); 
+  var iso = $container.data('isotope');
 
-  loadMore(initShow); 
+  loadMore(initShow);
 
   function loadMore(toShow) {
     $container.find(".hidden").removeClass("hidden");
 
-    var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function(item) {
+    var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function (item) {
       return item.element;
     });
     $(hiddenElems).addClass('hidden');
@@ -162,7 +162,7 @@ $(document).ready(function() {
   $container.after('<button id="load-more"> 더보기</button>');
 
   //when load more button clicked
-  $("#load-more").click(function() {
+  $("#load-more").click(function () {
     if ($('#filters').data('clicked')) {
       //when filter button clicked, set initial value for counter
       counter = initShow;
@@ -175,17 +175,17 @@ $(document).ready(function() {
 
     loadMore(counter);
   });
-  
+
 
   //when filter button clicked
-  $("#filters").click(function() {
+  $("#filters").click(function () {
     $(this).data('clicked', true);
 
     loadMore(initShow);
   });
 
-  
-  
+
+
 });
 
 // 메인 모달
@@ -196,7 +196,7 @@ $(document).ready(function() {
 //   $('.modal').css({'top' : scrTop + 'px'})
 //   $('body').css({'overflow' : 'hidden'})
 //   })
-  
+
 //   $('.close').click(function(){
 //   $('.modal').fadeOut()
 //   $('body').css({'overflow-y' : 'scroll'})
@@ -206,42 +206,42 @@ $(document).ready(function() {
 // top버튼
 $(window).scroll(function () {
   let scrTop = $(this).scrollTop()
-  if(scrTop >200){
+  if (scrTop > 200) {
     $('.top_btn').show();
-  }else{
+  } else {
     $('.top_btn').hide();
   }
 })
-  
+
 //---------------------서브----------------------------
 
 // 대륙별 sns 현황 셀렉트박스
 
-$('.select_box li').on('click',function(){
-  let idx=$(this).index()
-  let active=$(this).children('button').hasClass('up_btn');
-  if(active){
+$('.select_box li').on('click', function () {
+  let idx = $(this).index()
+  let active = $(this).children('button').hasClass('up_btn');
+  if (active) {
     $('.option_container .option_wrap').hide()
     $(this).children('button').removeClass('up_btn');
     $('.dim').removeClass('on')
-  }else{
-$('.select_box li button').removeClass('up_btn')
-  $(this).children('button').addClass('up_btn')
-  $('.option_container .option_wrap').hide()
-  $('.option_container .option_wrap').eq(idx).show()
-  $('.dim').addClass('on')
+  } else {
+    $('.select_box li button').removeClass('up_btn')
+    $(this).children('button').addClass('up_btn')
+    $('.option_container .option_wrap').hide()
+    $('.option_container .option_wrap').eq(idx).show()
+    $('.dim').addClass('on')
   }
-  
+
 })
 
 // 셀렉트박스 옵션 
-$('.continent_option .option li a').on('click',function(){
+$('.continent_option .option li a').on('click', function () {
   $('.continent_option .option li a').closest('li').removeClass('on')
   $(this).closest('li').addClass('on')
 
 
 })
-$('.office_option .option li a').on('click',function(){
+$('.office_option .option li a').on('click', function () {
   $('.office_option .option li a').closest('li').removeClass('on')
   $(this).closest('li').addClass('on')
 
@@ -250,10 +250,11 @@ $('.office_option .option li a').on('click',function(){
 
 // 공관소개 이미지 슬라이드
 var swiper2 = new Swiper(".office_slide", {
-  
+
   navigation: {
     nextEl: ".office_slide .swiper-button-next",
     prevEl: ".office_slide .swiper-button-prev",
   },
-  
+
 });
+

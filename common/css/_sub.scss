@@ -210,3 +210,16 @@ border-radius: 4px;
     }
     
 }
+// 통합검색
+.sch_wrap{
+    background:linear-gradient(to bottom,#212E40 80%,#fff 20%) ; 
+    .container{
+        .tit_wrap{            
+        display: block;
+        padding: 40px 0;
+        .tit{
+            text-align: center;
+        }
+    }
+}
+}
