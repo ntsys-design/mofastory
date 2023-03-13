@@ -388,7 +388,7 @@ max-height: 580px;
         color: #C6CBD0;
         position: relative;
 
-        &.on,&:hover {
+        &.on{
           color: #000000;
 
           &:before {
@@ -401,6 +401,10 @@ max-height: 580px;
             top: -16px;
             left: 0;
           }
+        }
+        // 0313 호버 수정
+        &:hover {
+          color: #000000;
         }
       }
     }

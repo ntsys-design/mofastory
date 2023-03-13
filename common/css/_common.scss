@@ -1,5 +1,6 @@
 .wrapper {
   width: 100%;
+  background: #fff ;
 }
 
 .container {
@@ -229,7 +230,10 @@ padding: 42px 0;
   }
 
 }
-
+b{
+  line-height: 150%;
+  display: block;
+}
 @media screen and (max-width:1080px) {
   footer {
     .container{

@@ -188,20 +188,7 @@ $(document).ready(function () {
 
 });
 
-// 메인 모달
-// $(window).scroll(function () {
-//   let scrTop = $(this).scrollTop()
-//   $('.element-item').click(function(){
-//   $('.modal').fadeIn()
-//   $('.modal').css({'top' : scrTop + 'px'})
-//   $('body').css({'overflow' : 'hidden'})
-//   })
 
-//   $('.close').click(function(){
-//   $('.modal').fadeOut()
-//   $('body').css({'overflow-y' : 'scroll'})
-//   })
-// })
 
 // top버튼
 $(window).scroll(function () {
@@ -258,3 +245,146 @@ var swiper2 = new Swiper(".office_slide", {
 
 });
 
+// 통합검색 페이지 전체 탭 
+$('.masonry').isotope({
+  itemSelector: '.element-item',
+  masonry: {
+    columnWidth: 100
+  }
+});
+
+
+$(document).ready(function () {
+  var $container = $('.result_isotope01').isotope({
+    itemSelector: '.element-item',
+    masonry: {
+      gutter: 32,
+      //horizontalOrder: true,
+
+
+    },
+  });
+
+  var masonryUpdate = function () {
+    setTimeout(function () {
+      $('.result_isotope01').masonry();
+    }, 500);
+  }
+  $(document).on('click', masonryUpdate);
+  $(document).ajaxComplete(masonryUpdate);
+
+ 
+  var initShow = 12;
+  var counter = initShow;
+  var iso = $container.data('masonry_01');
+
+  loadMore(initShow);
+
+  function loadMore(toShow) {
+    $container.find(".hidden").removeClass("hidden");
+
+    var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function (item) {
+      return item.element;
+    });
+    $(hiddenElems).addClass('hidden');
+    $container.isotope('layout');
+
+    //when no more to load, hide show more button
+    if (hiddenElems.length == 0) {
+      jQuery("#load-more").hide();
+    } else {
+      jQuery("#load-more").show();
+    };
+
+  }
+
+  //append load more button
+  $container.after('<button id="load-more"> 더보기</button>');
+
+  //when load more button clicked
+  $("#load-more").click(function () {
+    if ($('#filters').data('clicked')) {
+      //when filter button clicked, set initial value for counter
+      counter = initShow;
+      $('#filters').data('clicked', false);
+    } else {
+      counter = counter;
+    };
+
+    counter = counter + initShow;
+
+    loadMore(counter);
+  });
+
+});
+
+$(document).ready(function () {
+  var $container = $('.result_isotope02').isotope({
+    itemSelector: '.element-item',
+    masonry: {
+      gutter: 32,
+      //horizontalOrder: true,
+    },
+  });
+
+  var masonryUpdate = function () {
+    setTimeout(function () {
+      $('.result_isotope02').masonry();
+    }, 500);
+  }
+  $(document).on('click', masonryUpdate);
+  $(document).ajaxComplete(masonryUpdate);
+
+ 
+  var initShow = 12;
+  var counter = initShow;
+  var iso = $container.data('masonry_01');
+
+  loadMore(initShow);
+
+  function loadMore(toShow) {
+    $container.find(".hidden").removeClass("hidden");
+
+    var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function (item) {
+      return item.element;
+    });
+    $(hiddenElems).addClass('hidden');
+    $container.isotope('layout');
+
+    //when no more to load, hide show more button
+    if (hiddenElems.length == 0) {
+      jQuery("#load-more").hide();
+    } else {
+      jQuery("#load-more").show();
+    };
+
+  }
+
+  //append load more button
+  $container.after('<button id="load-more"> 더보기</button>');
+
+  //when load more button clicked
+  $("#load-more").click(function () {
+    if ($('#filters').data('clicked')) {
+      //when filter button clicked, set initial value for counter
+      counter = initShow;
+      $('#filters').data('clicked', false);
+    } else {
+      counter = counter;
+    };
+
+    counter = counter + initShow;
+
+    loadMore(counter);
+  });
+
+});
+
+$('.sch_continent li').on('click', function (e) {
+  let idx = $(this).index()
+  e.preventDefault()
+  $('.sch_continent li').removeClass('on')
+  $(this).addClass('on')
+  $('.resultview').hide()
+  $('.resultview').eq(idx).show()
+})
