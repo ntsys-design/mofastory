@@ -1,6 +1,5 @@
 .wrapper {
   width: 100%;
-  background: #fff ;
 }
 
 .container {
@@ -78,19 +77,24 @@ header {
     .info {
       display: flex;
       align-items: center;
-
+      gap: 24px;
       a {
         font-weight: 500;
-        color: #050505;
-        text-decoration: underline;
-        text-underline-position: under;
+        color: #79818C;
+        //text-decoration: underline;
+        //text-underline-position: under;
       }
 
-      button {
-        margin-left: 8px;
-        width: 6px;
-        height: 12px;
-        background: url(../images/arrow.png);
+      // button {
+      //   margin-left: 8px;
+      //   width: 6px;
+      //   height: 12px;
+      //   background: url(../images/arrow.png);
+      // }
+      &.sch_info{
+        a{
+          color: #C6CBD0;
+        }
       }
     }
   }

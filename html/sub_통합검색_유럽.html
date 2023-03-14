@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mofastory</title>
+  <link rel="stylesheet" href="../common/css/default.css">
+  <link rel="stylesheet" href="../common/css/swiper-bundle.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header" class="sch_hd">
+      <div class="container">
+        <div class="logo_sch">
+          <h1 class="logo">
+            <a href="./main.html"><img src="../common/images/search_logo.png" alt="로고"></a>
+          </h1>
+
+        </div>
+        <div class="info sch_info">
+          <a href="./sub_sns현황_동북아시아.html">SNS 현황</a>
+          <a href="./sub_공관소개_동북아시아.html">공관소개 </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="sch_wrap">
+      <div class="container">
+        <div class="tit_wrap">
+          <h3 class="tit">통합검색</h3>
+        </div>
+        <div class="input_wrap">
+          <ul>
+            <li>
+              <div class="search_bar">
+                <label for="search" class="hide">검색</label>
+                <input type="text" name="search" id="search" placeholder="검색어를 입력하세요." value="베트남">
+                <button class="search_btn"></button>
+              </div>
+              <input type="checkbox" name="chck" id="chck">
+              <label for="chck" class="chck">결과 내 재검색</label>
+            </li>
+
+            <li>
+              <span>인기 검색어</span>
+              <ul class="search_word">
+                <li><button class="active"><b>검색어명</b></button></li>
+                <li><button><b>검색어명</b></button></li>
+                <li><button><b>검색어명</b></button></li>
+                <li><button><b>검색어명</b></button></li>
+                <li><button><b>검색어명</b></button></li>
+              </ul>
+            </li>
+
+            <li>
+              <span>검색기간</span>
+              <ul>
+                <li><input type="radio" name="period" id="period01" checked><label for="period01">오늘</label></li>
+                <li><input type="radio" name="period" id="period02"><label for="period02">7일</label></li>
+                <li><input type="radio" name="period" id="period03"><label for="period03">1개월</label></li>
+                <li><input type="radio" name="period" id="period04"><label for="period04">3개월</label></li>
+                <li><input type="radio" name="period" id="period05"><label for="period05">6개월</label></li>
+                <li><input type="radio" name="period" id="period06"><label for="period06">1년</label></li>
+                <li><input type="radio" name="period" id="period07"><label for="period07">기간선택</label>
+                  <label for="date01" class="hide">날짜</label>
+                  <input type="date" name="date01" id="date01" value=""> <span>~</span>
+                  <label for="date02" class="hide">날짜</label>
+                  <input type="date" name="date02" id="date02" value="2021-10-23">
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span>정렬순서</span>
+              <ul>
+                <li><input type="radio" name="order" id="order01" checked><label for="order01">최신순</label></li>
+                <li><input type="radio" name="order" id="order02"><label for="order02">정확도순</label></li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contents_wrap sch_contents_wrap">
+
+      <div class="sns_con">
+
+        <div class="container">
+          <div class="sch_continent_wrap">
+            <p>'<span>베트남</span>'으로 총 '<span>25</span>' 건 검색 되었습니다.</p>
+
+            <ul class="sch_continent">
+              <li ><a href="./sub_통합검색.html">전체 (25)</a></li>
+              <li><a href="./sub_통합검색_동북아시아.html">동북아시아 (1)</a></li>
+              <li><a href="./sub_통합검색_동남아시아서남아시아태평양.html">동남아시아 서남아시아태평양 (15) </a></li>
+              <li><a href="./sub_통합검색_북미.html">북미 (5)</a></li>
+              <li><a href="./sub_통합검색_중남미.html">중남미 (0)</a></li>
+              <li class="on"><a href="./sub_통합검색_유럽.html">유럽 (3)</a></li>
+              <li><a href="./sub_통합검색_사하라이남아프리카.html">사하라 이남 아프리카 (0)</a></li>
+              <li><a href="./sub_통합검색_중동북아프리카.html">중동 북아프리카 (0) </a></li>
+              <li><a href="./sub_통합검색_러시아중앙아시아.html">러시아 중앙아시아 (0)</a></li>
+              <li><a href="./sub_통합검색_공관소개.html">공관소개 (1)</a></li>
+            </ul>
+
+          </div>
+          <div class="resultview_list">
+            
+            <div class="resultview">
+              <div class="rst_ctn">
+                <span>유럽 (3)건</span>
+                <label for="office_select" class="hide">공관선택</label>
+                <select name="office_select" id="office_select">
+                  <option value="" disabled selected>전체</option>
+                  <option value=""> 주교황청 대사관</option>
+              <option value=""> 주그리스 대사관</option>
+              <option value=""> 주네덜란드 대사관</option>
+              <option value=""> 주노르웨이 대사관</option>
+              <option value=""> 주덴마크 대사관</option>
+              <option value=""> 주독일 대사관</option>
+              <option value=""> 주라스팔마스 분관</option>
+              <option value=""> 주라트비아 대사관</option>
+              <option value=""> 주루마니아 대사관</option>
+              <option value=""> 주밀라노 총영사관</option>
+              <option value=""> 주바르셀로나 총영사관</option>
+              <option value=""> 주벨기에 대사관</option>
+              <option value=""> 주벨라루스 대사관</option>
+              <option value=""> 주본 분관</option>
+              <option value=""> 주불가리아 대사관</option>
+              <option value=""> 주세르비아 대사관</option>
+              <option value=""> 주스웨덴 대사관</option>
+              <option value=""> 주스위스 대사관</option>
+              <option value=""> 주스페인 대사관</option>
+              <option value=""> 주슬로바키아 대사관</option>
+              <option value=""> 주아일랜드 대사관</option>
+              <option value=""> 주아제르바이잔 대사관</option>
+              <option value=""> 주영국 대사관</option>
+              <option value=""> 주오스트리아 대사관</option>
+              <option value=""> 주OECD 대표부</option>
+              <option value=""> 주우크라이나 대사관</option>
+              <option value=""> 주유네스코 대표부</option>
+              <option value=""> 주이스탄불 총영사관</option>
+              <option value=""> 주이탈리아 대사관</option>
+              <option value=""> 주제네바 대표부</option>
+              <option value=""> 주조지아 대사관 트빌리시 분관</option>
+              <option value=""> 주체코 대사관</option>
+              <option value=""> 주크로아티아 대사관</option>
+              <option value=""> 주튀르키예 대사관</option>
+              <option value=""> 주포르투갈 대사관</option>
+              <option value=""> 주폴란드 대사관</option>
+              <option value=""> 주프랑스 대사관</option>
+              <option value=""> 주프랑크푸르트 <br>총영사관</option>
+              <option value=""> 주핀란드 대사관</option>
+              <option value=""> 주함부르크 총영사관</option>
+              <option value=""> 주헝가리 대사관</option>
+                </select>
+              </div>
+              <div class="isotope">
+                <div class="element-item insta">
+                  <span class="flex">
+                    <div class="flag sns_china"></div>주<span class="sch_word">베트남</span>대사관
+                  </span>
+                  <a href="#" target="_blank">
+                    <div class="img_wrap"><img src="../common/images/new_sns_3.png" alt="최신 sns 이미지">
+                      <div class="hover">
+                        <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
+                        </span>
+                      </div>
+                    </div>
+                    <p>브라티슬라바 시가 한눈에 보이는 <span class="sch_word">베트남</span> 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로
+                      사용되었습니다.</p>
+                  </a>
+                  <div class="like_wrap">
+                    <div class="icon_wrap">
+                      <div class="icon insta_ico"></div>
+                      <div class="date">12월 26일</div>
+                    </div>
+                    <div class="like flex"><span class="heart"><img src="../common/images/heart.png" alt="좋아요"></span>
+                      120
+                    </div>
+                  </div>
+                </div>
+                <div class="element-item twt">
+                  <span class="flex">
+                    <div class="flag sns_chile"></div>주칠레 대한민국대사관
+                  </span>
+                  <a href="#" target="_blank">
+                    <div class="img_wrap"><img src="../common/images/new_sns_2.png" alt="최신 sns 이미지">
+                      <div class="hover">
+                        <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
+                        </span>
+                      </div>
+                    </div>
+                    <p>브라티슬라바 시가 한눈에 보이는 <span class="sch_word">베트남</span> 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로
+                      사용되었습니다.</p>
+                  </a>
+                  <div class="like_wrap">
+                    <div class="icon_wrap">
+                      <div class="icon twt_ico"></div>
+                      <div class="date">12월 26일</div>
+                    </div>
+                    <div class="like flex"><span class="heart"><img src="../common/images/heart.png" alt="좋아요"></span>
+                      270
+                    </div>
+                  </div>
+                </div>
+                <div class="element-item insta">
+                  <span class="flex">
+                    <div class="flag sns_china"></div>주중국대사관
+                  </span>
+                  <a href="#" target="_blank">
+                    <div class="img_wrap"><img src="../common/images/new_sns_3.png" alt="최신 sns 이미지">
+                      <div class="hover">
+                        <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
+                        </span>
+                      </div>
+                    </div>
+                    <p>브라티슬라바 시가 한눈에 보이는 <span class="sch_word">베트남</span> 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로
+                      사용되었습니다.</p>
+                  </a>
+                  <div class="like_wrap">
+                    <div class="icon_wrap">
+                      <div class="icon insta_ico"></div>
+                      <div class="date">12월 26일</div>
+                    </div>
+                    <div class="like flex"><span class="heart"><img src="../common/images/heart.png" alt="좋아요"></span>
+                      120
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="container flex">
+        <div class="ft_logo flex"><img src="../common/images/ft_logo.png" alt="푸터 로고 ">
+          <ul class="flex">
+            <li>서울시 종로구 사직로 8길 60</li>
+            <li>Email. mofastory@mofa.go.kr</li>
+          </ul>
+        </div>
+        <p class="copy">Copyright 2023 MOFA Story. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <div class="top_btn">
+      <a href="#header"><img src="../common/images/top_btn.png" alt="top 이동 버튼"></a>
+    </div>
+    <div class="dim"></div>
+  </div>
+
+
+
+  <script src="../common/js/jquery-3.6.2.min.js"></script>
+  <script src="../common/js/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="../common/js/publish.js"></script>
+</body>
+
+</html>

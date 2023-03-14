@@ -88,15 +88,14 @@ $('.sns_tab ul li').on('click', function () {
 
 
 
-// 최신 sns
+// 최신 sns, 통합검색 상세 페이지
 $(document).ready(function () {
 
   var $container = $('.isotope').isotope({
     itemSelector: '.element-item',
     masonry: {
       gutter: 32,
-      //horizontalOrder: true,
-
+     //horizontalOrder: true,
 
     },
   });
@@ -143,6 +142,7 @@ $(document).ready(function () {
   function loadMore(toShow) {
     $container.find(".hidden").removeClass("hidden");
 
+    
     var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function (item) {
       return item.element;
     });
@@ -184,8 +184,14 @@ $(document).ready(function () {
     loadMore(initShow);
   });
 
-
-
+// element-item 개수가 12개 이하일때 더보기 버튼 hide
+  var element=$('.isotope .element-item').length
+  console.log(element)
+  if (element < 12) {
+    $("#load-more").hide();
+  } else {
+    $("#load-more").show();
+  };
 });
 
 
@@ -239,8 +245,8 @@ $('.office_option .option li a').on('click', function () {
 var swiper2 = new Swiper(".office_slide", {
 
   navigation: {
-    nextEl: ".office_slide .swiper-button-next",
-    prevEl: ".office_slide .swiper-button-prev",
+    nextEl: ".slide_btn .swiper-button-next",
+    prevEl: ".slide_btn .swiper-button-prev",
   },
 
 });
@@ -254,137 +260,10 @@ $('.masonry').isotope({
 });
 
 
-$(document).ready(function () {
-  var $container = $('.result_isotope01').isotope({
-    itemSelector: '.element-item',
-    masonry: {
-      gutter: 32,
-      //horizontalOrder: true,
-
-
-    },
-  });
-
-  var masonryUpdate = function () {
-    setTimeout(function () {
-      $('.result_isotope01').masonry();
-    }, 500);
-  }
-  $(document).on('click', masonryUpdate);
-  $(document).ajaxComplete(masonryUpdate);
-
- 
-  var initShow = 12;
-  var counter = initShow;
-  var iso = $container.data('masonry_01');
-
-  loadMore(initShow);
-
-  function loadMore(toShow) {
-    $container.find(".hidden").removeClass("hidden");
-
-    var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function (item) {
-      return item.element;
-    });
-    $(hiddenElems).addClass('hidden');
-    $container.isotope('layout');
-
-    //when no more to load, hide show more button
-    if (hiddenElems.length == 0) {
-      jQuery("#load-more").hide();
-    } else {
-      jQuery("#load-more").show();
-    };
-
-  }
-
-  //append load more button
-  $container.after('<button id="load-more"> 더보기</button>');
-
-  //when load more button clicked
-  $("#load-more").click(function () {
-    if ($('#filters').data('clicked')) {
-      //when filter button clicked, set initial value for counter
-      counter = initShow;
-      $('#filters').data('clicked', false);
-    } else {
-      counter = counter;
-    };
-
-    counter = counter + initShow;
-
-    loadMore(counter);
-  });
-
-});
-
-$(document).ready(function () {
-  var $container = $('.result_isotope02').isotope({
-    itemSelector: '.element-item',
-    masonry: {
-      gutter: 32,
-      //horizontalOrder: true,
-    },
-  });
-
-  var masonryUpdate = function () {
-    setTimeout(function () {
-      $('.result_isotope02').masonry();
-    }, 500);
-  }
-  $(document).on('click', masonryUpdate);
-  $(document).ajaxComplete(masonryUpdate);
-
- 
-  var initShow = 12;
-  var counter = initShow;
-  var iso = $container.data('masonry_01');
-
-  loadMore(initShow);
-
-  function loadMore(toShow) {
-    $container.find(".hidden").removeClass("hidden");
-
-    var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function (item) {
-      return item.element;
-    });
-    $(hiddenElems).addClass('hidden');
-    $container.isotope('layout');
-
-    //when no more to load, hide show more button
-    if (hiddenElems.length == 0) {
-      jQuery("#load-more").hide();
-    } else {
-      jQuery("#load-more").show();
-    };
-
-  }
-
-  //append load more button
-  $container.after('<button id="load-more"> 더보기</button>');
-
-  //when load more button clicked
-  $("#load-more").click(function () {
-    if ($('#filters').data('clicked')) {
-      //when filter button clicked, set initial value for counter
-      counter = initShow;
-      $('#filters').data('clicked', false);
-    } else {
-      counter = counter;
-    };
-
-    counter = counter + initShow;
-
-    loadMore(counter);
-  });
-
-});
 
 $('.sch_continent li').on('click', function (e) {
-  let idx = $(this).index()
-  e.preventDefault()
+ 
   $('.sch_continent li').removeClass('on')
   $(this).addClass('on')
-  $('.resultview').hide()
-  $('.resultview').eq(idx).show()
+  
 })

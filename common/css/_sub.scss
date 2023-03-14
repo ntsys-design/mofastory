@@ -133,29 +133,41 @@
 
 .ofiice_info_con {
   padding: 5.5% 0 4.6%;
-  display: flex;
+  
   position: relative;
-  align-items: center;
+  
+  .container{
+    display: flex;align-items: center;
+  }
 
   .slide_wrap {
     width: 50%;
-    margin: 64px 0;
+    padding: 64px 0;
+    position: relative;
 
     .office_slide {
-      width: 61%;
-      margin: 0 0 0 auto;
+      width: 100%;
 
       .img_wrap {
         border-radius: 4px;
         overflow: hidden;
       }
 
-      .swiper-button-next {
-        top: 54%;
-        right: 3%;
-        width: 32px;
-        height: 32px;
-        transform: translateY(-50%);
+      
+    }
+    .slide_btn{
+  position: absolute;
+  width: 160px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 34.5%;
+  bottom: 1%;
+  .swiper-button-next {
+       
+        width: 24px;
+        height: 24px;
 
         &:after {
           content: '';
@@ -167,11 +179,9 @@
       }
 
       .swiper-button-prev {
-        top: 54%;
-        left: 3%;
-        width: 32px;
-        height: 32px;
-        transform: translateY(-50%);
+      
+        width: 24px;
+        height: 24px;
 
         &:after {
           content: '';
@@ -181,29 +191,33 @@
 
         }
       }
-    }
+}
   }
 
   .bg {
     position: absolute;
-    width: 68%;
-    height: 74%;
-    top: 51%;
+    width: 66.5%;
+    height: 76%;
+    top: 52%;
     right: 0;
     transform: translateY(-50%);
     background: #212E40;
     z-index: -1;
   }
 
-  .office_info_txt {
-    margin: 65px 32px 73px;
-    color: #fff;
-
+  .txt_wrap {
+    margin: 65px 0px 73px 32px;
+    
+    .office_info_txt{
+      width: 90%;
+      color: #868B95;
+    }
     .office_name {
       display: block;
       font-weight: 600;
       font-size: 1.5em;
       margin-bottom: 28px;
+      color: #fff;
     }
 
     .address,
@@ -213,28 +227,28 @@
 
       span {
         font-weight: 500;
-        display: flex;
+        //display: flex;
         font-size: 1.25em;
-        gap: 8px;
+        //gap: 8px;
         margin-bottom: 8px;
 
-        .address_icon {
-          width: 24px;
-          height: 24px;
-          background: url(../images/address_ico.png);
-        }
+        // .address_icon {
+        //   width: 24px;
+        //   height: 24px;
+        //   background: url(../images/address_ico.png);
+        // }
 
-        .po_icon {
-          width: 24px;
-          height: 24px;
-          background: url(../images/po_ico.png);
-        }
+        // .po_icon {
+        //   width: 24px;
+        //   height: 24px;
+        //   background: url(../images/po_ico.png);
+        // }
 
-        .tell_icon {
-          width: 24px;
-          height: 24px;
-          background: url(../images/tell_ico.png);
-        }
+        // .tell_icon {
+        //   width: 24px;
+        //   height: 24px;
+        //   background: url(../images/tell_ico.png);
+        // }
       }
 
       p {
@@ -545,7 +559,7 @@
     }
   }
 }
-.all_result{
+.resultview{
  
   .masonry{
     margin:24px 0 64px;
@@ -553,7 +567,15 @@
       margin-bottom: 0;
     
     }
+    
   }
+  .isotope{
+      margin:24px 0 64px;
+      .element-item{
+        margin-bottom: 48;
+      
+      }
+    }
   // #load-more{
   //     display: none;
   //   }
@@ -569,7 +591,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 16px;
-  border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid #C6CBD0;
   span{
     font-weight: 500;
   }
@@ -579,8 +601,19 @@
           background: url(../images/arrow_result.png)no-repeat  99% center;
       padding-right: 17px;
 
-  
   }
+  select{
+  width: 32%;
+  height: 36px;
+  border: 1px solid #DBDBDB;
+  border-radius: 2px;
+  background: url(../images/slt_down.png)no-repeat  99% center;
+  padding: 0 16px;
+  font-weight: 400;
+  font-size: 1em;
+  color: #484B51;
+  outline: 0;
+}
 }
 .sch_word{
   color: #2A5AD3;
@@ -631,10 +664,4 @@
     clear: both;
   }
 
-}
-.resultview_list{
- >div{ display: none;
-  &:first-child{
-    display: block;
-  }}
 }

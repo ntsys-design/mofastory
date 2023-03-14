@@ -329,7 +329,6 @@ input, select, textarea {
 /*아이템 정렬*/
 .wrapper {
   width: 100%;
-  background: #fff;
 }
 
 .container {
@@ -398,18 +397,14 @@ header .container .logo_sch .search .search_bar input {
 header .container .info {
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 header .container .info a {
   font-weight: 500;
-  color: #050505;
-  text-decoration: underline;
-  text-underline-position: under;
+  color: #79818C;
 }
-header .container .info button {
-  margin-left: 8px;
-  width: 6px;
-  height: 12px;
-  background: url(../images/arrow.png);
+header .container .info.sch_info a {
+  color: #C6CBD0;
 }
 header.sch_hd {
   background: #212E40;
@@ -1380,43 +1375,49 @@ b {
 
 .ofiice_info_con {
   padding: 5.5% 0 4.6%;
-  display: flex;
   position: relative;
+}
+.ofiice_info_con .container {
+  display: flex;
   align-items: center;
 }
 .ofiice_info_con .slide_wrap {
   width: 50%;
-  margin: 64px 0;
+  padding: 64px 0;
+  position: relative;
 }
 .ofiice_info_con .slide_wrap .office_slide {
-  width: 61%;
-  margin: 0 0 0 auto;
+  width: 100%;
 }
 .ofiice_info_con .slide_wrap .office_slide .img_wrap {
   border-radius: 4px;
   overflow: hidden;
 }
-.ofiice_info_con .slide_wrap .office_slide .swiper-button-next {
-  top: 54%;
-  right: 3%;
-  width: 32px;
-  height: 32px;
-  transform: translateY(-50%);
+.ofiice_info_con .slide_wrap .slide_btn {
+  position: absolute;
+  width: 160px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 34.5%;
+  bottom: 1%;
 }
-.ofiice_info_con .slide_wrap .office_slide .swiper-button-next:after {
+.ofiice_info_con .slide_wrap .slide_btn .swiper-button-next {
+  width: 24px;
+  height: 24px;
+}
+.ofiice_info_con .slide_wrap .slide_btn .swiper-button-next:after {
   content: "";
   width: 100%;
   height: 100%;
   background: url(../images/office_next_btn.png);
 }
-.ofiice_info_con .slide_wrap .office_slide .swiper-button-prev {
-  top: 54%;
-  left: 3%;
-  width: 32px;
-  height: 32px;
-  transform: translateY(-50%);
+.ofiice_info_con .slide_wrap .slide_btn .swiper-button-prev {
+  width: 24px;
+  height: 24px;
 }
-.ofiice_info_con .slide_wrap .office_slide .swiper-button-prev:after {
+.ofiice_info_con .slide_wrap .slide_btn .swiper-button-prev:after {
   content: "";
   width: 100%;
   height: 100%;
@@ -1424,67 +1425,48 @@ b {
 }
 .ofiice_info_con .bg {
   position: absolute;
-  width: 68%;
-  height: 74%;
-  top: 51%;
+  width: 66.5%;
+  height: 76%;
+  top: 52%;
   right: 0;
   transform: translateY(-50%);
   background: #212E40;
   z-index: -1;
 }
-.ofiice_info_con .office_info_txt {
-  margin: 65px 32px 73px;
-  color: #fff;
+.ofiice_info_con .txt_wrap {
+  margin: 65px 0px 73px 32px;
 }
-.ofiice_info_con .office_info_txt .office_name {
+.ofiice_info_con .txt_wrap .office_info_txt {
+  width: 90%;
+  color: #868B95;
+}
+.ofiice_info_con .txt_wrap .office_name {
   display: block;
   font-weight: 600;
   font-size: 1.5em;
   margin-bottom: 28px;
+  color: #fff;
 }
-.ofiice_info_con .office_info_txt .address,
-.ofiice_info_con .office_info_txt .po_box,
-.ofiice_info_con .office_info_txt .tell {
+.ofiice_info_con .txt_wrap .address,
+.ofiice_info_con .txt_wrap .po_box,
+.ofiice_info_con .txt_wrap .tell {
   padding-bottom: 16px;
 }
-.ofiice_info_con .office_info_txt .address span,
-.ofiice_info_con .office_info_txt .po_box span,
-.ofiice_info_con .office_info_txt .tell span {
+.ofiice_info_con .txt_wrap .address span,
+.ofiice_info_con .txt_wrap .po_box span,
+.ofiice_info_con .txt_wrap .tell span {
   font-weight: 500;
-  display: flex;
   font-size: 1.25em;
-  gap: 8px;
   margin-bottom: 8px;
 }
-.ofiice_info_con .office_info_txt .address span .address_icon,
-.ofiice_info_con .office_info_txt .po_box span .address_icon,
-.ofiice_info_con .office_info_txt .tell span .address_icon {
-  width: 24px;
-  height: 24px;
-  background: url(../images/address_ico.png);
-}
-.ofiice_info_con .office_info_txt .address span .po_icon,
-.ofiice_info_con .office_info_txt .po_box span .po_icon,
-.ofiice_info_con .office_info_txt .tell span .po_icon {
-  width: 24px;
-  height: 24px;
-  background: url(../images/po_ico.png);
-}
-.ofiice_info_con .office_info_txt .address span .tell_icon,
-.ofiice_info_con .office_info_txt .po_box span .tell_icon,
-.ofiice_info_con .office_info_txt .tell span .tell_icon {
-  width: 24px;
-  height: 24px;
-  background: url(../images/tell_ico.png);
-}
-.ofiice_info_con .office_info_txt .address p,
-.ofiice_info_con .office_info_txt .po_box p,
-.ofiice_info_con .office_info_txt .tell p {
+.ofiice_info_con .txt_wrap .address p,
+.ofiice_info_con .txt_wrap .po_box p,
+.ofiice_info_con .txt_wrap .tell p {
   font-weight: 400;
   font-size: 1.125em;
   color: #868B95;
 }
-.ofiice_info_con .office_info_txt .tell {
+.ofiice_info_con .txt_wrap .tell {
   padding-bottom: 0;
 }
 
@@ -1719,13 +1701,19 @@ b {
   color: #2A5AD3;
 }
 
-.all_result .masonry {
+.resultview .masonry {
   margin: 24px 0 64px;
 }
-.all_result .masonry .element-item {
+.resultview .masonry .element-item {
   margin-bottom: 0;
 }
-.all_result p.no_result {
+.resultview .isotope {
+  margin: 24px 0 64px;
+}
+.resultview .isotope .element-item {
+  margin-bottom: 48;
+}
+.resultview p.no_result {
   text-align: center;
   padding: 24px 0 80px;
   font-weight: 500;
@@ -1736,7 +1724,7 @@ b {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 16px;
-  border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid #C6CBD0;
 }
 .rst_ctn span {
   font-weight: 500;
@@ -1746,6 +1734,18 @@ b {
   color: #79818C;
   background: url(../images/arrow_result.png) no-repeat 99% center;
   padding-right: 17px;
+}
+.rst_ctn select {
+  width: 32%;
+  height: 36px;
+  border: 1px solid #DBDBDB;
+  border-radius: 2px;
+  background: url(../images/slt_down.png) no-repeat 99% center;
+  padding: 0 16px;
+  font-weight: 400;
+  font-size: 1em;
+  color: #484B51;
+  outline: 0;
 }
 
 .sch_word {
@@ -1789,11 +1789,4 @@ b {
   content: "";
   display: block;
   clear: both;
-}
-
-.resultview_list > div {
-  display: none;
-}
-.resultview_list > div:first-child {
-  display: block;
 }/*# sourceMappingURL=default.css.map */
