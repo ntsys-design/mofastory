@@ -328,11 +328,11 @@
             padding: 0;
             width: 20px;
             height: 20px;
-            background: url(../images/chk_off.png);
+            background: url(../images/mf_chk_off.png);
             background-size: 100%;
   
             &:checked {
-              background: url(../images/chk_on.png);
+              background: url(../images/mf_chk_on.png);
               background-size: 100%;
             }
           }
@@ -412,11 +412,12 @@
                 width: 151px;
                 height: 36px;
                 border-radius: 2px;
-                border: 1px solid #DBDBDB;
+                border: 1px solid #C6CBD0;
                 padding: 6px 16px;
                 font-size: 1em;
                 color: #484B51;
                 position: relative;
+                outline: 0;
 
                 &::-webkit-clear-button,
                 &::-webkit-inner-spin-button {
@@ -436,7 +437,7 @@
                   width: 20px;
                   height: 20px;
 
-                  background: url(../images/calendar_ico.png) center center /contain;
+                  background: url(../images/mf_calendar_ico.png) center center /contain;
                   transform: translateY(-50%);
                   z-index: 0;
 
@@ -561,10 +562,10 @@
 }
 .resultview{
  
-  .masonry{
-    margin:24px 0 64px;
+  .sch_sns_list{
+    margin:24px 0 16px;
     .element-item{
-      margin-bottom: 0;
+      margin-bottom: 48px;
     
     }
     
@@ -653,15 +654,21 @@
   }
 }
 
-.masonry,.result_isotope {
-  margin: 80px 0;
-  // border: 1px solid #000;
+// .sch_sns_list,.result_isotope {
+//   margin: 80px 0;
+//   // border: 1px solid #000;
 
-  /* clear fix */
-  &:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
+//   /* clear fix */
+//   &:after {
+//     content: '';
+//     display: block;
+//     clear: both;
+//   }
 
+// }
+.sch_wrap .container .input_wrap > ul > li .search_bar button.sch_search_btn{
+  width: 32px;
+  height: 32px;
+  background: url(../images/sch_search_ico.png)no-repeat ;
+  margin-right: 10px;
 }

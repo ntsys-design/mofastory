@@ -81,8 +81,12 @@ header {
       a {
         font-weight: 500;
         color: #79818C;
-        //text-decoration: underline;
-        //text-underline-position: under;
+        &.on,&:hover{
+          text-decoration: underline;
+          text-underline-position: under;
+          color: #000;
+
+        }
       }
 
       // button {
@@ -174,21 +178,198 @@ padding: 42px 0;
   height: 22px;
   background: #79818C;
 
-  &.sgp {
+  &.sg {
     background: url(../images/sgp.svg)no-repeat center;
 
   }
 
-  &.svk {
+  &.sk {
     background: url(../images/svk.svg)no-repeat center;
   }
 
-  &.nld {
+  &.nl {
     background: url(../images/nld.svg)no-repeat center;
   }
+// 동북아시아
+// 일본
+  &.jp {
+    background: url(../images/NAA/jp.png)no-repeat center;
+  }
+  // 중국
+  &.cn {
+    background: url(../images/NAA/cn.png)no-repeat center;
+  }
+  // 홍콩
+  &.hk {
+    background: url(../images/NAA/hk.png)no-repeat center;
+  }
+  // 몽골
+  &.mn {
+    background: url(../images/NAA/mn.png)no-repeat center;
+  }
+  // 대만
+  &.tw {
+    background: url(../images/NAA/tw.png)no-repeat center;
+  }
 
-  &.jpn {
-    background: url(../images/jpn.svg)no-repeat center;
+  // 동남아시아 서남아시아 태평양
+  &.aa {
+    background: url(../images/SAA/.png)no-repeat center;
+  }
+  &.af {
+    background: url(../images/SAA/af.png)no-repeat center;
+  }
+  &.ASEAN {
+    background: url(../images/SAA/ASEAN.png)no-repeat center;
+  }
+  &.au {
+    background: url(../images/SAA/au.png)no-repeat center;
+  }
+  &.bd {
+    background: url(../images/SAA/bd.png)no-repeat center;
+  }
+  &.bn {
+    background: url(../images/SAA/bn.png)no-repeat center;
+  }
+  &.fj {
+    background: url(../images/SAA/fj.png)no-repeat center;
+  }
+  &.id {
+    background: url(../images/SAA/id.png)no-repeat center;
+  }
+  &.in {
+    background: url(../images/SAA/in.png)no-repeat center;
+  }
+  &.kh {
+    background: url(../images/SAA/kh.png)no-repeat center;
+  }
+  &.la {
+    background: url(../images/SAA/la.png)no-repeat center;
+  }
+  &.lk {
+    background: url(../images/SAA/lk.png)no-repeat center;
+  }
+  &.mm {
+    background: url(../images/SAA/mm.png)no-repeat center;
+  }
+  &.my {
+    background: url(../images/SAA/my.png)no-repeat center;
+  }
+  &.np {
+    background: url(../images/SAA/np.png)no-repeat center;
+  }
+  &.nz {
+    background: url(../images/SAA/nz.png)no-repeat center;
+  }
+  &.pg {
+    background: url(../images/SAA/pg.png)no-repeat center;
+  }
+  &.ph {
+    background: url(../images/SAA/ph.png)no-repeat center;
+  }
+  &.pk {
+    background: url(../images/SAA/pk.png)no-repeat center;
+  }
+  &.sg {
+    background: url(../images/SAA/sg.png)no-repeat center;
+  }
+  &.th {
+    background: url(../images/SAA/th.png)no-repeat center;
+  }
+  &.tl {
+    background: url(../images/SAA/tl.png)no-repeat center;
+  }
+  &.vn {
+    background: url(../images/SAA/vn.png)no-repeat center;
+  }
+
+  // 북미
+  &.ca {
+    background: url(../images/NA/vn.png)no-repeat center;
+  }
+  &.un {
+    background: url(../images/NA/un.png)no-repeat center;
+  }
+  &.us {
+    background: url(../images/SAA/us.png)no-repeat center;
+  }
+
+  // 사하라 이남 아프리카
+  // 앙골라
+  &.ao {
+    background: url(../images/SSA/ao.png)no-repeat center;
+  }
+  // 콩고민주공화국
+  &.cd {
+    background: url(../images/SSA/cd.png)no-repeat center;
+  }
+  // 코트디부아르
+  &.ci {
+    background: url(../images/SSA/ci.png)no-repeat center;
+  }
+  // 카메룬
+  &.cm {
+    background: url(../images/SSA/cm.png)no-repeat center;
+  }
+  // 에티오피아
+  &.et {
+    background: url(../images/SSA/et.png)no-repeat center;
+  }
+  // 가봉
+  &.ga {
+    background: url(../images/SSA/ao.png)no-repeat center;
+  }
+  // 가나
+  &.gh {
+    background: url(../images/SSA/gh.png)no-repeat center;
+  }
+  // 적도기니
+  &.gq {
+    background: url(../images/SSA/gq.png)no-repeat center;
+  }
+// 케냐
+  &.ke {
+    background: url(../images/SSA/ke.png)no-repeat center;
+  }
+  // 마다가스카르
+  &.mg {
+    background: url(../images/SSA/mg.png)no-repeat center;
+  }
+  // 모잠비크
+  &.mz {
+    background: url(../images/SSA/mz.png)no-repeat center;
+  }
+  // 나이지리아
+  &.ng {
+    background: url(../images/SSA/ng.png)no-repeat center;
+  }
+  // 르완다
+  &.rw {
+    background: url(../images/SSA/rw.png)no-repeat center;
+  }
+  // 수단
+  &.sd {
+    background: url(../images/SSA/sd.png)no-repeat center;
+  }
+  // 세네갈
+  &.sn {
+    background: url(../images/SSA/sn.png)no-repeat center;
+  }
+  //탄자니아
+  &.tz {
+    background: url(../images/SSA/tz.png)no-repeat center;
+  }
+  // 우간다
+  &.ug {
+    background: url(../images/SSA/ug.png)no-repeat center;
+  }
+  // 남아프리카공화국
+  &.za {
+    background: url(../images/SSA/za.png)no-repeat center;
+  }
+  // 짐바브웨
+  &.zw {
+    background: url(../images/SSA/zw.png)no-repeat center;
   }
 }
 
@@ -213,11 +394,123 @@ padding: 42px 0;
       background: url(../images/nld.svg)no-repeat center;
       background-size: 100%;
     }
-
-    &.jpn {
-      background: url(../images/jpn.svg)no-repeat center;
+// 동북아
+    &.jp {
+      background: url(../images/NAA/jp.png)no-repeat center;
       background-size: 100%;
     }
+    &.cn {
+      background: url(../images/NAA/cn.png)no-repeat center;
+      background-size: 100%;
+    }
+    &.hk {
+      background: url(../images/NAA/hk.png)no-repeat center;
+      background-size: 100%;
+    }
+    &.mn {
+      background: url(../images/NAA/mn.png)no-repeat center;
+      background-size: 100%;
+    }
+    &.tw {
+      background: url(../images/NAA/tw.png)no-repeat center;
+      background-size: 100%;
+    }
+    // 사하라 이남 아프리카
+  // 앙골라
+  &.ao {
+    background: url(../images/SSA/ao.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 콩고민주공화국
+  &.cd {
+    background: url(../images/SSA/cd.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 코트디부아르
+  &.ci {
+    background: url(../images/SSA/ci.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 카메룬
+  &.cm {
+    background: url(../images/SSA/cm.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 에티오피아
+  &.et {
+    background: url(../images/SSA/et.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 가봉
+  &.ga {
+    background: url(../images/SSA/ao.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 가나
+  &.gh {
+    background: url(../images/SSA/gh.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 적도기니
+  &.gq {
+    background: url(../images/SSA/gq.png)no-repeat center;
+    background-size: 100%;
+  }
+// 케냐
+  &.ke {
+    background: url(../images/SSA/ke.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 마다가스카르
+  &.mg {
+    background: url(../images/SSA/mg.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 모잠비크
+  &.mz {
+    background: url(../images/SSA/mz.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 나이지리아
+  &.ng {
+    background: url(../images/SSA/ng.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 르완다
+  &.rw {
+    background: url(../images/SSA/rw.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 수단
+  &.sd {
+    background: url(../images/SSA/sd.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 세네갈
+  &.sn {
+    background: url(../images/SSA/sn.png)no-repeat center;
+    background-size: 100%;
+  }
+  //탄자니아
+  &.tz {
+    background: url(../images/SSA/tz.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 우간다
+  &.ug {
+    background: url(../images/SSA/ug.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 남아프리카공화국
+  &.za {
+    background: url(../images/SSA/za.png)no-repeat center;
+    background-size: 100%;
+  }
+  // 짐바브웨
+  &.zw {
+    background: url(../images/SSA/zw.png)no-repeat center;
+    background-size: 100%;
+  }
   }
 }
 
@@ -226,11 +519,97 @@ padding: 42px 0;
   height: 28px;
   background: #79818C;
 
-  &.geo {
-    background: url(../images/geo.svg)no-repeat center;
+  &.jp {
+    background: url(../images/NAA/jp.png)no-repeat center;
   }
-  &.jpn {
-    background: url(../images/jpn.svg)no-repeat center;
+  &.cn {
+    background: url(../images/NAA/cn.png)no-repeat center;
+  }
+  &.hk {
+    background: url(../images/NAA/hk.png)no-repeat center;
+  }
+  &.mn {
+    background: url(../images/NAA/mn.png)no-repeat center;
+  }
+  &.tw {
+    background: url(../images/NAA/tw.png)no-repeat center;
+  }
+  // 사하라 이남 아프리카
+  // 앙골라
+  &.ao {
+    background: url(../images/SSA/ao.png)no-repeat center;
+  }
+  // 콩고
+  &.cd {
+    background: url(../images/SSA/cd.png)no-repeat center;
+  }
+  // 코트디부아르
+  &.ci {
+    background: url(../images/SSA/ci.png)no-repeat center;
+  }
+  // 카메룬
+  &.cm {
+    background: url(../images/SSA/cm.png)no-repeat center;
+  }
+  // 에티오피아
+  &.et {
+    background: url(../images/SSA/et.png)no-repeat center;
+  }
+  // 가봉
+  &.ga {
+    background: url(../images/SSA/ao.png)no-repeat center;
+  }
+  // 가나
+  &.gh {
+    background: url(../images/SSA/gh.png)no-repeat center;
+  }
+  // 적도기니
+  &.gq {
+    background: url(../images/SSA/gq.png)no-repeat center;
+  }
+// 케냐
+  &.ke {
+    background: url(../images/SSA/ke.png)no-repeat center;
+  }
+  // 마다가스카르
+  &.mg {
+    background: url(../images/SSA/mg.png)no-repeat center;
+  }
+  // 모잠비크
+  &.mz {
+    background: url(../images/SSA/mz.png)no-repeat center;
+  }
+  // 나이지리아
+  &.ng {
+    background: url(../images/SSA/ng.png)no-repeat center;
+  }
+  // 르완다
+  &.rw {
+    background: url(../images/SSA/rw.png)no-repeat center;
+  }
+  // 수단
+  &.sd {
+    background: url(../images/SSA/sd.png)no-repeat center;
+  }
+  // 세네갈
+  &.sn {
+    background: url(../images/SSA/sn.png)no-repeat center;
+  }
+  //탄자니아
+  &.tz {
+    background: url(../images/SSA/tz.png)no-repeat center;
+  }
+  // 우간다
+  &.ug {
+    background: url(../images/SSA/ug.png)no-repeat center;
+  }
+  // 남아프리카공화국
+  &.za {
+    background: url(../images/SSA/za.png)no-repeat center;
+  }
+  // 짐바브웨
+  &.zw {
+    background: url(../images/SSA/zw.png)no-repeat center;
   }
 
 }

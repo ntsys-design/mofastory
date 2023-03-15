@@ -80,7 +80,7 @@ var swiper = new Swiper(".pop_content", {
   }
 });
 
-//  sns 탭메뉴
+//  sns 탭메뉴 0309 수정
 $('.sns_tab ul li').on('click', function () {
   $('.sns_tab ul li').removeClass('on')
   $(this).addClass('on')
@@ -252,10 +252,10 @@ var swiper2 = new Swiper(".office_slide", {
 });
 
 // 통합검색 페이지 전체 탭 
-$('.masonry').isotope({
+$('.sch_sns_list').isotope({
   itemSelector: '.element-item',
   masonry: {
-    columnWidth: 100
+    gutter: 32,
   }
 });
 
