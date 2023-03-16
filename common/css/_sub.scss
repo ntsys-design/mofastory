@@ -63,7 +63,7 @@
     position: absolute;
     width: 100%;
     background: #fff;
-    z-index: 10;
+    z-index: 20;
     padding: 16px;
     display: none;
 
@@ -81,15 +81,13 @@
         a {
           color: #484B51;
           width: 100%;
+          font-weight: 400;
           padding: 0 16px;
           height: 100%;
           display: flex;
           align-items: center;
-
-          .flag24 {
-            margin-right: 16px;
-          }
-
+          gap: 16px;
+          
           &.fs_09 {
             font-size: 0.9em;
           }
@@ -98,7 +96,10 @@
         &:hover,
         &.on {
           border: 1.5px solid #000;
-
+          a{
+            font-weight: 500;
+            color: #26282C;
+          }
         }
       }
     }
@@ -636,11 +637,9 @@
       height: 100%;
       display: flex;
       align-items: center;
+      gap: 16px;
 
-      .flag24 {
-        margin-right: 16px;
-      }
-
+     
       &.fs_09 {
         font-size: 0.9em;
       }

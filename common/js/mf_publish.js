@@ -95,7 +95,7 @@ $(document).ready(function () {
     itemSelector: '.element-item',
     masonry: {
       gutter: 32,
-     //horizontalOrder: true,
+   // horizontalOrder: true,
 
     },
   });

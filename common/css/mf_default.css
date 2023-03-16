@@ -329,6 +329,7 @@ input, select, textarea {
 /*아이템 정렬*/
 .wrapper {
   width: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -470,361 +471,522 @@ footer .container p {
   align-items: center;
 }
 
-.flag24 {
-  width: 30px;
-  height: 22px;
+.flag_2 {
+  border-radius: 2px;
+  overflow: hidden;
   background: #79818C;
 }
-.flag24.sg {
-  background: url(../images/sgp.svg) no-repeat center;
+.flag_2.flag24 {
+  width: 24px;
+  height: 18px;
 }
-.flag24.sk {
-  background: url(../images/svk.svg) no-repeat center;
+.flag_2.flag32 {
+  width: 32px;
+  height: 24px;
 }
-.flag24.nl {
-  background: url(../images/nld.svg) no-repeat center;
-}
-.flag24.jp {
+.flag_2.jp {
   background: url(../images/NAA/jp.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.cn {
+.flag_2.cn {
   background: url(../images/NAA/cn.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.hk {
+.flag_2.hk {
   background: url(../images/NAA/hk.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.mn {
+.flag_2.mn {
   background: url(../images/NAA/mn.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.tw {
+.flag_2.tw {
   background: url(../images/NAA/tw.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.aa {
-  background: url(../images/SAA/.png) no-repeat center;
+.flag_2.aa {
+  background: url(../images/SAA/aa.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.af {
+.flag_2.af {
   background: url(../images/SAA/af.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.ASEAN {
-  background: url(../images/SAA/ASEAN.png) no-repeat center;
-}
-.flag24.au {
+.flag_2.au {
   background: url(../images/SAA/au.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.bd {
+.flag_2.bd {
   background: url(../images/SAA/bd.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.bn {
+.flag_2.bn {
   background: url(../images/SAA/bn.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.fj {
+.flag_2.fj {
   background: url(../images/SAA/fj.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.id {
+.flag_2.id {
   background: url(../images/SAA/id.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.in {
+.flag_2.in {
   background: url(../images/SAA/in.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.kh {
+.flag_2.kh {
   background: url(../images/SAA/kh.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.la {
+.flag_2.la {
   background: url(../images/SAA/la.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.lk {
+.flag_2.lk {
   background: url(../images/SAA/lk.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.mm {
+.flag_2.mm {
   background: url(../images/SAA/mm.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.my {
+.flag_2.my {
   background: url(../images/SAA/my.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.np {
+.flag_2.np {
   background: url(../images/SAA/np.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.nz {
+.flag_2.nz {
   background: url(../images/SAA/nz.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.pg {
+.flag_2.pg {
   background: url(../images/SAA/pg.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.ph {
+.flag_2.ph {
   background: url(../images/SAA/ph.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.pk {
+.flag_2.pk {
   background: url(../images/SAA/pk.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.sg {
+.flag_2.sg {
   background: url(../images/SAA/sg.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.th {
+.flag_2.th {
   background: url(../images/SAA/th.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.tl {
+.flag_2.tl {
   background: url(../images/SAA/tl.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.vn {
+.flag_2.vn {
   background: url(../images/SAA/vn.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.ca {
-  background: url(../images/NA/vn.png) no-repeat center;
+.flag_2.ca {
+  background: url(../images/NA/ca.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.un {
+.flag_2.un {
   background: url(../images/NA/un.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.us {
-  background: url(../images/SAA/us.png) no-repeat center;
+.flag_2.us {
+  background: url(../images/NA/us.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.ao {
+.flag_2.ar {
+  background: url(../images/CSA/ar.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.bo {
+  background: url(../images/CSA/bo.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.br {
+  background: url(../images/CSA/br.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.cl {
+  background: url(../images/CSA/cl.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.co {
+  background: url(../images/CSA/co.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.cr {
+  background: url(../images/CSA/cr.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.do {
+  background: url(../images/CSA/do.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.ec {
+  background: url(../images/CSA/ec.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.gt {
+  background: url(../images/CSA/gt.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.hn {
+  background: url(../images/CSA/hn.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.jm {
+  background: url(../images/CSA/jm.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.mx {
+  background: url(../images/CSA/mx.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.ni {
+  background: url(../images/CSA/ni.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.pa {
+  background: url(../images/CSA/pa.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.pe {
+  background: url(../images/CSA/pe.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.py {
+  background: url(../images/CSA/py.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.sv {
+  background: url(../images/CSA/sv.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.tt {
+  background: url(../images/CSA/tt.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.uy {
+  background: url(../images/CSA/uy.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.ve {
+  background: url(../images/CSA/ve.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.at {
+  background: url(../images/EU/at.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.az {
+  background: url(../images/EU/az.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.be {
+  background: url(../images/EU/be.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.bg {
+  background: url(../images/EU/bg.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.by {
+  background: url(../images/EU/by.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.ch {
+  background: url(../images/EU/ch.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.cz {
+  background: url(../images/EU/cz.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.de {
+  background: url(../images/EU/de.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.dk {
+  background: url(../images/EU/dk.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.es {
+  background: url(../images/EU/es.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.fi {
+  background: url(../images/EU/fi.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.fr {
+  background: url(../images/EU/fr.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.gb {
+  background: url(../images/EU/gb.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.ge {
+  background: url(../images/EU/ge.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.gr {
+  background: url(../images/EU/gr.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.hr {
+  background: url(../images/EU/hr.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.hu {
+  background: url(../images/EU/hu.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.ie {
+  background: url(../images/EU/ie.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.it {
+  background: url(../images/EU/it.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.lv {
+  background: url(../images/EU/lv.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.nl {
+  background: url(../images/EU/nl.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.no {
+  background: url(../images/EU/no.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.oecd {
+  background: url(../images/EU/OECD.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.pl {
+  background: url(../images/EU/pl.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.pt {
+  background: url(../images/EU/pt.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.ro {
+  background: url(../images/EU/ro.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.rs {
+  background: url(../images/EU/rs.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.se {
+  background: url(../images/EU/se.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.sk {
+  background: url(../images/EU/sk.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.tr {
+  background: url(../images/EU/tr.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.ua {
+  background: url(../images/EU/ua.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.unesco {
+  background: url(../images/EU/UNESCO.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.va {
+  background: url(../images/EU/va.png) no-repeat center;
+  background-size: 100%;
+}
+.flag_2.ao {
   background: url(../images/SSA/ao.png) no-repeat center;
+  background-size: 100%;
 }
-.flag24.cd {
+.flag_2.cd {
   background: url(../images/SSA/cd.png) no-repeat center;
-}
-.flag24.ci {
-  background: url(../images/SSA/ci.png) no-repeat center;
-}
-.flag24.cm {
-  background: url(../images/SSA/cm.png) no-repeat center;
-}
-.flag24.et {
-  background: url(../images/SSA/et.png) no-repeat center;
-}
-.flag24.ga {
-  background: url(../images/SSA/ao.png) no-repeat center;
-}
-.flag24.gh {
-  background: url(../images/SSA/gh.png) no-repeat center;
-}
-.flag24.gq {
-  background: url(../images/SSA/gq.png) no-repeat center;
-}
-.flag24.ke {
-  background: url(../images/SSA/ke.png) no-repeat center;
-}
-.flag24.mg {
-  background: url(../images/SSA/mg.png) no-repeat center;
-}
-.flag24.mz {
-  background: url(../images/SSA/mz.png) no-repeat center;
-}
-.flag24.ng {
-  background: url(../images/SSA/ng.png) no-repeat center;
-}
-.flag24.rw {
-  background: url(../images/SSA/rw.png) no-repeat center;
-}
-.flag24.sd {
-  background: url(../images/SSA/sd.png) no-repeat center;
-}
-.flag24.sn {
-  background: url(../images/SSA/sn.png) no-repeat center;
-}
-.flag24.tz {
-  background: url(../images/SSA/tz.png) no-repeat center;
-}
-.flag24.ug {
-  background: url(../images/SSA/ug.png) no-repeat center;
-}
-.flag24.za {
-  background: url(../images/SSA/za.png) no-repeat center;
-}
-.flag24.zw {
-  background: url(../images/SSA/zw.png) no-repeat center;
-}
-
-.option .flag24 {
-  width: 30px;
-  height: 22px;
-  background: #79818C;
-}
-.option .flag24.sgp {
-  background: url(../images/sgp.svg) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.svk {
-  background: url(../images/svk.svg) no-repeat center;
-  background-size: 100%;
-}
-.option .flag24.nld {
-  background: url(../images/nld.svg) no-repeat center;
-  background-size: 100%;
-}
-.option .flag24.jp {
-  background: url(../images/NAA/jp.png) no-repeat center;
-  background-size: 100%;
-}
-.option .flag24.cn {
-  background: url(../images/NAA/cn.png) no-repeat center;
-  background-size: 100%;
-}
-.option .flag24.hk {
-  background: url(../images/NAA/hk.png) no-repeat center;
-  background-size: 100%;
-}
-.option .flag24.mn {
-  background: url(../images/NAA/mn.png) no-repeat center;
-  background-size: 100%;
-}
-.option .flag24.tw {
-  background: url(../images/NAA/tw.png) no-repeat center;
-  background-size: 100%;
-}
-.option .flag24.ao {
-  background: url(../images/SSA/ao.png) no-repeat center;
-  background-size: 100%;
-}
-.option .flag24.cd {
-  background: url(../images/SSA/cd.png) no-repeat center;
-  background-size: 100%;
-}
-.option .flag24.ci {
+.flag_2.ci {
   background: url(../images/SSA/ci.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.cm {
+.flag_2.cm {
   background: url(../images/SSA/cm.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.et {
+.flag_2.et {
   background: url(../images/SSA/et.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.ga {
+.flag_2.ga {
   background: url(../images/SSA/ao.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.gh {
+.flag_2.gh {
   background: url(../images/SSA/gh.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.gq {
+.flag_2.gq {
   background: url(../images/SSA/gq.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.ke {
+.flag_2.ke {
   background: url(../images/SSA/ke.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.mg {
+.flag_2.mg {
   background: url(../images/SSA/mg.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.mz {
+.flag_2.mz {
   background: url(../images/SSA/mz.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.ng {
+.flag_2.ng {
   background: url(../images/SSA/ng.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.rw {
+.flag_2.rw {
   background: url(../images/SSA/rw.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.sd {
+.flag_2.sd {
   background: url(../images/SSA/sd.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.sn {
+.flag_2.sn {
   background: url(../images/SSA/sn.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.tz {
+.flag_2.tz {
   background: url(../images/SSA/tz.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.ug {
+.flag_2.ug {
   background: url(../images/SSA/ug.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.za {
+.flag_2.za {
   background: url(../images/SSA/za.png) no-repeat center;
   background-size: 100%;
 }
-.option .flag24.zw {
+.flag_2.zw {
   background: url(../images/SSA/zw.png) no-repeat center;
   background-size: 100%;
 }
-
-.flag33 {
-  width: 39px;
-  height: 28px;
-  background: #79818C;
+.flag_2.ae {
+  background: url(../images/MENA/ae.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.jp {
-  background: url(../images/NAA/jp.png) no-repeat center;
+.flag_2.bh {
+  background: url(../images/MENA/bh.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.cn {
-  background: url(../images/NAA/cn.png) no-repeat center;
+.flag_2.dz {
+  background: url(../images/MENA/dz.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.hk {
-  background: url(../images/NAA/hk.png) no-repeat center;
+.flag_2.eg {
+  background: url(../images/MENA/eg.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.mn {
-  background: url(../images/NAA/mn.png) no-repeat center;
+.flag_2.il {
+  background: url(../images/MENA/il.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.tw {
-  background: url(../images/NAA/tw.png) no-repeat center;
+.flag_2.iq {
+  background: url(../images/MENA/iq.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.ao {
-  background: url(../images/SSA/ao.png) no-repeat center;
+.flag_2.ir {
+  background: url(../images/MENA/ir.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.cd {
-  background: url(../images/SSA/cd.png) no-repeat center;
+.flag_2.jo {
+  background: url(../images/MENA/jo.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.ci {
-  background: url(../images/SSA/ci.png) no-repeat center;
+.flag_2.kw {
+  background: url(../images/MENA/kw.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.cm {
-  background: url(../images/SSA/cm.png) no-repeat center;
+.flag_2.lb {
+  background: url(../images/MENA/lb.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.et {
-  background: url(../images/SSA/et.png) no-repeat center;
+.flag_2.ly {
+  background: url(../images/MENA/ly.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.ga {
-  background: url(../images/SSA/ao.png) no-repeat center;
+.flag_2.ma {
+  background: url(../images/MENA/ma.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.gh {
-  background: url(../images/SSA/gh.png) no-repeat center;
+.flag_2.om {
+  background: url(../images/MENA/om.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.gq {
-  background: url(../images/SSA/gq.png) no-repeat center;
+.flag_2.ps {
+  background: url(../images/MENA/ps.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.ke {
-  background: url(../images/SSA/ke.png) no-repeat center;
+.flag_2.qa {
+  background: url(../images/MENA/qa.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.mg {
-  background: url(../images/SSA/mg.png) no-repeat center;
+.flag_2.sa {
+  background: url(../images/MENA/sa.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.mz {
-  background: url(../images/SSA/mz.png) no-repeat center;
+.flag_2.tn {
+  background: url(../images/MENA/tn.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.ng {
-  background: url(../images/SSA/ng.png) no-repeat center;
+.flag_2.ye {
+  background: url(../images/MENA/ye.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.rw {
-  background: url(../images/SSA/rw.png) no-repeat center;
+.flag_2.kg {
+  background: url(../images/RCA/kg.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.sd {
-  background: url(../images/SSA/sd.png) no-repeat center;
+.flag_2.kz {
+  background: url(../images/RCA/kz.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.sn {
-  background: url(../images/SSA/sn.png) no-repeat center;
+.flag_2.ru {
+  background: url(../images/RCA/ru.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.tz {
-  background: url(../images/SSA/tz.png) no-repeat center;
+.flag_2.tj {
+  background: url(../images/RCA/tj.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.ug {
-  background: url(../images/SSA/ug.png) no-repeat center;
+.flag_2.tm {
+  background: url(../images/RCA/tm.png) no-repeat center;
+  background-size: 100%;
 }
-.flag33.za {
-  background: url(../images/SSA/za.png) no-repeat center;
-}
-.flag33.zw {
-  background: url(../images/SSA/zw.png) no-repeat center;
+.flag_2.uz {
+  background: url(../images/RCA/uz.png) no-repeat center;
+  background-size: 100%;
 }
 
 b {
@@ -1629,7 +1791,7 @@ b {
   position: absolute;
   width: 100%;
   background: #fff;
-  z-index: 10;
+  z-index: 20;
   padding: 16px;
   display: none;
 }
@@ -1646,19 +1808,22 @@ b {
 .sub_sns_state .option_wrap ul li a {
   color: #484B51;
   width: 100%;
+  font-weight: 400;
   padding: 0 16px;
   height: 100%;
   display: flex;
   align-items: center;
-}
-.sub_sns_state .option_wrap ul li a .flag24 {
-  margin-right: 16px;
+  gap: 16px;
 }
 .sub_sns_state .option_wrap ul li a.fs_09 {
   font-size: 0.9em;
 }
 .sub_sns_state .option_wrap ul li:hover, .sub_sns_state .option_wrap ul li.on {
   border: 1.5px solid #000;
+}
+.sub_sns_state .option_wrap ul li:hover a, .sub_sns_state .option_wrap ul li.on a {
+  font-weight: 500;
+  color: #26282C;
 }
 
 .wrapper {
@@ -2081,9 +2246,7 @@ b {
   height: 100%;
   display: flex;
   align-items: center;
-}
-.rst_ofc li a .flag24 {
-  margin-right: 16px;
+  gap: 16px;
 }
 .rst_ofc li a.fs_09 {
   font-size: 0.9em;
