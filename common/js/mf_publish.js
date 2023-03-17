@@ -197,8 +197,9 @@ $(document).ready(function () {
 
 
 
-// top버튼
+// top버튼 스크롤 200이상이면 show 200이하 hide
 $(window).scroll(function () {
+ 
   let scrTop = $(this).scrollTop()
   if (scrTop > 200) {
     $('.top_btn').show();
@@ -206,7 +207,14 @@ $(window).scroll(function () {
     $('.top_btn').hide();
   }
 })
-
+// top버튼 클릭시 맨위로 이동
+$('.top_btn').click(function(e) {
+  e.stopPropagation()
+  $('html, body').animate({
+      scrollTop : 0
+  }, 400);
+  return false;
+});
 //---------------------서브----------------------------
 
 // 대륙별 sns 현황 셀렉트박스
