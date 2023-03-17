@@ -70,7 +70,7 @@
     ul {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      grid-gap: 14px 24px;
+      grid-gap: 14px ;
 
       li {
         border: 1.5px solid #EAEAEA;
@@ -118,7 +118,7 @@
     height: calc(100% - 380px);
     background: rgba(0, 0, 0, 0.6);
     display: none;
-    z-index: 1;
+    z-index: 19;
 
     &.on {
       display: block;
@@ -143,8 +143,17 @@
 
   .slide_wrap {
     width: 50%;
-    padding: 64px 0;
+    padding: 4.7% 0 6%;
     position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 10000px;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      background:#212E40 ;
+    }
 
     .office_slide {
       width: 100%;
@@ -163,8 +172,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  left: 34.5%;
-  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 18;
+  bottom: 3%;
   .swiper-button-next {
        
         width: 24px;
@@ -195,23 +206,51 @@
 }
   }
 
-  .bg {
-    position: absolute;
-    width: 66.5%;
-    height: 76%;
-    top: 52%;
-    right: 0;
-    transform: translateY(-50%);
-    background: #212E40;
-    z-index: -1;
-  }
+  // .bg {
+  //   position: absolute;
+  //   width: 66.5%;
+  //   height: 76%;
+  //   top: 52%;
+  //   right: 0;
+  //   transform: translateY(-50%);
+  //   background: #212E40;
+  //   z-index: -1;
+  // }
 
   .txt_wrap {
-    margin: 65px 0px 73px 32px;
-    
-    .office_info_txt{
-      width: 90%;
+    margin: 5.4% 0px 6% 2.7%;
+    width: 50%;
+    position: relative;
       color: #868B95;
+      
+   
+    .office_info_txt{
+      padding-right: 10%;
+      max-height: 350px;
+      height: 17vw;
+      overflow-y: auto;
+      // 스크롤
+      &::-webkit-scrollbar {
+        width: 4px;
+        
+      }
+      
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: rgba(219, 219, 219, 0.1); 
+      }
+       
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: rgba(219, 219, 219, 0.5);
+        border-radius: 16px;
+        overflow: hidden;
+      }
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgba(219, 219, 219, 1); 
+      }
     }
     .office_name {
       display: block;
@@ -256,6 +295,7 @@
         font-weight: 400;
         font-size: 1.125em;
         color: #868B95;
+        word-wrap: break-word;
       }
     }
 

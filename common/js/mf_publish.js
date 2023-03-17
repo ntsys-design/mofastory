@@ -46,11 +46,12 @@ $('.tabmenu h3').on('click', function (e) {
 
 
 // 인기 콘텐츠 슬라이드
+// 0317 루프 삭제
 var swiper = new Swiper(".pop_content", {
   slidesPerView: 2,
   spaceBetween: 30,
-  loop: true,
-  loopFillGroupWithBlank: true,
+  // loop: true,
+  // loopFillGroupWithBlank: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -95,7 +96,7 @@ $(document).ready(function () {
     itemSelector: '.element-item',
     masonry: {
       gutter: 32,
-   // horizontalOrder: true,
+    //horizontalOrder: true,
 
     },
   });
@@ -210,9 +211,11 @@ $(window).scroll(function () {
 
 // 대륙별 sns 현황 셀렉트박스
 
-$('.select_box li').on('click', function () {
+$('.select_box li').on('click', function (e) {
   let idx = $(this).index()
   let active = $(this).children('button').hasClass('up_btn');
+  let cls=$('body').click()
+  e.stopPropagation()
   if (active) {
     $('.option_container .option_wrap').hide()
     $(this).children('button').removeClass('up_btn');
@@ -222,26 +225,35 @@ $('.select_box li').on('click', function () {
     $(this).children('button').addClass('up_btn')
     $('.option_container .option_wrap').hide()
     $('.option_container .option_wrap').eq(idx).show()
-    $('.dim').addClass('on')
+    $('.dim').addClass('on')  
   }
-
 })
 
-// 셀렉트박스 옵션 
-$('.continent_option .option li a').on('click', function () {
+// 셀렉트박스 옵션 -대륙명
+$('.continent_option .option li a').on('click', function (e) {
+  e.stopPropagation()
   $('.continent_option .option li a').closest('li').removeClass('on')
   $(this).closest('li').addClass('on')
-
-
 })
-$('.office_option .option li a').on('click', function () {
+// 셀렉트박스 옵션 -공관명
+$('.office_option .option li a').on('click', function (e) {
+  e.stopPropagation()
   $('.office_option .option li a').closest('li').removeClass('on')
   $(this).closest('li').addClass('on')
-
-
 })
 
-// 공관소개 이미지 슬라이드
+// body 클릭시 옵션 닫힘
+$('body').on('click',function(){
+  let up_btn = $('.select_box li button').hasClass('up_btn');
+  if(up_btn){
+    $('.option_container .option_wrap').hide()
+    $('.select_box li button').removeClass('up_btn');
+    $('.dim').removeClass('on')
+  }
+})
+
+
+// 공관소개페이지 이미지 슬라이드
 var swiper2 = new Swiper(".office_slide", {
 
   navigation: {
@@ -260,9 +272,8 @@ $('.sch_sns_list').isotope({
 });
 
 
-
-$('.sch_continent li').on('click', function (e) {
- 
+// 검색 결과 항목 선택
+$('.sch_continent li').on('click', function () {
   $('.sch_continent li').removeClass('on')
   $(this).addClass('on')
   
