@@ -53,7 +53,6 @@ header {
             padding: 0;
             border: none;
             background: url(../images/search_ico.png) no-repeat center;
-            background-size: 100%;
             margin-left: 28px;
             cursor: pointer;
           }
@@ -63,11 +62,10 @@ header {
             height: 48px;
             outline: 0;
             border: 1px solid transparent;
-            ;
             background: transparent;
             padding: 0 14px;
             font-weight: 400;
-
+            font-size: 1em;
 
           }
         }
@@ -174,8 +172,657 @@ padding: 42px 0;
   align-items: center;
 }
 
+// sns 원형 국기
+.element-item > span .flag {
+  // 동북아시아
+// 일본 고베 나고야 니가타 삿포르 오사카 요코하마 후쿠오카 히로시마
+&.jp {
+  background: url(../images/NAA/jp_r.png)no-repeat center;
+  background-size: contain;
+}
+// 중국 광저우 다롄 상하이 선양 센다이 시안 우한 청두 칭다오
+&.cn {
+  background: url(../images/NAA/cn_r.png)no-repeat center;
+  background-size: contain;
+}
+// 홍콩
+&.hk {
+  background: url(../images/NAA/hk_r.png)no-repeat center;
+  background-size: contain;
+}
+// 몽골
+&.mn {
+  background: url(../images/NAA/mn_r.png)no-repeat center;
+  background-size: contain;
+}
+// 대만
+&.tw {
+  background: url(../images/NAA/tw_r.png)no-repeat center;
+  background-size: contain;
+}
 
-// 국기
+// 동남아시아 서남아시아 태평양
+// 아세안
+&.aa {
+background: url(../images/SAA/aa_r.png)no-repeat center;
+background-size: contain;
+}
+// 아프가니스탄
+&.af {
+background: url(../images/SAA/af_r.png)no-repeat center;
+background-size: contain;
+}
+// 호주 브리즈번 시드니 맬번
+&.au {
+background: url(../images/SAA/au_r.png)no-repeat center;
+background-size: contain;
+}
+// 방글라데시
+&.bd {
+background: url(../images/SAA/bd_r.png)no-repeat center;
+background-size: contain;
+}
+// 브루나이
+&.bn {
+background: url(../images/SAA/bn_r.png)no-repeat center;
+background-size: contain;
+}
+// 피지
+&.fj {
+background: url(../images/SAA/fj_r.png)no-repeat center;
+background-size: contain;
+}
+// 인도네시아
+&.id {
+background: url(../images/SAA/id_r.png)no-repeat center;
+background-size: contain;
+}
+// 인도 뭄바이 첸나이 카라치
+&.in {
+background: url(../images/SAA/in_r.png)no-repeat center;
+background-size: contain;
+}
+// 캄보디아 시엠립
+&.kh {
+background: url(../images/SAA/kh_r.png)no-repeat center;
+background-size: contain;
+}
+// 라오스
+&.la {
+background: url(../images/SAA/la_r.png)no-repeat center;
+background-size: contain;
+}
+// 스리랑카
+&.lk {
+background: url(../images/SAA/lk_r.png)no-repeat center;
+background-size: contain;
+}
+//미얀마
+&.mm {
+background: url(../images/SAA/mm_r.png)no-repeat center;
+background-size: contain;
+}
+// 말레이시아
+&.my {
+background: url(../images/SAA/my_r.png)no-repeat center;
+background-size: contain;
+}
+// 네팔
+&.np {
+background: url(../images/SAA/np_r.png)no-repeat center;
+background-size: contain;
+}
+// 뉴질랜드 오클랜드
+&.nz {
+background: url(../images/SAA/nz_r.png)no-repeat center;
+background-size: contain;
+}
+// 파푸아뉴기니
+&.pg {
+background: url(../images/SAA/pg_r.png)no-repeat center;
+background-size: contain;
+}
+// 필리핀 세부
+&.ph {
+background: url(../images/SAA/ph_r.png)no-repeat center;
+background-size: contain;
+}
+// 파키스탄
+&.pk {
+background: url(../images/SAA/pk_r.png)no-repeat center;
+background-size: contain;
+}
+// 싱가포르
+&.sg {
+background: url(../images/SAA/sg_r.png)no-repeat center;
+background-size: contain;
+}
+// 태국
+&.th {
+background: url(../images/SAA/th_r.png)no-repeat center;
+background-size: contain;
+}
+// 동티모르
+&.tl {
+background: url(../images/SAA/tl_r.png)no-repeat center;
+background-size: contain;
+}
+// 베트남 다낭 호치민
+&.vn {
+background: url(../images/SAA/vn_r.png)no-repeat center;
+background-size: contain;
+}
+
+// 북미
+// 캐나다 몬트리올 밴쿠버 토론토
+&.ca {
+background: url(../images/NA/ca_r.png)no-repeat center;
+ background-size: contain;
+}
+// 유엔
+&.un {
+background: url(../images/NA/un_r.png)no-repeat center;
+ background-size: contain;
+}
+// 미국 뉴욕 댈러스 로스앤젤러스 보스턴 샌프란시스코 시애틀 시카고 애틀랜타 앵커리지 하갓냐 호놀룰루 휴스턴
+&.us {
+background: url(../images/NA/us_r.png)no-repeat center;
+ background-size: contain;
+}
+
+// 중남미
+// 아르헨티나
+&.ar {
+background: url(../images/CSA/ar_r.png)no-repeat center;
+ background-size: contain;
+}
+// 볼리비아
+&.bo {
+background: url(../images/CSA/bo_r.png)no-repeat center;
+ background-size: contain;
+}
+// 브라질 상파울루
+&.br {
+background: url(../images/CSA/br_r.png)no-repeat center;
+ background-size: contain;
+}
+// 칠레
+&.cl {
+background: url(../images/CSA/cl_r.png)no-repeat center;
+ background-size: contain;
+}
+//콜롬비아
+&.co {
+background: url(../images/CSA/co_r.png)no-repeat center;
+ background-size: contain;
+}
+// 코스타리카
+&.cr {
+background: url(../images/CSA/cr_r.png)no-repeat center;
+ background-size: contain;
+}
+// 도미니카
+&.do {
+background: url(../images/CSA/do_r.png)no-repeat center;
+ background-size: contain;
+}
+// 에콰도르
+&.ec {
+background: url(../images/CSA/ec_r.png)no-repeat center;
+ background-size: contain;
+}
+// 과테말라
+&.gt {
+background: url(../images/CSA/gt_r.png)no-repeat center;
+ background-size: contain;
+}
+// 온두라스
+&.hn {
+background: url(../images/CSA/hn_r.png)no-repeat center;
+ background-size: contain;
+}
+// 자메이카
+&.jm {
+background: url(../images/CSA/jm_r.png)no-repeat center;
+ background-size: contain;
+}
+// 멕시코
+&.mx {
+background: url(../images/CSA/mx_r.png)no-repeat center;
+ background-size: contain;
+}
+// 니카라과
+&.ni {
+background: url(../images/CSA/ni_r.png)no-repeat center;
+ background-size: contain;
+}
+// 파나마
+&.pa {
+background: url(../images/CSA/pa_r.png)no-repeat center;
+ background-size: contain;
+}
+// 페루
+&.pe {
+background: url(../images/CSA/pe_r.png)no-repeat center;
+ background-size: contain;
+}
+// 파라과이
+&.py {
+background: url(../images/CSA/py_r.png)no-repeat center;
+ background-size: contain;
+}
+// 엘살바도르
+&.sv {
+background: url(../images/CSA/sv_r.png)no-repeat center;
+ background-size: contain;
+}
+// 트리니다드토바고
+&.tt {
+background: url(../images/CSA/tt_r.png)no-repeat center;
+ background-size: contain;
+}
+// 우루과이
+&.uy {
+background: url(../images/CSA/uy_r.png)no-repeat center;
+ background-size: contain;
+}
+// 베네수엘라
+&.ve {
+background: url(../images/CSA/ve_r.png)no-repeat center;
+ background-size: contain;
+}
+
+// 유럽
+// 오스트리아
+&.at {
+background: url(../images/EU/at_r.png)no-repeat center;
+ background-size: contain;
+}
+// 아제르바이잔
+&.az {
+background: url(../images/EU/az_r.png)no-repeat center;
+ background-size: contain;
+}
+// 벨기에
+&.be {
+background: url(../images/EU/be_r.png)no-repeat center;
+ background-size: contain;
+}
+// 불가리아
+&.bg {
+background: url(../images/EU/bg_r.png)no-repeat center;
+ background-size: contain;
+}
+// 벨라루스
+&.by {
+background: url(../images/EU/by_r.png)no-repeat center;
+ background-size: contain;
+}
+// 스위스 제네바
+&.ch {
+background: url(../images/EU/ch_r.png)no-repeat center;
+ background-size: contain;
+}
+// 체코
+&.cz {
+background: url(../images/EU/cz_r.png)no-repeat center;
+ background-size: contain;
+}
+// 독일 프랑크푸르트 함부르크
+&.de {
+background: url(../images/EU/de_r.png)no-repeat center;
+ background-size: contain;
+}
+// 덴마크
+&.dk {
+background: url(../images/EU/dk_r.png)no-repeat center;
+ background-size: contain;
+}
+// 스페인 라스팔마스 바르셀로나
+&.es {
+background: url(../images/EU/es_r.png)no-repeat center;
+ background-size: contain;
+}
+// 핀란드
+&.fi {
+background: url(../images/EU/fi_r.png)no-repeat center;
+ background-size: contain;
+}
+// 프랑스
+&.fr {
+background: url(../images/EU/fr_r.png)no-repeat center;
+ background-size: contain;
+}
+// 영국
+&.gb {
+background: url(../images/EU/gb_r.png)no-repeat center;
+ background-size: contain;
+}
+// 조지아
+&.ge {
+background: url(../images/EU/ge_r.png)no-repeat center;
+ background-size: contain;
+}
+// 그리스
+&.gr {
+background: url(../images/EU/gr_r.png)no-repeat center;
+ background-size: contain;
+}
+// 크로아티아
+&.hr {
+background: url(../images/EU/hr_r.png)no-repeat center;
+ background-size: contain;
+}
+// 헝가리
+&.hu {
+background: url(../images/EU/hu_r.png)no-repeat center;
+ background-size: contain;
+}
+// 아일랜드
+&.ie {
+background: url(../images/EU/ie_r.png)no-repeat center;
+ background-size: contain;
+}
+// 이탈리아 밀라노
+&.it {
+background: url(../images/EU/it_r.png)no-repeat center;
+ background-size: contain;
+}
+// 라트비아
+&.lv {
+background: url(../images/EU/lv_r.png)no-repeat center;
+ background-size: contain;
+}
+// 네덜란드
+&.nl {
+background: url(../images/EU/nl_r.png)no-repeat center;
+ background-size: contain;
+}
+// 노르웨이
+&.no {
+background: url(../images/EU/no_r.png)no-repeat center;
+ background-size: contain;
+}
+// oecd
+&.oecd {
+background: url(../images/EU/OECD_r.png)no-repeat center;
+ background-size: contain;
+}
+// 폴란드
+&.pl {
+background: url(../images/EU/pl_r.png)no-repeat center;
+ background-size: contain;
+}
+// 포르투갈
+&.pt {
+background: url(../images/EU/pt_r.png)no-repeat center;
+ background-size: contain;
+}
+//  루마니아
+&.ro {
+background: url(../images/EU/ro_r.png)no-repeat center;
+ background-size: contain;
+}
+// 세르비아
+&.rs {
+background: url(../images/EU/rs_r.png)no-repeat center;
+ background-size: contain;
+}
+// 스웨덴
+&.se {
+background: url(../images/EU/se_r.png)no-repeat center;
+ background-size: contain;
+}
+// 슬로바키아
+&.sk {
+background: url(../images/EU/sk_r.png)no-repeat center;
+ background-size: contain;
+}
+// 튀르키예 이스탄불
+&.tr {
+background: url(../images/EU/tr_r.png)no-repeat center;
+ background-size: contain;
+}
+// 우크라이나
+&.ua {
+background: url(../images/EU/ua_r.png)no-repeat center;
+ background-size: contain;
+}
+// 유네스코
+&.unesco {
+background: url(../images/EU/UNESCO_r.png)no-repeat center;
+ background-size: contain;
+}
+// 교황청
+&.va {
+background: url(../images/EU/va_r.png)no-repeat center;
+ background-size: contain;
+}
+
+// 사하라 이남 아프리카
+// 앙골라
+&.ao {
+background: url(../images/SSA/ao_r.png)no-repeat center;
+background-size: contain;
+}
+// 콩고민주공화국
+&.cd {
+background: url(../images/SSA/cd_r.png)no-repeat center;
+background-size: contain;
+}
+// 코트디부아르
+&.ci {
+background: url(../images/SSA/ci_r.png)no-repeat center;
+background-size: contain;
+}
+// 카메룬
+&.cm {
+background: url(../images/SSA/cm_r.png)no-repeat center;
+background-size: contain;
+}
+// 에티오피아
+&.et {
+background: url(../images/SSA/et_r.png)no-repeat center;
+background-size: contain;
+}
+// 가봉
+&.ga {
+background: url(../images/SSA/ga_r.png)no-repeat center;
+background-size: contain;
+}
+// 가나
+&.gh {
+background: url(../images/SSA/gh_r.png)no-repeat center;
+background-size: contain;
+}
+// 적도기니
+&.gq {
+background: url(../images/SSA/gq_r.png)no-repeat center;
+background-size: contain;
+}
+// 케냐
+&.ke {
+background: url(../images/SSA/ke_r.png)no-repeat center;
+background-size: contain;
+}
+// 마다가스카르
+&.mg {
+background: url(../images/SSA/mg_r.png)no-repeat center;
+background-size: contain;
+}
+// 모잠비크
+&.mz {
+background: url(../images/SSA/mz_r.png)no-repeat center;
+background-size: contain;
+}
+// 나이지리아
+&.ng {
+background: url(../images/SSA/ng_r.png)no-repeat center;
+background-size: contain;
+}
+// 르완다
+&.rw {
+background: url(../images/SSA/rw_r.png)no-repeat center;
+background-size: contain;
+}
+// 수단
+&.sd {
+background: url(../images/SSA/sd_r.png)no-repeat center;
+background-size: contain;
+}
+// 세네갈
+&.sn {
+background: url(../images/SSA/sn_r.png)no-repeat center;
+background-size: contain;
+}
+//탄자니아
+&.tz {
+background: url(../images/SSA/tz_r.png)no-repeat center;
+background-size: contain;
+}
+// 우간다
+&.ug {
+background: url(../images/SSA/ug_r.png)no-repeat center;
+background-size: contain;
+}
+// 남아프리카공화국
+&.za {
+background: url(../images/SSA/za_r.png)no-repeat center;
+background-size: contain;
+}
+// 짐바브웨
+&.zw {
+background: url(../images/SSA/zw_r.png)no-repeat center;
+background-size: contain;
+}
+
+// 중동 북아프리카
+// 아랍에미리트 두바이
+&.ae {
+background: url(../images/MENA/ae_r.png)no-repeat center;
+background-size: contain;
+}
+// 바레인
+&.bh {
+background: url(../images/MENA/bh_r.png)no-repeat center;
+background-size: contain;
+}
+// 알제리
+&.dz {
+background: url(../images/MENA/dz_r.png)no-repeat center;
+background-size: contain;
+}
+// 이집트
+&.eg {
+background: url(../images/MENA/eg_r.png)no-repeat center;
+background-size: contain;
+}
+// 이스라엘
+&.il {
+background: url(../images/MENA/il_r.png)no-repeat center;
+background-size: contain;
+}
+// 이라크
+&.iq {
+background: url(../images/MENA/iq_r.png)no-repeat center;
+background-size: contain;
+}
+// 이란
+&.ir {
+background: url(../images/MENA/ir_r.png)no-repeat center;
+background-size: contain;
+}
+// 요르단
+&.jo {
+background: url(../images/MENA/jo_r.png)no-repeat center;
+background-size: contain;
+}
+// 쿠웨이트
+&.kw {
+background: url(../images/MENA/kw_r.png)no-repeat center;
+background-size: contain;
+}
+// 레바논
+&.lb {
+background: url(../images/MENA/lb_r.png)no-repeat center;
+background-size: contain;
+}
+// 리비아
+&.ly {
+background: url(../images/MENA/ly_r.png)no-repeat center;
+background-size: contain;
+}
+// 모로코
+&.ma {
+background: url(../images/MENA/ma_r.png)no-repeat center;
+background-size: contain;
+}
+// 오만
+&.om {
+background: url(../images/MENA/om_r.png)no-repeat center;
+background-size: contain;
+}
+// 팔레스타인
+&.ps {
+background: url(../images/MENA/ps_r.png)no-repeat center;
+background-size: contain;
+}
+// 카타르
+&.qa {
+background: url(../images/MENA/qa_r.png)no-repeat center;
+background-size: contain;
+}
+// 사우디아라비아 젯다
+&.sa {
+background: url(../images/MENA/sa_r.png)no-repeat center;
+background-size: contain;
+}
+//튀니지
+&.tn {
+background: url(../images/MENA/tn_r.png)no-repeat center;
+background-size: contain;
+}
+// 예멘
+&.ye {
+background: url(../images/MENA/ye_r.png)no-repeat center;
+background-size: contain;
+}
+
+// 러시아 중앙아시아
+// 키르기즈 공화국
+&.kg {
+background: url(../images/RCA/kg_r.png)no-repeat center;
+background-size: contain;
+}
+// 카자흐스탄 알마티
+&.kz {
+background: url(../images/RCA/kz_r.png)no-repeat center;
+background-size: contain;
+}
+// 러시아 블라디보스톡 상트페테르부르크 이르쿠츠크
+&.ru {
+background: url(../images/RCA/ru_r.png)no-repeat center;
+background-size: contain;
+}
+// 타지키스탄
+&.tj {
+background: url(../images/RCA/tj_r.png)no-repeat center;
+background-size: contain;
+}
+// 투르크케니스탄
+&.tm {
+background: url(../images/RCA/tm_r.png)no-repeat center;
+background-size: contain;
+}
+// 우즈베키스탄
+&.uz {
+background: url(../images/RCA/uz_r.png)no-repeat center;
+background-size: contain;
+}
+}
+
+
+//sns현황페이지, 공관소개페이지 - 공관선택 사각형 국기
 .flag_2{border-radius: 2px;
     overflow: hidden;
     background: #79818C;
@@ -184,656 +831,656 @@ padding: 42px 0;
     height: 18px;
     
   }
-
+// flag33에서 flag32로 class 변경
   &.flag32 {
     width: 32px;
     height: 24px;
     }
 
-// 동북아
+// 동북아시아
 // 일본 고베 나고야 니가타 삿포르 오사카 요코하마 후쿠오카 히로시마
     &.jp {
       background: url(../images/NAA/jp.png)no-repeat center;
-      background-size: 100%;
+      background-size: contain;
     }
-    // 중국 광저우 다엔 상하이 선양 센다이 시안 우한 청두 칭다오
+    // 중국 광저우 다롄 상하이 선양 센다이 시안 우한 청두 칭다오
     &.cn {
       background: url(../images/NAA/cn.png)no-repeat center;
-      background-size: 100%;
+      background-size: contain;
     }
     // 홍콩
     &.hk {
       background: url(../images/NAA/hk.png)no-repeat center;
-      background-size: 100%;
+      background-size: contain;
     }
     // 몽골
     &.mn {
       background: url(../images/NAA/mn.png)no-repeat center;
-      background-size: 100%;
+      background-size: contain;
     }
     // 대만
     &.tw {
       background: url(../images/NAA/tw.png)no-repeat center;
-      background-size: 100%;
+      background-size: contain;
     }
 
 // 동남아시아 서남아시아 태평양
   // 아세안
   &.aa {
     background: url(../images/SAA/aa.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 아프가니스탄
   &.af {
     background: url(../images/SAA/af.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 호주 브리즈번 시드니 맬번
   &.au {
     background: url(../images/SAA/au.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 방글라데시
   &.bd {
     background: url(../images/SAA/bd.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 브루나이
   &.bn {
     background: url(../images/SAA/bn.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
 // 피지
   &.fj {
     background: url(../images/SAA/fj.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 인도네시아
   &.id {
     background: url(../images/SAA/id.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 인도 뭄바이 첸나이 카라치
   &.in {
     background: url(../images/SAA/in.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 캄보디아 시엠립
   &.kh {
     background: url(../images/SAA/kh.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 라오스
   &.la {
     background: url(../images/SAA/la.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 스리랑카
   &.lk {
     background: url(../images/SAA/lk.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   //미얀마
   &.mm {
     background: url(../images/SAA/mm.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 말레이시아
   &.my {
     background: url(../images/SAA/my.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 네팔
   &.np {
     background: url(../images/SAA/np.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 뉴질랜드 오클랜드
   &.nz {
     background: url(../images/SAA/nz.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 파푸아뉴기니
   &.pg {
     background: url(../images/SAA/pg.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 필리핀 세부
   &.ph {
     background: url(../images/SAA/ph.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 파키스탄
   &.pk {
     background: url(../images/SAA/pk.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 싱가포르
   &.sg {
     background: url(../images/SAA/sg.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 태국
   &.th {
     background: url(../images/SAA/th.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 동티모르
   &.tl {
     background: url(../images/SAA/tl.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 베트남 다낭 호치민
   &.vn {
     background: url(../images/SAA/vn.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
 
   // 북미
   // 캐나다 몬트리올 밴쿠버 토론토
   &.ca {
     background: url(../images/NA/ca.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 유엔
   &.un {
     background: url(../images/NA/un.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 미국 뉴욕 댈러스 로스앤젤러스 보스턴 샌프란시스코 시애틀 시카고 애틀랜타 앵커리지 하갓냐 호놀룰루 휴스턴
   &.us {
     background: url(../images/NA/us.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
 
   // 중남미
   // 아르헨티나
   &.ar {
     background: url(../images/CSA/ar.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 볼리비아
   &.bo {
     background: url(../images/CSA/bo.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 브라질 상파울루
   &.br {
     background: url(../images/CSA/br.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 칠레
   &.cl {
     background: url(../images/CSA/cl.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   //콜롬비아
   &.co {
     background: url(../images/CSA/co.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 코스타리카
   &.cr {
     background: url(../images/CSA/cr.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 도미니카
   &.do {
     background: url(../images/CSA/do.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 에콰도르
   &.ec {
     background: url(../images/CSA/ec.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 과테말라
   &.gt {
     background: url(../images/CSA/gt.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 온두라스
   &.hn {
     background: url(../images/CSA/hn.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 자메이카
   &.jm {
     background: url(../images/CSA/jm.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 멕시코
   &.mx {
     background: url(../images/CSA/mx.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 니카라과
   &.ni {
     background: url(../images/CSA/ni.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 파나마
   &.pa {
     background: url(../images/CSA/pa.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 페루
   &.pe {
     background: url(../images/CSA/pe.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 파라과이
   &.py {
     background: url(../images/CSA/py.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 엘살바도르
   &.sv {
     background: url(../images/CSA/sv.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 트리니다드토바고
   &.tt {
     background: url(../images/CSA/tt.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 우루과이
   &.uy {
     background: url(../images/CSA/uy.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 베네수엘라
   &.ve {
     background: url(../images/CSA/ve.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
 
   // 유럽
   // 오스트리아
   &.at {
     background: url(../images/EU/at.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 아제르바이잔
   &.az {
     background: url(../images/EU/az.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 벨기에
   &.be {
     background: url(../images/EU/be.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 불가리아
   &.bg {
     background: url(../images/EU/bg.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 벨라루스
   &.by {
     background: url(../images/EU/by.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 스위스 제네바
   &.ch {
     background: url(../images/EU/ch.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 체코
   &.cz {
     background: url(../images/EU/cz.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 독일 프랑크푸르트 함부르크
   &.de {
     background: url(../images/EU/de.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 덴마크
   &.dk {
     background: url(../images/EU/dk.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 스페인 라스팔마스 바르셀로나
   &.es {
     background: url(../images/EU/es.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 핀란드
   &.fi {
     background: url(../images/EU/fi.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 프랑스
   &.fr {
     background: url(../images/EU/fr.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 영국
   &.gb {
     background: url(../images/EU/gb.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 조지아
   &.ge {
     background: url(../images/EU/ge.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 그리스
   &.gr {
     background: url(../images/EU/gr.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 크로아티아
   &.hr {
     background: url(../images/EU/hr.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 헝가리
   &.hu {
     background: url(../images/EU/hu.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 아일랜드
   &.ie {
     background: url(../images/EU/ie.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 이탈리아 밀라노
   &.it {
     background: url(../images/EU/it.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 라트비아
   &.lv {
     background: url(../images/EU/lv.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 네덜란드
   &.nl {
     background: url(../images/EU/nl.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 노르웨이
   &.no {
     background: url(../images/EU/no.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // oecd
   &.oecd {
     background: url(../images/EU/OECD.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 폴란드
   &.pl {
     background: url(../images/EU/pl.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 포르투갈
   &.pt {
     background: url(../images/EU/pt.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   //  루마니아
   &.ro {
     background: url(../images/EU/ro.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 세르비아
   &.rs {
     background: url(../images/EU/rs.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 스웨덴
   &.se {
     background: url(../images/EU/se.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 슬로바키아
   &.sk {
     background: url(../images/EU/sk.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 튀르키예 이스탄불
   &.tr {
     background: url(../images/EU/tr.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 우크라이나
   &.ua {
     background: url(../images/EU/ua.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 유네스코
   &.unesco {
     background: url(../images/EU/UNESCO.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
   // 교황청
   &.va {
     background: url(../images/EU/va.png)no-repeat center;
-     background-size: 100%;
+     background-size: contain;
   }
 
     // 사하라 이남 아프리카
   // 앙골라
   &.ao {
     background: url(../images/SSA/ao.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 콩고민주공화국
   &.cd {
     background: url(../images/SSA/cd.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 코트디부아르
   &.ci {
     background: url(../images/SSA/ci.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 카메룬
   &.cm {
     background: url(../images/SSA/cm.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 에티오피아
   &.et {
     background: url(../images/SSA/et.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 가봉
   &.ga {
-    background: url(../images/SSA/ao.png)no-repeat center;
-    background-size: 100%;
+    background: url(../images/SSA/ga.png)no-repeat center;
+    background-size: contain;
   }
   // 가나
   &.gh {
     background: url(../images/SSA/gh.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 적도기니
   &.gq {
     background: url(../images/SSA/gq.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
 // 케냐
   &.ke {
     background: url(../images/SSA/ke.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 마다가스카르
   &.mg {
     background: url(../images/SSA/mg.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 모잠비크
   &.mz {
     background: url(../images/SSA/mz.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 나이지리아
   &.ng {
     background: url(../images/SSA/ng.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 르완다
   &.rw {
     background: url(../images/SSA/rw.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 수단
   &.sd {
     background: url(../images/SSA/sd.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 세네갈
   &.sn {
     background: url(../images/SSA/sn.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   //탄자니아
   &.tz {
     background: url(../images/SSA/tz.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 우간다
   &.ug {
     background: url(../images/SSA/ug.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 남아프리카공화국
   &.za {
     background: url(../images/SSA/za.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 짐바브웨
   &.zw {
     background: url(../images/SSA/zw.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
 
   // 중동 북아프리카
   // 아랍에미리트 두바이
   &.ae {
     background: url(../images/MENA/ae.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 바레인
   &.bh {
     background: url(../images/MENA/bh.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 알제리
   &.dz {
     background: url(../images/MENA/dz.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 이집트
   &.eg {
     background: url(../images/MENA/eg.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 이스라엘
   &.il {
     background: url(../images/MENA/il.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 이라크
   &.iq {
     background: url(../images/MENA/iq.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 이란
   &.ir {
     background: url(../images/MENA/ir.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 요르단
   &.jo {
     background: url(../images/MENA/jo.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 쿠웨이트
   &.kw {
     background: url(../images/MENA/kw.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 레바논
   &.lb {
     background: url(../images/MENA/lb.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 리비아
   &.ly {
     background: url(../images/MENA/ly.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 모로코
   &.ma {
     background: url(../images/MENA/ma.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 오만
   &.om {
     background: url(../images/MENA/om.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 팔레스타인
   &.ps {
     background: url(../images/MENA/ps.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 카타르
   &.qa {
     background: url(../images/MENA/qa.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 사우디아라비아 젯다
   &.sa {
     background: url(../images/MENA/sa.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   //튀니지
   &.tn {
     background: url(../images/MENA/tn.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 예멘
   &.ye {
     background: url(../images/MENA/ye.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
 
   // 러시아 중앙아시아
   // 키르기즈 공화국
   &.kg {
     background: url(../images/RCA/kg.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 카자흐스탄 알마티
   &.kz {
     background: url(../images/RCA/kz.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 러시아 블라디보스톡 상트페테르부르크 이르쿠츠크
   &.ru {
     background: url(../images/RCA/ru.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
 // 타지키스탄
   &.tj {
     background: url(../images/RCA/tj.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 투르크케니스탄
   &.tm {
     background: url(../images/RCA/tm.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
   // 우즈베키스탄
   &.uz {
     background: url(../images/RCA/uz.png)no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
 
 }

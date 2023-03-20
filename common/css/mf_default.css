@@ -381,7 +381,6 @@ header .container .logo_sch .search .search_bar button {
   padding: 0;
   border: none;
   background: url(../images/search_ico.png) no-repeat center;
-  background-size: 100%;
   margin-left: 28px;
   cursor: pointer;
 }
@@ -393,6 +392,7 @@ header .container .logo_sch .search .search_bar input {
   background: transparent;
   padding: 0 14px;
   font-weight: 400;
+  font-size: 1em;
 }
 header .container .info {
   display: flex;
@@ -470,6 +470,511 @@ footer .container p {
   align-items: center;
 }
 
+.element-item > span .flag.jp {
+  background: url(../images/NAA/jp_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.cn {
+  background: url(../images/NAA/cn_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.hk {
+  background: url(../images/NAA/hk_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.mn {
+  background: url(../images/NAA/mn_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.tw {
+  background: url(../images/NAA/tw_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.aa {
+  background: url(../images/SAA/aa_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.af {
+  background: url(../images/SAA/af_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.au {
+  background: url(../images/SAA/au_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.bd {
+  background: url(../images/SAA/bd_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.bn {
+  background: url(../images/SAA/bn_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.fj {
+  background: url(../images/SAA/fj_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.id {
+  background: url(../images/SAA/id_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.in {
+  background: url(../images/SAA/in_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.kh {
+  background: url(../images/SAA/kh_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.la {
+  background: url(../images/SAA/la_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.lk {
+  background: url(../images/SAA/lk_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.mm {
+  background: url(../images/SAA/mm_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.my {
+  background: url(../images/SAA/my_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.np {
+  background: url(../images/SAA/np_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.nz {
+  background: url(../images/SAA/nz_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.pg {
+  background: url(../images/SAA/pg_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ph {
+  background: url(../images/SAA/ph_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.pk {
+  background: url(../images/SAA/pk_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.sg {
+  background: url(../images/SAA/sg_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.th {
+  background: url(../images/SAA/th_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.tl {
+  background: url(../images/SAA/tl_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.vn {
+  background: url(../images/SAA/vn_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ca {
+  background: url(../images/NA/ca_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.un {
+  background: url(../images/NA/un_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.us {
+  background: url(../images/NA/us_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ar {
+  background: url(../images/CSA/ar_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.bo {
+  background: url(../images/CSA/bo_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.br {
+  background: url(../images/CSA/br_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.cl {
+  background: url(../images/CSA/cl_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.co {
+  background: url(../images/CSA/co_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.cr {
+  background: url(../images/CSA/cr_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.do {
+  background: url(../images/CSA/do_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ec {
+  background: url(../images/CSA/ec_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.gt {
+  background: url(../images/CSA/gt_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.hn {
+  background: url(../images/CSA/hn_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.jm {
+  background: url(../images/CSA/jm_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.mx {
+  background: url(../images/CSA/mx_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ni {
+  background: url(../images/CSA/ni_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.pa {
+  background: url(../images/CSA/pa_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.pe {
+  background: url(../images/CSA/pe_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.py {
+  background: url(../images/CSA/py_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.sv {
+  background: url(../images/CSA/sv_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.tt {
+  background: url(../images/CSA/tt_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.uy {
+  background: url(../images/CSA/uy_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ve {
+  background: url(../images/CSA/ve_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.at {
+  background: url(../images/EU/at_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.az {
+  background: url(../images/EU/az_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.be {
+  background: url(../images/EU/be_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.bg {
+  background: url(../images/EU/bg_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.by {
+  background: url(../images/EU/by_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ch {
+  background: url(../images/EU/ch_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.cz {
+  background: url(../images/EU/cz_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.de {
+  background: url(../images/EU/de_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.dk {
+  background: url(../images/EU/dk_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.es {
+  background: url(../images/EU/es_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.fi {
+  background: url(../images/EU/fi_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.fr {
+  background: url(../images/EU/fr_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.gb {
+  background: url(../images/EU/gb_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ge {
+  background: url(../images/EU/ge_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.gr {
+  background: url(../images/EU/gr_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.hr {
+  background: url(../images/EU/hr_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.hu {
+  background: url(../images/EU/hu_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ie {
+  background: url(../images/EU/ie_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.it {
+  background: url(../images/EU/it_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.lv {
+  background: url(../images/EU/lv_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.nl {
+  background: url(../images/EU/nl_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.no {
+  background: url(../images/EU/no_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.oecd {
+  background: url(../images/EU/OECD_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.pl {
+  background: url(../images/EU/pl_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.pt {
+  background: url(../images/EU/pt_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ro {
+  background: url(../images/EU/ro_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.rs {
+  background: url(../images/EU/rs_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.se {
+  background: url(../images/EU/se_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.sk {
+  background: url(../images/EU/sk_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.tr {
+  background: url(../images/EU/tr_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ua {
+  background: url(../images/EU/ua_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.unesco {
+  background: url(../images/EU/UNESCO_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.va {
+  background: url(../images/EU/va_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ao {
+  background: url(../images/SSA/ao_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.cd {
+  background: url(../images/SSA/cd_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ci {
+  background: url(../images/SSA/ci_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.cm {
+  background: url(../images/SSA/cm_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.et {
+  background: url(../images/SSA/et_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ga {
+  background: url(../images/SSA/ga_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.gh {
+  background: url(../images/SSA/gh_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.gq {
+  background: url(../images/SSA/gq_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ke {
+  background: url(../images/SSA/ke_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.mg {
+  background: url(../images/SSA/mg_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.mz {
+  background: url(../images/SSA/mz_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ng {
+  background: url(../images/SSA/ng_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.rw {
+  background: url(../images/SSA/rw_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.sd {
+  background: url(../images/SSA/sd_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.sn {
+  background: url(../images/SSA/sn_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.tz {
+  background: url(../images/SSA/tz_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ug {
+  background: url(../images/SSA/ug_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.za {
+  background: url(../images/SSA/za_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.zw {
+  background: url(../images/SSA/zw_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ae {
+  background: url(../images/MENA/ae_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.bh {
+  background: url(../images/MENA/bh_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.dz {
+  background: url(../images/MENA/dz_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.eg {
+  background: url(../images/MENA/eg_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.il {
+  background: url(../images/MENA/il_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.iq {
+  background: url(../images/MENA/iq_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ir {
+  background: url(../images/MENA/ir_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.jo {
+  background: url(../images/MENA/jo_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.kw {
+  background: url(../images/MENA/kw_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.lb {
+  background: url(../images/MENA/lb_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ly {
+  background: url(../images/MENA/ly_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ma {
+  background: url(../images/MENA/ma_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.om {
+  background: url(../images/MENA/om_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ps {
+  background: url(../images/MENA/ps_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.qa {
+  background: url(../images/MENA/qa_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.sa {
+  background: url(../images/MENA/sa_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.tn {
+  background: url(../images/MENA/tn_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ye {
+  background: url(../images/MENA/ye_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.kg {
+  background: url(../images/RCA/kg_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.kz {
+  background: url(../images/RCA/kz_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.ru {
+  background: url(../images/RCA/ru_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.tj {
+  background: url(../images/RCA/tj_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.tm {
+  background: url(../images/RCA/tm_r.png) no-repeat center;
+  background-size: contain;
+}
+.element-item > span .flag.uz {
+  background: url(../images/RCA/uz_r.png) no-repeat center;
+  background-size: contain;
+}
+
 .flag_2 {
   border-radius: 2px;
   overflow: hidden;
@@ -485,507 +990,507 @@ footer .container p {
 }
 .flag_2.jp {
   background: url(../images/NAA/jp.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.cn {
   background: url(../images/NAA/cn.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.hk {
   background: url(../images/NAA/hk.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.mn {
   background: url(../images/NAA/mn.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.tw {
   background: url(../images/NAA/tw.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.aa {
   background: url(../images/SAA/aa.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.af {
   background: url(../images/SAA/af.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.au {
   background: url(../images/SAA/au.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.bd {
   background: url(../images/SAA/bd.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.bn {
   background: url(../images/SAA/bn.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.fj {
   background: url(../images/SAA/fj.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.id {
   background: url(../images/SAA/id.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.in {
   background: url(../images/SAA/in.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.kh {
   background: url(../images/SAA/kh.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.la {
   background: url(../images/SAA/la.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.lk {
   background: url(../images/SAA/lk.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.mm {
   background: url(../images/SAA/mm.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.my {
   background: url(../images/SAA/my.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.np {
   background: url(../images/SAA/np.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.nz {
   background: url(../images/SAA/nz.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.pg {
   background: url(../images/SAA/pg.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ph {
   background: url(../images/SAA/ph.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.pk {
   background: url(../images/SAA/pk.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.sg {
   background: url(../images/SAA/sg.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.th {
   background: url(../images/SAA/th.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.tl {
   background: url(../images/SAA/tl.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.vn {
   background: url(../images/SAA/vn.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ca {
   background: url(../images/NA/ca.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.un {
   background: url(../images/NA/un.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.us {
   background: url(../images/NA/us.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ar {
   background: url(../images/CSA/ar.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.bo {
   background: url(../images/CSA/bo.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.br {
   background: url(../images/CSA/br.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.cl {
   background: url(../images/CSA/cl.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.co {
   background: url(../images/CSA/co.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.cr {
   background: url(../images/CSA/cr.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.do {
   background: url(../images/CSA/do.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ec {
   background: url(../images/CSA/ec.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.gt {
   background: url(../images/CSA/gt.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.hn {
   background: url(../images/CSA/hn.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.jm {
   background: url(../images/CSA/jm.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.mx {
   background: url(../images/CSA/mx.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ni {
   background: url(../images/CSA/ni.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.pa {
   background: url(../images/CSA/pa.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.pe {
   background: url(../images/CSA/pe.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.py {
   background: url(../images/CSA/py.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.sv {
   background: url(../images/CSA/sv.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.tt {
   background: url(../images/CSA/tt.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.uy {
   background: url(../images/CSA/uy.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ve {
   background: url(../images/CSA/ve.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.at {
   background: url(../images/EU/at.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.az {
   background: url(../images/EU/az.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.be {
   background: url(../images/EU/be.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.bg {
   background: url(../images/EU/bg.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.by {
   background: url(../images/EU/by.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ch {
   background: url(../images/EU/ch.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.cz {
   background: url(../images/EU/cz.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.de {
   background: url(../images/EU/de.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.dk {
   background: url(../images/EU/dk.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.es {
   background: url(../images/EU/es.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.fi {
   background: url(../images/EU/fi.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.fr {
   background: url(../images/EU/fr.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.gb {
   background: url(../images/EU/gb.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ge {
   background: url(../images/EU/ge.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.gr {
   background: url(../images/EU/gr.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.hr {
   background: url(../images/EU/hr.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.hu {
   background: url(../images/EU/hu.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ie {
   background: url(../images/EU/ie.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.it {
   background: url(../images/EU/it.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.lv {
   background: url(../images/EU/lv.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.nl {
   background: url(../images/EU/nl.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.no {
   background: url(../images/EU/no.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.oecd {
   background: url(../images/EU/OECD.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.pl {
   background: url(../images/EU/pl.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.pt {
   background: url(../images/EU/pt.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ro {
   background: url(../images/EU/ro.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.rs {
   background: url(../images/EU/rs.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.se {
   background: url(../images/EU/se.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.sk {
   background: url(../images/EU/sk.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.tr {
   background: url(../images/EU/tr.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ua {
   background: url(../images/EU/ua.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.unesco {
   background: url(../images/EU/UNESCO.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.va {
   background: url(../images/EU/va.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ao {
   background: url(../images/SSA/ao.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.cd {
   background: url(../images/SSA/cd.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ci {
   background: url(../images/SSA/ci.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.cm {
   background: url(../images/SSA/cm.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.et {
   background: url(../images/SSA/et.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ga {
-  background: url(../images/SSA/ao.png) no-repeat center;
-  background-size: 100%;
+  background: url(../images/SSA/ga.png) no-repeat center;
+  background-size: contain;
 }
 .flag_2.gh {
   background: url(../images/SSA/gh.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.gq {
   background: url(../images/SSA/gq.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ke {
   background: url(../images/SSA/ke.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.mg {
   background: url(../images/SSA/mg.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.mz {
   background: url(../images/SSA/mz.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ng {
   background: url(../images/SSA/ng.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.rw {
   background: url(../images/SSA/rw.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.sd {
   background: url(../images/SSA/sd.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.sn {
   background: url(../images/SSA/sn.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.tz {
   background: url(../images/SSA/tz.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ug {
   background: url(../images/SSA/ug.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.za {
   background: url(../images/SSA/za.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.zw {
   background: url(../images/SSA/zw.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ae {
   background: url(../images/MENA/ae.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.bh {
   background: url(../images/MENA/bh.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.dz {
   background: url(../images/MENA/dz.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.eg {
   background: url(../images/MENA/eg.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.il {
   background: url(../images/MENA/il.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.iq {
   background: url(../images/MENA/iq.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ir {
   background: url(../images/MENA/ir.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.jo {
   background: url(../images/MENA/jo.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.kw {
   background: url(../images/MENA/kw.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.lb {
   background: url(../images/MENA/lb.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ly {
   background: url(../images/MENA/ly.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ma {
   background: url(../images/MENA/ma.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.om {
   background: url(../images/MENA/om.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ps {
   background: url(../images/MENA/ps.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.qa {
   background: url(../images/MENA/qa.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.sa {
   background: url(../images/MENA/sa.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.tn {
   background: url(../images/MENA/tn.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ye {
   background: url(../images/MENA/ye.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.kg {
   background: url(../images/RCA/kg.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.kz {
   background: url(../images/RCA/kz.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.ru {
   background: url(../images/RCA/ru.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.tj {
   background: url(../images/RCA/tj.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.tm {
   background: url(../images/RCA/tm.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 .flag_2.uz {
   background: url(../images/RCA/uz.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 b {
@@ -1563,18 +2068,6 @@ b {
   background: #1A3857;
   margin-right: 20px;
 }
-.element-item > span .flag.sns_amrc {
-  background: url(../images/sns_america.png);
-}
-.element-item > span .flag.sns_chile {
-  background: url(../images/sns_chile.png);
-}
-.element-item > span .flag.sns_china {
-  background: url(../images/sns_china.png);
-}
-.element-item > span .flag.sns_ecd {
-  background: url(../images/sns_ecuador.png);
-}
 .element-item a:hover .img_wrap .hover {
   display: block;
 }
@@ -1677,6 +2170,9 @@ b {
 .element-item .like_wrap .like .heart {
   color: rgba(245, 16, 58, 0.95);
   margin-right: 16px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/heart.png) no-repeat center;
 }
 
 .modal {
@@ -1770,6 +2266,7 @@ b {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 .sub_sns_state .container .select_wrap > ul.select_box li.select span {
   display: flex;
@@ -1869,10 +2366,6 @@ b {
 }
 .ofiice_info_con .slide_wrap .office_slide {
   width: 100%;
-}
-.ofiice_info_con .slide_wrap .office_slide .img_wrap {
-  border-radius: 4px;
-  overflow: hidden;
 }
 .ofiice_info_con .slide_wrap .slide_btn {
   position: absolute;
@@ -1996,19 +2489,18 @@ b {
 .sch_wrap .container .input_wrap > ul > li .search_bar input[type=text] {
   background: none;
   outline: 0;
-  padding: 10px;
+  padding: 8px 10px;
   font-weight: 500;
   font-size: 1.5em;
   color: #484B51;
 }
 .sch_wrap .container .input_wrap > ul > li .search_bar button {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   padding: 0;
   border: none;
-  background: url(../images/search_ico.png) no-repeat center;
-  background-size: 100%;
-  margin-left: 28px;
+  background: url(../images/sch_search_ico.png) no-repeat;
+  margin: 8px;
   cursor: pointer;
 }
 .sch_wrap .container .input_wrap > ul > li .chck {
@@ -2229,8 +2721,17 @@ b {
 .rst_ctn a {
   font-weight: 400;
   color: #79818C;
-  background: url(../images/arrow_result.png) no-repeat 99% center;
-  padding-right: 17px;
+  display: flex;
+  align-items: center;
+}
+.rst_ctn a:after {
+  content: "";
+  width: 7px;
+  height: 14px;
+  display: inline-block;
+  background: url(../images/arrow_result.png) no-repeat center;
+  margin-left: 10px;
+  margin-bottom: 1.5px;
 }
 .rst_ctn select {
   width: 32%;
@@ -2274,11 +2775,4 @@ b {
 }
 .rst_ofc li:hover, .rst_ofc li.on {
   border: 1.5px solid #000;
-}
-
-.sch_wrap .container .input_wrap > ul > li .search_bar button.sch_search_btn {
-  width: 32px;
-  height: 32px;
-  background: url(../images/sch_search_ico.png) no-repeat;
-  margin-right: 10px;
 }/*# sourceMappingURL=mf_default.css.map */

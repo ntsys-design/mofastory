@@ -187,7 +187,7 @@ $(document).ready(function () {
 
 // element-item 개수가 12개 이하일때 더보기 버튼 hide
   var element=$('.isotope .element-item').length
-  console.log(element)
+  //console.log(element)
   if (element < 12) {
     $("#load-more").hide();
   } else {
@@ -222,15 +222,14 @@ $('.top_btn').click(function(e) {
 $('.select_box li').on('click', function (e) {
   let idx = $(this).index()
   let active = $(this).children('button').hasClass('up_btn');
-  let cls=$('body').click()
   e.stopPropagation()
   if (active) {
     $('.option_container .option_wrap').hide()
-    $(this).children('button').removeClass('up_btn');
+    $(this).children('button').removeClass('up_btn').attr('title','열기');
     $('.dim').removeClass('on')
   } else {
     $('.select_box li button').removeClass('up_btn')
-    $(this).children('button').addClass('up_btn')
+    $(this).children('button').addClass('up_btn').attr('title','닫기')
     $('.option_container .option_wrap').hide()
     $('.option_container .option_wrap').eq(idx).show()
     $('.dim').addClass('on')  
@@ -255,7 +254,7 @@ $('body').on('click',function(){
   let up_btn = $('.select_box li button').hasClass('up_btn');
   if(up_btn){
     $('.option_container .option_wrap').hide()
-    $('.select_box li button').removeClass('up_btn');
+    $('.select_box li button').removeClass('up_btn').attr('title','열기');
     $('.dim').removeClass('on')
   }
 })

@@ -760,18 +760,7 @@ max-height: 580px;
       border-radius: 50%;
       background: #1A3857;
       margin-right: 20px;
-      &.sns_amrc{
-        background: url(../images/sns_america.png);
-      }
-      &.sns_chile{
-        background: url(../images/sns_chile.png);
-      }
-      &.sns_china{
-        background: url(../images/sns_china.png);
-      }
-      &.sns_ecd{
-        background: url(../images/sns_ecuador.png);
-      }
+      
     }
   }
 
@@ -904,6 +893,9 @@ max-height: 580px;
       .heart {
         color: rgba(245, 16, 58, 0.95);
         margin-right: 16px;
+        width: 16px;
+        height: 16px;
+        background: url(../images/heart.png)no-repeat center;
       }
 
     }
