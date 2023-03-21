@@ -87,7 +87,7 @@
           display: flex;
           align-items: center;
           gap: 16px;
-          
+          word-break: keep-all;
           &.fs_09 {
             font-size: 0.9em;
           }
@@ -260,9 +260,9 @@
       padding-bottom: 16px;
 
       span {
-        font-weight: 500;
+        font-weight: 400;
         //display: flex;
-        font-size: 1.25em;
+        font-size: 1em;
         //gap: 8px;
         margin-bottom: 8px;
 
@@ -287,7 +287,7 @@
 
       p {
         font-weight: 400;
-        font-size: 1.125em;
+        font-size: 1em;
         color: #868B95;
         word-wrap: break-word;
       }
@@ -437,7 +437,7 @@
                 border: 1px solid #DBDBDB;
 
                 &:checked {
-                  background: #2A5AD3;
+                  background: #004FC7;
                 }
               }
 
@@ -485,51 +485,6 @@
           }
         }
       }
-
-      .btn_wrap {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 32px;
-
-        button {
-          width: 112px;
-          height: 44px;
-          border-radius: 4px;
-
-          span {
-            font-weight: 500;
-          }
-
-          &.reset_btn {
-            background: #fff;
-            border: 1px solid #2A5AD3;
-
-            span {
-              color: #2A5AD3;
-            }
-          }
-
-          &.inquiry_btn,
-          &.register_btn {
-            background: #2A5AD3;
-
-            span {
-              color: #fff;
-            }
-          }
-
-          &.cancel_btn {
-            background: #fff;
-            border: 1px solid #C0C3C8;
-
-            span {
-              color: #484B51;
-            }
-          }
-        }
-      }
     }
   }
 }
@@ -548,7 +503,7 @@
           color: #484B51;
 
           span {
-            color: #2A5AD3;
+            color: #004FC7;
           }
         }
 
@@ -557,7 +512,7 @@
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
-          
+          ;
 
           li {
             margin:16px 0; 
@@ -565,6 +520,7 @@
             a {
               padding: 0 64px;
               font-weight: 400;
+              color: #484B51;
             }
             &:after{
               content: '';
@@ -583,7 +539,7 @@
             &.on{
               a{
                 font-weight: 500;
-                color: #2A5AD3;
+                color: #004FC7;
               }
             }
           }
@@ -660,7 +616,7 @@
 }
 }
 .sch_word{
-  color: #2A5AD3;
+  color: #004FC7;
 }
 .rst_ofc{
   display: grid;
@@ -695,15 +651,22 @@
   }
 }
 
-// .sch_sns_list,.result_isotope {
-//   margin: 80px 0;
-//   // border: 1px solid #000;
+// 0321 sns 항목이 없을때 공관선택 잘리는 현상 수정
+.contents_wrap{
+  min-height: 620px;
+}
 
-//   /* clear fix */
-//   &:after {
-//     content: '';
-//     display: block;
-//     clear: both;
-//   }
+@media screen and (max-width:1080px) {
+// sns현황 공관소개 옵션
+.sub_sns_state{
+  .option_wrap{
+    ul{
+      grid-template-columns: repeat(4, 1fr);
+      li{
+        a{font-size: 0.9em;}
+      }
+    }
+  }
+}
 
-// }
+}

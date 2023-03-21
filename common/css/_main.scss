@@ -93,6 +93,7 @@
           border: 2px solid #fff;
           height: 152px;
           border-radius: 8px;
+          padding: 20px;
 
           a {
             display: block;
@@ -107,6 +108,7 @@
               font-size: 1.375em;
               color: #fff;
               text-align: center;
+              word-break: keep-all;
             }
           }
 
@@ -594,7 +596,7 @@ max-height: 580px;
   }
 
   .sns_top {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #DDE1E4;
 
     .container {
       .tit_wrap {
@@ -953,10 +955,8 @@ max-height: 580px;
   }
 }
 
-@media screen and (max-width:1200px) {
-  header .container {
-    padding: 20px;
-  }
+@media screen and (max-width:1240px) {
+  
 
   .container {
     padding: 0 20px;
@@ -970,12 +970,236 @@ max-height: 580px;
 }
 
 @media screen and (max-width:1080px) {
+ 
   .element-item {
     width: 30%;
   }
 }
 
 @media screen and (max-width:720px) {
+  .sns_state{
+    background: url(../images/m_sns_stateBg.png)no-repeat 95% 4%,linear-gradient(180deg, rgba(242, 244, 245, 0) 0%, #F2F4F5 100%);;
+    max-height: unset;
+    .container{
+      padding: 0 24px;
+      .tit_wrap{
+        padding-top: 56px;
+        h3.tit{
+          color:#000 ;
+          font-size: 1.375em;
+        }
+        .list_tab{
+          display: none;
+        }
+      }
+      .list_wrap{
+        .embassy_list{
+          padding-top: 32px;
+          padding-bottom: 0;
+          ul{
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+border-radius: 16px;
+background: #fff;
+gap: 0;
+            li{border: none;
+              height: unset;
+              padding: 0;
+              &:hover{
+                background: #fff;
+              }
+              a{
+                display: block;
+                padding: 20px;
+                position: relative;
+                &:after{
+                  content: '';
+                  width: 32px;
+                  height: 32px;
+                  background: url(../images/m_st_arrow.png);
+                  position: absolute;
+                  right: 12px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+                span{
+                  color: #000;
+                  font-weight: 600;
+                  font-size: 1.0625em;
+                  display: flex;
+                  align-items: center;
+                  &::before{
+                    content: '';
+                    width: 18px;
+                    height: 24px;
+                    background: url(../images/m_marker.png);
+                    display: inline-block;
+                    margin-right: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .popular_contents{
+    .container{
+      padding: 0 24px;
+      min-height: 380px;
+      .tit_wrap{
+        gap: 1.25em;
+        padding-top: 52px;
+        padding-bottom: 32px;
+        h3{
+          &::before{
+            display: none;
+          }
+          &.on:after{
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #004FC7;
+            position: absolute;
+            border-radius: 50%;
+            top: -10px;
+            right: 0;
+          }
+        }
+      }
+      .slide_tab{
+        .content_wrap{
+          .swiper-slide{
+            .img_wrap{
+              margin-bottom: 16px;
+            }
+            span.office{
+              font-size: 0.875em;
+            }
+          }
+          .swiper{
+            width: 100%;
+          }
+          .swiper-button-next,.swiper-button-prev{display: none;}
+        }
+      }
+    }
+  }
+  .sns_list{
+    .sns_top{
+      border-bottom: none;
+      .container{
+        margin-left: 24px;
+        padding: 0 24px 0 0;
+        border-bottom: 1px solid #DDE1E4;
+        .tit_wrap{
+          padding: 32px 0 24px;
+        }
+        .sns_tab{
+          ul{
+            gap: 12px;
+            li {
+              button {
+                &.all_btn {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../images/sns_icon.png)no-repeat;
+                  background-position: -103px -108px;
+                }
+  
+                &.facebook_btn {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../images/sns_icon.png)no-repeat;
+                  background-position: -167px -108px;
+                }
+  
+                &.twt_btn {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../images/sns_icon.png)no-repeat;
+                  background-position: -301px -108px;
+                }
+  
+                &.insta_btn {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../images/sns_icon.png)no-repeat;
+                  background-position: -415px -108px;
+                }
+  
+                &.youtube_btn {
+                  width: 40px;
+                  height: 40px;
+                  background: url(../images/sns_icon.png)no-repeat;
+                  background-position: -554px -108px;
+                }
+              }
+  
+              &.on, &:hover{
+                button {
+                  position: relative;
+                  &.all_btn {
+                    width: 40px;
+                    height: 40px;
+                    background: url(../images/sns_icon.png)no-repeat;
+                    background-position: -103px -38px;
+                  }
+  
+                  &.facebook_btn {
+                    width: 40px;
+                    height: 40px;
+                    background: url(../images/sns_icon.png)no-repeat;
+                    background-position: -167px -38px;
+                  }
+  
+                  &.twt_btn {
+                    width: 40px;
+                    height: 40px;
+                    background: url(../images/sns_icon.png)no-repeat;
+                    background-position: -301px -38px;
+                  }
+  
+                  &.insta_btn {
+                    width: 40px;
+                    height: 40px;
+                    background: url(../images/sns_icon.png)no-repeat;
+                    background-position: -415px -38px;
+                  }
+  
+                  &.youtube_btn {
+                    width: 40px;
+                    height: 40px;
+                    background: url(../images/sns_icon.png)no-repeat;
+                    background-position: -554px -38px;
+                  }
+                  
+                }
+              }
+              &.on button:after{
+                content: '';
+                height: 4px;
+                width: 100%;
+                background: #004FC7;
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .container .tit_wrap{
+    
+    h3.tit{
+    font-size: 1.25em;
+  }
+  } 
   .element-item {
     width: 47%;
   }
