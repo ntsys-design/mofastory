@@ -314,7 +314,7 @@
       }
     }
 
-    .input_wrap {
+    .input_wrap,.m_input_wrap {
       background: #F7F7F8;
       border-radius: 4px;
       padding: 34px 48px 40px;
@@ -352,6 +352,7 @@
               cursor: pointer;
             }
           }
+        
           .chck{
             color: #484B51;
             font-weight: 400;
@@ -485,6 +486,9 @@
           }
         }
       }
+    }
+    .m_input_wrap{
+      display: none;
     }
   }
 }
@@ -668,5 +672,123 @@
     }
   }
 }
+
+}
+
+@media screen and (max-width:720px) {
+  .container{
+    padding: 0 24px;
+  }
+  // 통합검색
+  .sch_wrap{
+    background: linear-gradient(to bottom, #212E40 21%, #fff 9%);
+    .container{
+      padding: 0;
+      .tit_wrap{
+        padding:0 0 20px 24px;
+        h3.tit{
+          text-align: left;
+        }
+      }
+      .input_wrap{
+        display: none;
+        
+      }
+      .m_input_wrap{
+        display: block;
+        padding: 0;
+        background: transparent;
+        >ul{background: transparent;
+          >li{
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 24px;
+            .line{
+              width: 100%;
+              padding: 0 26px;
+              background: #ffffff;
+            }
+            .search_bar{
+              width: 100%;
+              input[type='text']{
+                padding: 18px 0 14px;
+                font-weight: 400;
+                font-size: 1.0625em;
+                color: #000000;
+              }
+            }
+            .chck_wrap{
+              width: 100%;
+              justify-content: flex-end;
+              padding: 10px 0 20px;
+            }
+            &:first-child{
+              border-bottom: 1px solid #EBEEF0;
+            }
+            span{
+              padding: 24px 0 16px;
+            }
+            ul{
+              width: 100%;
+              flex-wrap: wrap;
+              gap: 8px;
+              li{
+                padding-right: 0;
+              }
+              &.sch_period{
+                gap:8px 4px;
+                li{
+                  button{
+                    padding: 0;
+                    width: 48px;
+                    height: 36px;
+                    font-weight: 500;
+                    font-size: 0.875em;
+                    background: #ffffff;
+                    border: 1px solid #DDE1E4;
+                    border-radius: 2px;
+                  }
+                  input[type='date']{
+                    border: 1px solid transparent;
+                    margin-left: 0;
+                  }
+                  &:last-child{
+                    border: 1px solid #DDE1E4;
+                   // width: 100%;
+                  }
+                  span{
+                    padding: 0;
+                  }
+                  
+                }
+              }
+              &.order{
+                gap: 0;
+                li{width: 50%;
+                  button{
+                    padding: 10px 0;
+                    width: 100%;
+                    border-radius: 0;
+                    background: transparent;
+                    color: #8C949E;
+                    background: #F7F7F8;
+                    border: 1px solid #DDE1E4;
+                  }
+                  &.on{
+                    button{
+                      background: #ffffff;
+                      color:#484B51 ;
+                      border: 1px solid #484B51;
+                      font-weight: 600;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
 }

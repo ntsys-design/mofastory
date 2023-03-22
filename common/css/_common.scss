@@ -1511,6 +1511,9 @@ b{
     .container{
       .logo_sch{
         width: 80%;
+        .logo{
+          margin-right: 5%;
+        }
       }
       .info{
         gap: 15px;
@@ -1630,6 +1633,28 @@ b{
               transform: translateY(-50%);
             }
           }
+          &.on,&:hover{
+           text-decoration: unset;
+           text-underline-position: unset;
+           color: #484B51;
+          }
+        }
+      }
+    }
+    // 통합검색 헤더
+    &.sch_hd{
+      border-bottom: none;
+
+      .container{
+        padding: 20px 24px;
+        .info{
+          
+            background: none;
+            border: 1px solid #DDE1E4;
+            a{
+              color:#DDE1E4 ;
+            }
+          
         }
       }
     }
@@ -1641,16 +1666,22 @@ b{
       padding: 32px 0;
 
       .ft_logo{
-        flex-direction: column;
+        img{
+          display: none;
+        }
+        .m_ft_logo{
+          display: block;
+          opacity: 1;
+        }
         ul{
-          padding: 24px 0;
-          margin: 0;
-          flex-direction: column;
-          gap: 8px;
+          padding: 12px 0 16px;
+          gap: 4px;
           li{
-            padding: 0;
+            color: #000;
+            font-weight: 400;
             &:last-child{
-              padding-left: 0;
+              color: #666;
+              font-weight: 300;
             }
             &::before{
               display: none;
@@ -1659,23 +1690,10 @@ b{
         }
       }
       p{
-        width: 207px;
-        text-align: center;
+        color: #000;
       }
     }
   }
-  footer{
-    .container{
-      .ft_logo{
-        img{
-          display: none;
-        }
-        .m_ft_logo{
-          display: block;
-          opacity: 1;
-        }
-      }
-    }
-  }
+ 
 }
 

@@ -18,6 +18,10 @@
           <h1 class="logo">
             <a href="./main.html"><img src="../common/images/logo.png" alt="로고"></a>
           </h1>
+          <!-- 0321 모바일 로고 추가 -->
+          <h1 class="m_logo">
+            <a href="./main.html"><img src="../common/images/m_logo.png" alt="모바일 로고"></a>
+          </h1>
           <div class="search">
             <div class="search_bar">   
               <button onclick="window.open('sub_통합검색.html')"></button>
@@ -30,6 +34,15 @@
           <a href="./sub_sns현황_동북아시아.html" class="on">SNS 현황</a>
           <a href="./sub_공관소개_동북아시아.html">공관소개 </a>
         </div>
+        <!-- 0321 모바일 검색창 추가 -->
+        <div class="m_sch_wrap">
+          <div class="m_search_bar">
+            <button onclick="window.open('sub_통합검색.html')"></button>
+            <label for="m_search" class="hide">검색</label>
+            <input type="text" name="m_search" id="m_search" placeholder="검색어를 입력하세요 ">
+          </div>
+        </div>
+        <!--// 0321 모바일 검색창 추가 -->
       </div>
     </header>
     <div class="sns_state sub_sns_state">
@@ -583,7 +596,10 @@
 
     <footer>
       <div class="container flex">
-        <div class="ft_logo flex"><img src="../common/images/ft_logo.png" alt="푸터 로고 ">
+        <div class="ft_logo flex">
+          <img src="../common/images/ft_logo.png" alt="푸터 로고 ">
+          <!-- 0321 모바일 로고 추가 -->
+          <img src="../common/images/m_ft_logo.png" alt="모바일 푸터 로고 " class="m_ft_logo">
           <ul class="flex">
             <li>서울시 종로구 사직로 8길 60</li>
             <li>Email. mofastory@mofa.go.kr</li>

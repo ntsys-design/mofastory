@@ -21,6 +21,7 @@
             <!-- 0310 로고 추가 -->
             <a href="./main.html"><img src="../common/images/logo.png" alt="로고"></a>
           </h1>
+          <!-- 0321 모바일 로고 추가 -->
           <h1 class="m_logo">
             <a href="./main.html"><img src="../common/images/m_logo.png" alt="모바일 로고"></a>
           </h1>
@@ -40,11 +41,12 @@
           <a href="./sub_sns현황_동북아시아.html">SNS 현황</a>
           <a href="./sub_공관소개_동북아시아.html">공관소개 </a>
         </div>
+        <!-- 0321 모바일 검색창 추가 -->
         <div class="m_sch_wrap">
           <div class="m_search_bar">
             <button onclick="window.open('sub_통합검색.html')"></button>
-            <label for="main_search" class="hide">검색</label>
-            <input type="text" name="search" id="main_search" placeholder="검색어를 입력하세요 ">
+            <label for="m_search" class="hide">검색</label>
+            <input type="text" name="m_search" id="m_search" placeholder="검색어를 입력하세요 ">
           </div>
         </div>
         <!-- //0308 공관소개 페이지명 변경 -->
@@ -56,8 +58,8 @@
           <h3 class="tit">SNS 현황</h3>
           <div class="list_tab">
             <ul>
-              <li><a href="#"><span class="hide">목록</span></a></li>
-              <li class="on"><a href="#"><span class="hide">지도</span></a></li>
+              <li><a href="#"><span class="hide">지도</span></a></li>
+              <li class="on"><a href="#"><span class="hide">목록</span></a></li>
             </ul>
           </div>
         </div>
@@ -277,33 +279,40 @@
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-            <div class="content_wrap">
-              <div class="monthly_content">
-                <div>
-                  <a href="#" target="_blank">
-                    <img src="../common/images/monthly_1.png" alt="이달의 우수사례 이미지">
-                    <span class="flex">
-                      <!-- 0315 class sgp에서 sg 수정 -->
-                      <div class="flag_2 flag24 sg"></div> 
-                      주싱가포르 대한민국대사관</span>
-                    <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div>
-                  </a>
+            <!--0322 이달의 우수사례 스와이퍼 슬라이드로 변경 -->
+            <div class="content_wrap ">
+              <div class="monthly_swiper">
+                <div class="monthly_content swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" target="_blank">
+                      <img src="../common/images/monthly_1.png" alt="이달의 우수사례 이미지">
+                      <span class="flex">
+                        <!-- 0315 class sgp에서 sg 수정 -->
+                        <div class="flag_2 flag24 sg"></div>
+                        주싱가포르 대한민국대사관</span>
+                      <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" target="_blank"><img src="../common/images/monthly_2.png" alt="이달의 우수사례 이미지">
+                      <!-- 0315 class  svk에서 sk 수정 -->
+                      <span class="flex"><div class="flag_2 flag24 sk"></div> 주슬로바키아대사관 </span>
+                      <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" target="_blank"><img src="../common/images/monthly_3.png" alt="이달의 우수사례 이미지">
+                      <!-- 0315 class ndl에서 nl 수정 -->
+                      <span class="flex"><div class="flag_2 flag24 nl"></div> 주네덜란드 대한민국대사관</span>
+                      <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div></a>
+                  </div>
                 </div>
-                <div>
-                  <a href="#" target="_blank"><img src="../common/images/monthly_2.png" alt="이달의 우수사례 이미지">
-                    <!-- 0315 class  svk에서 sk 수정 -->
-                    <span class="flex"><div class="flag_2 flag24 sk"></div> 주슬로바키아대사관 </span>
-                    <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div>
-                  </a>
-                </div>
-                <div>
-                  <a href="#" target="_blank"><img src="../common/images/monthly_3.png" alt="이달의 우수사례 이미지">
-                    <!-- 0315 class ndl에서 nl 수정 -->
-                    <span class="flex"><div class="flag_2 flag24 nl"></div> 주네덜란드 대한민국대사관</span>
-                    <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div></a>
-                </div>
+                <!-- <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
               </div>
             </div>
+            <!--//0322 이달의 우수사례 스와이퍼 슬라이드로 변경 -->
           </div>
         </div>
       
@@ -799,7 +808,9 @@
 
     <footer>
       <div class="container flex">
-        <div class="ft_logo flex"><img src="../common/images/ft_logo.png" alt="푸터 로고 ">
+        <div class="ft_logo flex">
+          <img src="../common/images/ft_logo.png" alt="푸터 로고 ">
+          <!-- 0321 모바일 로고 추가 -->
           <img src="../common/images/m_ft_logo.png" alt="모바일 푸터 로고 " class="m_ft_logo">
           
           <ul class="flex">
@@ -807,7 +818,7 @@
             <li>Email. mofastory@mofa.go.kr</li>
           </ul>
         </div>
-        <p class="copy">Copyright 2023 MOFA Story. All Rights Reserved. <div class="test33"></div><div class="test3322"></div><div class="test22"></div></p>
+        <p class="copy">Copyright 2023 MOFA Story. All Rights Reserved. </p>
       </div>
     </footer>
     <div class="top_btn">

@@ -4,6 +4,23 @@ $('.embassy_list ul li').on('click', function () {
   $(this).addClass('on')
 })
 
+// window 720이하 지도 hide
+$(window).resize(function(){
+let win=$(this).width()
+if(win<721){
+  $('.embassy_list:first-child').hide()
+  $('.embassy_list:last-child').show()
+}else{
+  if($('.list_tab ul li:first-child').hasClass('on')){
+    $('.embassy_list:first-child').show()
+    $('.embassy_list:last-child').hide()
+  }else{
+    $('.embassy_list:first-child').hide()
+  }
+  
+}
+
+})
 //메인 sns현황 지도/목록 버튼
 $('.list_tab ul li ').on('click', function (e) {
   let idx = $(this).index()
@@ -14,6 +31,8 @@ $('.list_tab ul li ').on('click', function (e) {
   $('.embassy_list').eq(idx).show()
 
 })
+
+
 
 // 메인 지도 Bg
 
@@ -48,8 +67,9 @@ $('.tabmenu h3').on('click', function (e) {
 // 인기 콘텐츠 슬라이드
 // 0317 루프 삭제
 var swiper = new Swiper(".pop_content", {
-  slidesPerView: 2,
-  spaceBetween: 30,
+  slidesPerView: 2.2,
+  spaceBetween: 15.3,
+
   // loop: true,
   // loopFillGroupWithBlank: true,
   pagination: {
@@ -62,24 +82,70 @@ var swiper = new Swiper(".pop_content", {
   },
   breakpoints: {
     501: {
-      slidesPerView: 3,
-      spaceBetween: 20,
+      slidesPerView: 3.5,
+      spaceBetween: 15.3,
     },
 
     721: {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 15.3,
     },
 
 
 
-    1200: {
+    1080: {
       slidesPerView: 5,
-      spaceBetween: 30,
+      spaceBetween: 32,
     },
 
   }
 });
+
+// 이달의 우수사례 
+ // 모바일에서만 슬라이드
+ var ww = $(window).width();
+ var swiperAw = undefined;
+
+ function initSwiper() {
+
+   if (ww <= 720 && swiperAw == undefined) {
+     swiperAw = new Swiper(".monthly_swiper", {
+       slidesPerView: 1.2,
+       spaceBetween: 16,
+       watchSlidesProgress: true, setWrapperSize: true,
+      
+       // pagination: {
+       //     el: '.monthly_swiper .swiper-pagination',
+       //     clickable: true,
+       // },
+       // navigation: {
+       //     prevEl: '.swiper-button-prev',
+       //     nextEl: '.swiper-button-next',
+       // },
+       breakpoints: {
+        401: {
+          slidesPerView: 1.5,
+          spaceBetween: 16,
+        },
+        501: {
+          slidesPerView: 1.8,
+          spaceBetween: 16,
+        },
+
+      }
+     });
+   } else if (ww > 720 && swiperAw != undefined) {
+     swiperAw.destroy();
+     swiperAw = undefined;
+   }
+ }
+
+ initSwiper();
+
+ $(window).on('resize', function () {
+   ww = $(window).width();
+   initSwiper();
+ });
 
 //  sns 탭메뉴 0309 수정
 $('.sns_tab ul li').on('click', function () {
@@ -89,7 +155,7 @@ $('.sns_tab ul li').on('click', function () {
 
 
 
-// 최신 sns, 통합검색 상세 페이지
+// 최신 sns, 통합검색 상세 페이지 isotope
 $(document).ready(function () {
 
   var $container = $('.isotope').isotope({
@@ -195,8 +261,15 @@ $(document).ready(function () {
   };
 });
 
-
-
+// top버튼 모바일 hide
+$(window).resize(function(){
+let wwd=$(this).width()
+  if(wwd<721){
+    $('.top_btn').addClass('hide');
+  }else{
+    $('.top_btn').removeClass('hide');
+  }
+})
 // top버튼 스크롤 200이상이면 show 200이하 hide
 $(window).scroll(function () {
  
@@ -207,6 +280,8 @@ $(window).scroll(function () {
     $('.top_btn').hide();
   }
 })
+
+
 // top버튼 클릭시 맨위로 이동
 $('.top_btn').click(function(e) {
   e.stopPropagation()
@@ -215,6 +290,8 @@ $('.top_btn').click(function(e) {
   }, 400);
   return false;
 });
+
+
 //---------------------서브----------------------------
 
 // 대륙별 sns 현황 셀렉트박스
