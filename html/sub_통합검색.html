@@ -12,14 +12,13 @@
 
 <body>
   <div class="wrapper">
-    <!-- 모바일헤더 작업예정 -->
     <header id="header" class="sch_hd">
       <div class="container">
         <div class="logo_sch">
           <h1 class="logo">
             <a href="./main.html"><img src="../common/images/search_logo.png" alt="로고"></a>
           </h1>
-          <!-- 0321 모바일 로고 추가 -->
+          <!-- 0321 모바일로고 추가 -->
           <h1 class="m_logo">
             <a href="./main.html"><img src="../common/images/m_search_logo.png" alt="모바일 로고"></a>
           </h1>
@@ -61,7 +60,7 @@
 
             <li>
               <span>검색기간</span>
-              <ul>
+              <ul class="sch_period">
                 <li><input type="radio" name="period" id="period01" checked><label for="period01">오늘</label></li>
                 <li><input type="radio" name="period" id="period02"><label for="period02">7일</label></li>
                 <li><input type="radio" name="period" id="period03"><label for="period03">1개월</label></li>
@@ -91,17 +90,16 @@
         <div class="m_input_wrap">
           <ul>
             <li>
-              <div class="line">
                 <div class="search_bar">
                   <label for="search" class="hide">검색</label>
-                  <input type="text" name="search" id="search" placeholder="검색어를 입력하세요." value="지배세력">
+                  <input type="text" name="search" id="search" placeholder="검색어를 입력하세요." value="베트남">
                   <button class="sch_search_btn"></button>
                 </div>
                 <div class="chck_wrap flex">
                   <input type="checkbox" name="chck" id="chck">
                   <label for="chck" class="chck">결과 내 재검색</label>
                 </div>
-              </div>
+              
             </li>
 
             <li>
@@ -118,7 +116,7 @@
             <li>
               <span>검색기간</span>
               <ul class="sch_period">
-                <li><button>오늘</button></li>
+                <li><button class="on">오늘</button></li>
                 <li><button>7일</button></li>
                 <li><button>1개월</button></li>
                 <li><button>3개월</button></li>
@@ -167,6 +165,23 @@
               <li><a href="./sub_통합검색_러시아중앙아시아.html">러시아 중앙아시아 (0)</a></li>
               <li><a href="./sub_통합검색_공관소개.html">공관소개 (1)</a></li>
             </ul>
+
+            <!--0323 모바일 검색 항목 -->
+            <div class="m_sch_contienet">
+              <label for="m_sch_contienet" class="hide">검색 항목 선택</label>
+              <select name="m_sch_contienet" id="m_sch_contienet">
+                <option value="" selected>전체 (25)</option>
+                <option value="">동북아시아 (1)</option>
+                <option value="">동남아시아 서남아시아태평양 (15) </option>
+                <option value="">북미 (5)</option>
+                <option value="">중남미 (0)</option>
+                <option value="">유럽 (3)</option>
+                <option value="">사하라 이남 아프리카 (0)</option>
+                <option value="">중동 북아프리카 (0) </option>
+                <option value="">러시아 중앙아시아 (0)</option>
+                <option value="">공관소개 (1)</option>
+              </select>
+            </div>
           </div>
           
             <div class="resultview">
@@ -575,7 +590,8 @@
 
 
   <script src="../common/js/jquery-3.6.2.min.js"></script>
-  <script src="../common/js/swiper-bundle.min.js"></script>
+  <!-- 0323 sns현황페이지, 통합검색 페이지 swiper-bundle.min.js 삭제 -->
+  <!-- <script src="../common/js/swiper-bundle.min.js"></script> -->
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>

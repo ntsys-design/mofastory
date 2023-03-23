@@ -18,7 +18,9 @@
           <h1 class="logo">
             <a href="./main.html"><img src="../common/images/search_logo.png" alt="로고"></a>
           </h1>
-
+          <h1 class="m_logo">
+            <a href="./main.html"><img src="../common/images/m_search_logo.png" alt="모바일 로고"></a>
+          </h1>
         </div>
         <div class="info sch_info">
           <a href="./sub_sns현황_동북아시아.html">SNS 현황</a>
@@ -38,7 +40,7 @@
               <div class="search_bar">
                 <label for="search" class="hide">검색</label>
                 <input type="text" name="search" id="search" placeholder="검색어를 입력하세요." value="베트남">
-                <button class="search_btn"></button>
+                <button class="sch_search_btn"></button>
               </div>
               <input type="checkbox" name="chck" id="chck">
               <label for="chck" class="chck">결과 내 재검색</label>
@@ -83,8 +85,60 @@
           </ul>
 
         </div>
-      </div>
+        <!-- 0322 모바일 검색 조건 -->
+        <div class="m_input_wrap">
+          <ul>
+            <li>
+                <div class="search_bar">
+                  <label for="search" class="hide">검색</label>
+                  <input type="text" name="search" id="search" placeholder="검색어를 입력하세요." value="베트남">
+                  <button class="sch_search_btn"></button>
+                </div>
+                <div class="chck_wrap flex">
+                  <input type="checkbox" name="chck" id="chck">
+                  <label for="chck" class="chck">결과 내 재검색</label>
+                </div>
+              
+            </li>
 
+            <li>
+              <span>인기 검색어</span>
+              <ul class="search_word">
+                <li><button class="active"><b>검색어명</b></button></li>
+                <li><button><b>검색어명</b></button></li>
+                <li><button><b>검색어명</b></button></li>
+                <li><button><b>검색어명</b></button></li>
+                <li><button><b>검색어명</b></button></li>
+              </ul>
+            </li>
+
+            <li>
+              <span>검색기간</span>
+              <ul class="sch_period">
+                <li><button class="on">오늘</button></li>
+                <li><button>7일</button></li>
+                <li><button>1개월</button></li>
+                <li><button>3개월</button></li>
+                <li><button>6개월</button></li>
+                <li><button>1년</button></li>
+                <li>
+                  <label for="date01" class="hide">날짜</label>
+                  <input type="date" name="date01" id="date01" value="2021-03-14"> <span>~</span>
+                  <label for="date02" class="hide">날짜</label>
+                  <input type="date" name="date02" id="date02" value="2021-03-14">
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span>정렬순서</span>
+              <ul class="order">
+                <li class="on"><button>최신순</button></li>
+                <li><button>정확도순</button></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="contents_wrap sch_contents_wrap">
@@ -108,6 +162,22 @@
               <li><a href="./sub_통합검색_공관소개.html">공관소개 (1)</a></li>
             </ul>
 
+            <!--0323 모바일 검색 항목 -->
+            <div class="m_sch_contienet">
+              <label for="m_sch_contienet" class="hide">검색 항목 선택</label>
+              <select name="m_sch_contienet" id="m_sch_contienet">
+                <option value="" >전체 (25)</option>
+                <option value="">동북아시아 (1)</option>
+                <option value="">동남아시아 서남아시아태평양 (15) </option>
+                <option value="">북미 (5)</option>
+                <option value="">중남미 (0)</option>
+                <option value="">유럽 (3)</option>
+                <option value="">사하라 이남 아프리카 (0)</option>
+                <option value="">중동 북아프리카 (0) </option>
+                <option value=""selected>러시아 중앙아시아 (0)</option>
+                <option value="">공관소개 (1)</option>
+              </select>
+            </div>
           </div>
           <div class="resultview_list">
             
@@ -162,11 +232,13 @@
 
 
   <script src="../common/js/jquery-3.6.2.min.js"></script>
-  <script src="../common/js/swiper-bundle.min.js"></script>
+  <!-- 0323 sns현황페이지, 통합검색 페이지 swiper-bundle.min.js 삭제 -->
+  <!-- <script src="../common/js/swiper-bundle.min.js"></script> -->
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <script src="../common/js/mf_publish.js"></script>
+  
 </body>
 
 </html>
