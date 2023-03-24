@@ -83,10 +83,23 @@ var swiper = new Swiper(".swiper.pop_content", {
 
  // 공관소개페이지 이미지 슬라이드
 var swiper2 = new Swiper(".office_slide", {
-
+  pagination: {
+    el: ".office_slide .swiper-pagination",
+  },
     navigation: {
       nextEl: ".slide_btn .swiper-button-next",
       prevEl: ".slide_btn .swiper-button-prev",
     },
   
   });
+// 모바일 공관소개페이지 이미지 슬라이드
+  var swiper3 = new Swiper(".m_office_slide", {
+    pagination: {
+      el: ".slide_pg .swiper-pagination",
+    },
+      navigation: {
+        nextEl: ".slide_btn .swiper-button-next",
+        prevEl: ".slide_btn .swiper-button-prev",
+      },
+    
+    });
