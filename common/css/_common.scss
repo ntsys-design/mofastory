@@ -18,18 +18,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+gap: 0 40px;
     .logo_sch {
       display: flex;
       align-items: center;
       height: 100%;
-      width: 83%;
+     // width: 83%;
 
       .logo {
         width: 88px;
         height: 100%;
-        
-        margin-right: 48px;
+        flex-shrink: 0;
         a{width: 100%;
         height: 100%;}
       }
@@ -37,9 +36,10 @@ header {
         display: none;
       }
 
-      .search {
-        width: calc(100% - 138px);
-
+     
+    } 
+    .search {
+      flex-grow: 1;        
         .search_bar {
           height: 48px;
           display: flex;
@@ -74,11 +74,11 @@ header {
         }
 
       }
-    }
     .m_sch_wrap{
       display: none;
     }
     .info {
+      flex-shrink: 0;
       display: flex;
       align-items: center;
       gap: 24px;
@@ -1507,19 +1507,7 @@ b{
   }
 }
 @media screen and (max-width:1080px) {
-  header{
-    .container{
-      .logo_sch{
-        width: 80%;
-        .logo{
-          margin-right: 5%;
-        }
-      }
-      .info{
-        gap: 15px;
-      }
-    }
-  }
+  
   footer {
     .container{
       flex-direction: column;        
@@ -1564,6 +1552,7 @@ b{
       .logo_sch{
         width: unset;
         height: unset;
+        order: 1;
         .logo{
           display: none;
         }
@@ -1571,23 +1560,11 @@ b{
           display: block;
         }
       
-       .search{
-        display: none;
-       }
-      }  
-      .m_sch_wrap{
-          display: block;
-          width: 100%;
-          .m_search_bar{
-          height: 44px;
-          display: flex;
-          align-items: center;
-          border: 2px solid transparent;
-          border-radius: 48px;
-          background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #005EAC 0%, #EB1C23 100%);
-          background-origin: border-box;
-          background-clip: content-box, border-box;
-
+       
+      }  .search{
+        order: 3;
+         width: 100%;
+         .search_bar{
           button {
             width: 24px;
             height: 24px;
@@ -1597,21 +1574,12 @@ b{
             margin-left: 28px;
             cursor: pointer;
           }
-
-          input {
-            width: 90%;
-            height: 48px;
-            outline: 0;
-            border: 1px solid transparent;
-            background: transparent;
-            padding: 0 14px;
-            font-weight: 400;
-            font-size: 1em;
-            color: #484B51;
-          }
-        }
-      }
+         }
+        
+       }
+     
       .info{
+        order: 2;
         background: #F7F7F8;
         border-radius: 24px;
         gap: unset;

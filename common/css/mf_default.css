@@ -346,17 +346,17 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0 40px;
 }
 header .container .logo_sch {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 83%;
 }
 header .container .logo_sch .logo {
   width: 88px;
   height: 100%;
-  margin-right: 48px;
+  flex-shrink: 0;
 }
 header .container .logo_sch .logo a {
   width: 100%;
@@ -365,10 +365,10 @@ header .container .logo_sch .logo a {
 header .container .logo_sch .m_logo {
   display: none;
 }
-header .container .logo_sch .search {
-  width: calc(100% - 138px);
+header .container .search {
+  flex-grow: 1;
 }
-header .container .logo_sch .search .search_bar {
+header .container .search .search_bar {
   height: 48px;
   display: flex;
   align-items: center;
@@ -378,7 +378,7 @@ header .container .logo_sch .search .search_bar {
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
-header .container .logo_sch .search .search_bar button {
+header .container .search .search_bar button {
   width: 24px;
   height: 24px;
   padding: 0;
@@ -387,7 +387,7 @@ header .container .logo_sch .search .search_bar button {
   margin-left: 28px;
   cursor: pointer;
 }
-header .container .logo_sch .search .search_bar input {
+header .container .search .search_bar input {
   width: 90%;
   height: 48px;
   outline: 0;
@@ -402,6 +402,7 @@ header .container .m_sch_wrap {
   display: none;
 }
 header .container .info {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -1518,15 +1519,6 @@ b {
   }
 }
 @media screen and (max-width: 1080px) {
-  header .container .logo_sch {
-    width: 80%;
-  }
-  header .container .logo_sch .logo {
-    margin-right: 5%;
-  }
-  header .container .info {
-    gap: 15px;
-  }
   footer .container {
     flex-direction: column;
     padding: 48px 0;
@@ -1567,6 +1559,7 @@ b {
   header .container .logo_sch {
     width: unset;
     height: unset;
+    order: 1;
   }
   header .container .logo_sch .logo {
     display: none;
@@ -1574,24 +1567,11 @@ b {
   header .container .logo_sch .m_logo {
     display: block;
   }
-  header .container .logo_sch .search {
-    display: none;
-  }
-  header .container .m_sch_wrap {
-    display: block;
+  header .container .search {
+    order: 3;
     width: 100%;
   }
-  header .container .m_sch_wrap .m_search_bar {
-    height: 44px;
-    display: flex;
-    align-items: center;
-    border: 2px solid transparent;
-    border-radius: 48px;
-    background-image: linear-gradient(#fff, #fff), linear-gradient(90deg, #005EAC 0%, #EB1C23 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-  }
-  header .container .m_sch_wrap .m_search_bar button {
+  header .container .search .search_bar button {
     width: 24px;
     height: 24px;
     padding: 0;
@@ -1600,18 +1580,8 @@ b {
     margin-left: 28px;
     cursor: pointer;
   }
-  header .container .m_sch_wrap .m_search_bar input {
-    width: 90%;
-    height: 48px;
-    outline: 0;
-    border: 1px solid transparent;
-    background: transparent;
-    padding: 0 14px;
-    font-weight: 400;
-    font-size: 1em;
-    color: #484B51;
-  }
   header .container .info {
+    order: 2;
     background: #F7F7F8;
     border-radius: 24px;
     gap: unset;
