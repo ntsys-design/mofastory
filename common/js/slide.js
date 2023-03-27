@@ -35,52 +35,7 @@ var swiper = new Swiper(".swiper.pop_content", {
     }
   });
 
-  // 이달의 우수사례 
- // 모바일에서만 슬라이드
- var ww = $(window).width();
- var swiperAw = undefined;
-
- function initSwiper() {
-
-   if (ww <= 720 && swiperAw == undefined) {
-     swiperAw = new Swiper(".monthly_swiper", {
-       slidesPerView: 1.2,
-       spaceBetween: 16,
-       watchSlidesProgress: true, setWrapperSize: true,
-      
-       // pagination: {
-       //     el: '.monthly_swiper .swiper-pagination',
-       //     clickable: true,
-       // },
-       // navigation: {
-       //     prevEl: '.swiper-button-prev',
-       //     nextEl: '.swiper-button-next',
-       // },
-       breakpoints: {
-        401: {
-          slidesPerView: 1.5,
-          spaceBetween: 16,
-        },
-        501: {
-          slidesPerView: 1.8,
-          spaceBetween: 16,
-        },
-
-      }
-     });
-   } else if (ww > 720 && swiperAw != undefined) {
-     swiperAw.destroy();
-     swiperAw = undefined;
-   }
- }
-
- initSwiper();
-
- $(window).on('resize', function () {
-   ww = $(window).width();
-   initSwiper();
- });
-
+  
  // 공관소개페이지 이미지 슬라이드
 var swiper2 = new Swiper(".office_slide", {
   pagination: {
@@ -92,14 +47,15 @@ var swiper2 = new Swiper(".office_slide", {
     },
   
   });
+  
 // 모바일 공관소개페이지 이미지 슬라이드
-  var swiper3 = new Swiper(".m_office_slide", {
-    pagination: {
-      el: ".slide_pg .swiper-pagination",
+var swiper3 = new Swiper(".m_office_slide", {
+  pagination: {
+    el: ".slide_pg .swiper-pagination",
+  },
+    navigation: {
+      nextEl: ".slide_btn .swiper-button-next",
+      prevEl: ".slide_btn .swiper-button-prev",
     },
-      navigation: {
-        nextEl: ".slide_btn .swiper-button-next",
-        prevEl: ".slide_btn .swiper-button-prev",
-      },
-    
-    });
+  
+  });

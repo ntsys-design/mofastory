@@ -267,7 +267,6 @@ $('body').on('click',function(){
 
 
 
-
 // 통합검색 페이지 전체 탭 
 $('.sch_sns_list').isotope({
   itemSelector: '.element-item',
@@ -295,3 +294,16 @@ $('ul.order li').on('click',function(){
   $('ul.order li').removeClass('on')
   $(this).addClass('on')
 })
+
+// 720 이하 옵션
+$(window).resize(function(){
+  let wwd=$(this).width()
+  console.log(wwd)
+    if(wwd>721){
+      
+    }else{
+      $('.select_box li button').removeClass('up_btn')
+      $('.option_container .option_wrap').hide();
+      $('.dim').removeClass('on')
+    }
+  })

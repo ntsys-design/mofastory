@@ -58,10 +58,51 @@
                 <div class="flag_2 flag32 gt"></div> 주과테말라 대사관
               </span>
               <button class="down_btn"></button>
-
             </li>
-
           </ul>
+          <!-- 0327 모바일 셀렉트 박스 추가 -->
+          <ul class="m_select_box">
+            <li class="select continent_sl">
+              <label for="m_continent">대륙선택</label>
+              <select name="m_continent" id="m_continent" class="wide">
+                <option value="">동북아시아</option>
+                <option value="" >동남아시아 서남아시아태평양</option>
+                <option value="">북미</option>
+                <option value=""selected>중남미</option>
+                <option value="">유럽</option>
+                <option value="">사하라 이남 아프리카</option>
+                <option value="">중동 북아프리카</option>
+                <option value="">러시아 중앙아시아</option>
+              </select>
+            </li>
+            <li class="select office_sl">
+              <label for="m_office_select">공관선택</label>
+                <select name="m_office_select" id="m_office_select" class="wide">
+               <option value="" selected>주과테말라 대사관</option>
+               <option value="">주니카라과 대사관 </option>
+               <option value="">주도미니카 대사관</option>
+               <option value="">주멕시코 대사관</option>
+               <option value="">주베네수엘라 대사관 </option>
+               <option value="">주볼리비아 대사관 </option>
+               <option value=""> 주브라질 대사관 </option>
+               <option value="">주상파울루 대사관 </option>
+               <option value="">주아르헨티나 대사관 </option>
+               <option value="">주에콰도르 대사관 </option>
+               <option value="">주엘살바도르 대사관 </option>
+               <option value="">주온두라스 대사관 </option>
+               <option value="">주우루과이 대사관 </option>
+               <option value="">주자메이카 대사관 </option>
+               <option value="">주칠레 대사관 </option>
+               <option value="">주코스타리카 대사관 </option>
+               <option value="">주콜롬비아 대사관 </option>
+               <option value="">주트리니다드토바고 대사관 </option>
+               <option value="">주파나마 대사관 </option>
+               <option value="">주파라과이 대사관 </option>
+               <option value="">주페루 대사관 </option>
+                </select>
+            </li>
+          </ul>
+          <!--// 0327 모바일 셀렉트 박스 추가 -->
         </div>
       </div>
       <div class="option_container">
@@ -117,26 +158,19 @@
           <div class="swiper office_slide">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="#" target="_blank">
                   <div class="img_wrap">
                     <img src="../common/images/office_img2.png" alt="공관 이미지">
                   </div>
-                </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" target="_blank">
                   <div class="img_wrap">
                     <img src="../common/images/office_img.png" alt="공관 이미지">
                   </div>
-        
-                </a>
               </div>
               <div class="swiper-slide">
-                <a href="#" target="_blank">
                   <div class="img_wrap">
                     <img src="../common/images/office_img.png" alt="공관 이미지">
                   </div>
-                </a>
               </div>
             </div>
         
@@ -173,7 +207,51 @@
           </div>
       </div>
       </div>
-      
+      <!-- 0324 모바일 공관소개 추가 -->
+      <div class="container m_info_container">
+        <div class="m_office_info">
+          <span class="flex">
+            <div class="flag jp"></div>주니가타 총영사관
+          </span>
+          <div class="m_slide_wrap">
+            <div class="swiper m_office_slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="../common/images/m_office_img.png" alt="공관 이미지">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="../common/images/m_office_img.png" alt="공관 이미지">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="../common/images/m_office_img.png" alt="공관 이미지">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="slide_pg">
+              <div class="swiper-pagination"></div>
+              <div class="slide_btn">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+            </div>
+            <p>
+              브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다. <br>
+              브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다. <br>
+              브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- //0324 모바일 공관소개 추가 -->
     </div>
 
     <footer>
@@ -198,9 +276,33 @@
 
   <script src="../common/js/jquery-3.6.2.min.js"></script>
   <script src="../common/js/swiper-bundle.min.js"></script>
-  <script src="../common/js/mf_publish.js"></script>
   <!-- 0323 main, 공관소개 페이지 slide.js 추가 -->
   <script src="../common/js/slide.js"></script>
+  <!-- 0327 nice select 추가 -->
+  <script src="../common/js/jquery.nice-select.js"></script>
+  <script src="../common/js/mf_publish.js"></script>
+   
+   <!-- 0327 script 추가 -->
+  <script>
+    $(document).ready(function(){
+  $('#m_continent').niceSelect();
+  $('#m_office_select').niceSelect();
+
+})
+// 720 이하 옵션
+$(window).resize(function(){
+  let wwd=$(this).width()
+  console.log(wwd)
+    if(wwd>721){
+      
+    }else{
+      $('.select_box li button').removeClass('up_btn')
+      $('.option_container .option_wrap').hide();
+      $('.dim').removeClass('on')
+    }
+  })
+  
+  </script>
 </body>
 
 </html>

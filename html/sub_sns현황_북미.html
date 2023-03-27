@@ -21,16 +21,16 @@
           <!-- 0321 모바일 로고 추가 -->
           <h1 class="m_logo">
             <a href="./main.html"><img src="../common/images/m_logo.png" alt="모바일 로고"></a>
-          </h1>       
+          </h1>
         </div>
         <!-- 0324 검색창 logo_sch 에서 분리  -->
         <div class="search">
-            <div class="search_bar">   
-              <button onclick="window.open('sub_통합검색.html')"></button>
-              <label for="main_search" class="hide">검색</label>
-              <input type="text" name="search" id="main_search" placeholder="검색어를 입력하세요 ">
-            </div>
+          <div class="search_bar">
+            <button onclick="window.open('sub_통합검색.html')"></button>
+            <label for="main_search" class="hide">검색</label>
+            <input type="text" name="search" id="main_search" placeholder="검색어를 입력하세요 ">
           </div>
+        </div>
         <div class="info">
           <a href="./sub_sns현황_동북아시아.html" class="on">SNS 현황</a>
           <a href="./sub_공관소개_동북아시아.html">공관소개 </a>
@@ -40,7 +40,7 @@
     <div class="sns_state sub_sns_state">
       <div class="container">
         <div class="tit_wrap">
-          <h3 class="tit">북미 SNS 현황</h3>         
+          <h3 class="tit">북미 SNS 현황</h3>
         </div>
         <div class="select_wrap">
           <ul>
@@ -53,12 +53,57 @@
               <button class="down_btn"></button>
             </li>
             <li class="select office_sl">
-              <span><div class="flag_2 flag32 us"></div> 주뉴욕 총영사관</span>
+              <span>
+                <div class="flag_2 flag32 us"></div> 주뉴욕 총영사관
+              </span>
               <button class="down_btn"></button>
-              
+
             </li>
-          
+
           </ul>
+          <!-- 0327 모바일 셀렉트 박스 추가 -->
+          <ul class="m_select_box">
+            <li class="select continent_sl">
+              <label for="m_continent">대륙선택</label>
+              <select name="m_continent" id="m_continent" class="wide">
+                <option value="">동북아시아</option>
+                <option value="" >동남아시아 서남아시아태평양</option>
+                <option value=""selected>북미</option>
+                <option value="">중남미</option>
+                <option value="">유럽</option>
+                <option value="">사하라 이남 아프리카</option>
+                <option value="">중동 북아프리카</option>
+                <option value="">러시아 중앙아시아</option>
+              </select>
+            </li>
+            <li class="select office_sl">
+              <label for="m_office_select">공관선택</label>
+                <select name="m_office_select" id="m_office_select" class="wide">
+                  <option value="">전체(19) </option>
+                  <option value="" selected>주뉴욕 총영사관</option>
+                  <option value="">주뉴욕 총영사관 필라델피아 출장소</option>
+                  <option value=""> 주댈러스 출장소</option>
+                  <option value="">주로스앤젤레스 총영사관</option>
+                  <option value="">주몬트리올 총영사관</option>
+                  <option value="">주미국 대사관</option>
+                  <option value="">주밴쿠버 총영사관</option>
+                  <option value="">주보스턴 총영사관</option>
+                  <option value="">주샌프란시스코 총영사관</option>
+                  <option value="">주시애틀 총영사관</option>
+                  <option value="">주시카고 총영사관</option>
+                  <option value="">주애틀랜타 총영사관</option>
+                  <option value="">주앵커리지 출장소</option>
+                  <option value="">주유엔 대표부</option>
+                  <option value="">주캐나다 대사관</option>
+                  <option value="">주토론토 총영사관</option>
+                  <option value="">주하갓냐 출장소</option>
+                  <option value="">주호놀룰루 총영사관</option>
+                  <option value="">주휴스턴 총영사관</option>
+                </select>             
+            </li>
+
+          </ul>
+          <!--// 0327 모바일 셀렉트 박스 추가 -->
         </div>
       </div>
       <div class="option_container">
@@ -81,28 +126,64 @@
           <div class="container">
             <ul class="option">
               <li class="on"><a href="#">전체(19)</a></li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주뉴욕 총영사관</a></li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주뉴욕 총영사관 필라델피아 출장소</a></li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주댈러스 출장소</a></li>
               <li><a href="#">
-                <div class="flag_2 flag24 us"></div> 주로스앤젤레스 총영사관</a></li>
-              <li><a href="#"><div class="flag_2 flag24 ca"></div> 주몬트리올 총영사관</a> </li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주미국 대사관</a> </li>
-              <li><a href="#"><div class="flag_2 flag24 ca"></div> 주밴쿠버 총영사관</a> </li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주보스턴 총영사관</a></li>
+                  <div class="flag_2 flag24 us"></div> 주뉴욕 총영사관
+                </a></li>
               <li><a href="#">
-                <div class="flag_2 flag24 us"></div> 주샌프란시스코 총영사관</a></li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주시애틀 총영사관</a></li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주시카고 총영사관</a></li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주애틀랜타 총영사관</a></li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주앵커리지 출장소</a></li>
-              <li><a href="#"><div class="flag_2 flag24 un"></div> 주유엔 대표부</a></li>
-              <li><a href="#"><div class="flag_2 flag24 ca"></div> 주캐나다 대사관</a></li>
-              <li><a href="#"><div class="flag_2 flag24 ca"></div> 주토론토 총영사관</a></li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주하갓냐 출장소</a></li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주호놀룰루 총영사관</a> </li>
-              <li><a href="#"><div class="flag_2 flag24 us"></div> 주휴스턴 총영사관</a></li>
-              
+                  <div class="flag_2 flag24 us"></div> 주뉴욕 총영사관 필라델피아 출장소
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주댈러스 출장소
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주로스앤젤레스 총영사관
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 ca"></div> 주몬트리올 총영사관
+                </a> </li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주미국 대사관
+                </a> </li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 ca"></div> 주밴쿠버 총영사관
+                </a> </li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주보스턴 총영사관
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주샌프란시스코 총영사관
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주시애틀 총영사관
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주시카고 총영사관
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주애틀랜타 총영사관
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주앵커리지 출장소
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 un"></div> 주유엔 대표부
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 ca"></div> 주캐나다 대사관
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 ca"></div> 주토론토 총영사관
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주하갓냐 출장소
+                </a></li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주호놀룰루 총영사관
+                </a> </li>
+              <li><a href="#">
+                  <div class="flag_2 flag24 us"></div> 주휴스턴 총영사관
+                </a></li>
+
             </ul>
           </div>
         </div>
@@ -111,8 +192,8 @@
     </div>
 
     <div class="contents_wrap">
-      
-      
+
+
       <div class="sns_list">
         <div class="sns_top">
           <div class="container">
@@ -141,7 +222,8 @@
                       </span>
                     </div>
                   </div>
-                  <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다. 브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은
+                  <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다. 브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바
+                    성은
                     9-18세기까지 지배세력들의 거처로 사용되었습니다.</p>
                 </a>
                 <div class="like_wrap">
@@ -164,7 +246,7 @@
                       </span>
                     </div>
                   </div>
-                  
+
                   <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다.</p>
                 </a>
                 <div class="like_wrap">
@@ -228,13 +310,13 @@
                   <div class="flag us"></div>주뉴욕총영사관
                 </span>
                 <a href="#" target="_blank">
-                <div class="img_wrap"><img src="../common/images/new_sns_5.png" alt="최신 sns 이미지">
-                  <div class="hover">
-                    <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                    </span>
+                  <div class="img_wrap"><img src="../common/images/new_sns_5.png" alt="최신 sns 이미지">
+                    <div class="hover">
+                      <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
+                      </span>
+                    </div>
                   </div>
-                </div>
-                
+
                   <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다.</p>
                 </a>
                 <div class="like_wrap">
@@ -284,7 +366,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="element-item fb">
                 <span class="flex">
                   <div class="flag us"></div>주시애틀총영사관
@@ -358,10 +440,10 @@
                 <a href="#" target="_blank">
                   <div class="img_wrap"><img src="../common/images/new_sns_10.png" alt="최신 sns 이미지">
                     <div class="hover">
-                    <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                    </span>
+                      <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
+                      </span>
+                    </div>
                   </div>
-                                </div>
                   <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다.</p>
                 </a>
                 <div class="like_wrap">
@@ -428,7 +510,8 @@
                       </span>
                     </div>
                   </div>
-                  <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다. 브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은
+                  <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다. 브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바
+                    성은
                     9-18세기까지 지배세력들의 거처로 사용되었습니다.</p>
                 </a>
                 <div class="like_wrap">
@@ -614,7 +697,7 @@
     <div class="top_btn">
       <a href="#header"><img src="../common/images/top_btn.png" alt="top 이동 버튼"></a>
     </div>
-<div class="dim"></div>
+    <div class="dim"></div>
   </div>
 
 
@@ -626,9 +709,17 @@
   <!-- 0323 sns현황페이지, 통합검색 페이지 swiper-bundle.min.js 삭제 -->
   <!-- <script src="../common/js/swiper-bundle.min.js"></script> -->
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!-- 0327 nice select 추가 -->
+  <script src="../common/js/jquery.nice-select.js"></script>
   <script src="../common/js/mf_publish.js"></script>
+  <!-- 0327 script 추가 -->
+  <script>
+    $(document).ready(function(){
+  $('#m_continent').niceSelect();
+  $('#m_office_select').niceSelect();
+})
+  </script>
 </body>
 
 </html>

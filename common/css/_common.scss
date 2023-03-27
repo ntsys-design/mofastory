@@ -62,14 +62,14 @@ gap: 0 40px;
 
           input {
             width: 90%;
-            height: 48px;
+            height: 44px;
             outline: 0;
             border: 1px solid transparent;
             background: transparent;
             padding: 0 14px;
             font-weight: 400;
             font-size: 1em;
-            color: #696E76;
+            color: #484B51;
           }
         }
 
@@ -832,7 +832,7 @@ background-size: contain;
 //sns현황페이지, 공관소개페이지 - 공관선택 사각형 국기
 .flag_2{border-radius: 2px;
     overflow: hidden;
-    background: #79818C;
+    //background: #79818C;
   &.flag24 {
     width: 24px;
     height: 18px;
@@ -1593,6 +1593,7 @@ b{
           font-size: 0.8125em;
           position: relative;
           padding:6px 8px;
+          font-weight: 400;
           &:first-child{
             &:after{
               content: '';
@@ -1608,7 +1609,8 @@ b{
           &.on,&:hover{
            text-decoration: unset;
            text-underline-position: unset;
-           color: #484B51;
+           color: #000000;
+           font-weight: 500;
           }
         }
       }

@@ -54,11 +54,52 @@
             </li>
             <li class="select office_sl">
               <span><div class="flag_2 flag32 gh"></div> 주가나 대사관</span>
-              <button class="down_btn"></button>
-              
-            </li>
-          
+              <button class="down_btn"></button>             
+            </li>          
           </ul>
+          <!-- 0327 모바일 셀렉트 박스 추가 -->
+          <ul class="m_select_box">
+            <li class="select continent_sl">
+              <label for="m_continent">대륙선택</label>
+              <select name="m_continent" id="m_continent" class="wide">
+                <option value="">동북아시아</option>
+                <option value="" >동남아시아 서남아시아태평양</option>
+                <option value="">북미</option>
+                <option value="">중남미</option>
+                <option value="">유럽</option>
+                <option value=""selected>사하라 이남 아프리카</option>
+                <option value="">중동 북아프리카</option>
+                <option value="">러시아 중앙아시아</option>
+              </select>
+            </li>
+            <li class="select office_sl">
+              <label for="m_office_select">공관선택</label>
+                <select name="m_office_select" id="m_office_select" class="wide">
+                  <option value="">전체(20)</option>
+              <option value="" selected>주가나 대사관</option>
+              <option value="">주가봉 대사관 </option>
+              <option value="">주나이지리아 대사관</option>
+              <option value="">주남아프리카공화국 대사관</option>
+              <option value="">주라고스 대사관</option>
+              <option value="">주르완다 대사관</option>
+              <option value="">주마다가스카르 대사관</option>
+              <option value="">주모잠비크 대사관</option>
+              <option value="">주세네갈 대사관</option>
+              <option value="">주수단 대사관</option>
+              <option value="">주앙골라 대사관</option>
+              <option value="">주에티오피아 대사관</option>
+              <option value="">주우간다 대사관</option>
+              <option value="">주적도기니 대사관 말라보 분관 </option>
+              <option value="">주짐바브웨 대사관</option>
+              <option value="">주카메룬 대사관</option>
+              <option value="">주케냐 대사관</option>
+              <option value="">주코트디부아르 대사관</option>
+              <option value="">주콩고 대사관</option>
+              <option value="">주탄자니아 대사관</option>
+                </select>
+            </li>
+          </ul>
+          <!--// 0327 모바일 셀렉트 박스 추가 -->
         </div>
       </div>
       <div class="option_container">
@@ -621,9 +662,17 @@
   <!-- 0323 sns현황페이지, 통합검색 페이지 swiper-bundle.min.js 삭제 -->
   <!-- <script src="../common/js/swiper-bundle.min.js"></script> -->
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!-- 0327 nice select 추가 -->
+  <script src="../common/js/jquery.nice-select.js"></script>
   <script src="../common/js/mf_publish.js"></script>
+  <!-- 0327 script 추가 -->
+  <script>
+    $(document).ready(function(){
+  $('#m_continent').niceSelect();
+  $('#m_office_select').niceSelect();
+})
+  </script>
 </body>
 
 </html>

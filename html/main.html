@@ -282,21 +282,26 @@
                       <span class="flex">
                         <!-- 0315 class sgp에서 sg 수정 -->
                         <div class="flag_2 flag24 sg"></div>
-                        주싱가포르 대한민국대사관</span>
+                        <!-- 0327 공관명 <b>태그 추가 -->
+                        <b>주싱가포르 대한민국대사관</b></span>
                       <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div>
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" target="_blank"><img src="../common/images/monthly_2.png" alt="이달의 우수사례 이미지">
                       <!-- 0315 class  svk에서 sk 수정 -->
-                      <span class="flex"><div class="flag_2 flag24 sk"></div> 주슬로바키아대사관 </span>
+                      <span class="flex"><div class="flag_2 flag24 sk"></div> 
+                        <!-- 0327 공관명 <b>태그 추가 -->
+                        <b>주슬로바키아대사관</b> </span>
                       <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div>
                     </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" target="_blank"><img src="../common/images/monthly_3.png" alt="이달의 우수사례 이미지">
                       <!-- 0315 class ndl에서 nl 수정 -->
-                      <span class="flex"><div class="flag_2 flag24 nl"></div> 주네덜란드 대한민국대사관</span>
+                      <span class="flex"><div class="flag_2 flag24 nl"></div> 
+                        <!-- 0327 공관명 <b>태그 추가 -->
+                        <b>주네덜란드 대한민국대사관</b></span>
                       <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div></a>
                   </div>
                 </div>
@@ -829,6 +834,51 @@
   <script src="../common/js/mf_publish.js"></script>
   <!-- 0323 main, 공관소개 페이지 slide.js 추가 -->
   <script src="../common/js/slide.js"></script>
+
+  <!-- 0327 script 추가 -->
+  <script>
+    // 이달의 우수사례 
+ // 모바일에서만 슬라이드
+ var ww = $(window).width();
+ var swiperAw = undefined;
+
+ function initSwiper() {
+
+   if (ww <= 720 && swiperAw == undefined) {
+     swiperAw = new Swiper(".monthly_swiper", {
+       slidesPerView: 1.2,
+       spaceBetween: 16,
+       watchSlidesProgress: true, setWrapperSize: true,
+    
+       breakpoints: {
+        401: {
+          slidesPerView: 1.5,
+          spaceBetween: 16,
+        },
+        501: {
+          slidesPerView: 1.8,
+          spaceBetween: 16,
+        },
+        601: {
+          slidesPerView: 2.2,
+          spaceBetween: 16,
+        },
+      }
+     });
+   } else if (ww > 720 && swiperAw != undefined) {
+     swiperAw.destroy();
+     swiperAw = undefined;
+   }
+ }
+
+ initSwiper();
+
+ $(window).on('resize', function () {
+   ww = $(window).width();
+   initSwiper();
+ });
+
+  </script>
 </body>
 
 </html>
