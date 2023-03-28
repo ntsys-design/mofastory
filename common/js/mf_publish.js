@@ -181,7 +181,7 @@ $(document).ready(function () {
 
 $(document).ready(function(){
 let wd=$(window).width()
-console.log(wd)
+//console.log(wd)
   if(wd>721){
       $('.top_btn').removeClass('hide');
   }else{
@@ -192,7 +192,7 @@ console.log(wd)
 // top버튼 모바일 hide
 $(window).resize(function(){
   let wwd=$(this).width()
-  console.log(wwd)
+  //console.log(wwd)
     if(wwd>721){
         $('.top_btn').removeClass('hide');
     }else{
@@ -298,7 +298,7 @@ $('ul.order li').on('click',function(){
 // 720 이하 옵션
 $(window).resize(function(){
   let wwd=$(this).width()
-  console.log(wwd)
+  //console.log(wwd)
     if(wwd>721){
       
     }else{

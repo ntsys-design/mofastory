@@ -2152,10 +2152,11 @@ b {
   background: url(../images/sns_icon.png) no-repeat;
   background-position: -554px -38px;
 }
+/* 0328 수정 */
 .sns_list .sns_top .container .sns_tab ul li.on button:after {
   content: "";
   height: 2px;
-  width: 100%;
+  width: calc(100% + 8px);
   background: #26282C;
   position: absolute;
   bottom: -9px;
@@ -2211,11 +2212,13 @@ b {
   font-size: 1.25em;
   margin-bottom: 24px;
 }
+/* 0328 수정 */
 .element-item > span .flag {
   width: 32px;
   height: 32px;
   border-radius: 50%;
   margin-right: 16px;
+  min-width: 32px;
 }
 .element-item a:hover .img_wrap .hover {
   display: block;
@@ -2370,6 +2373,11 @@ b {
   .element-item {
     width: 22%;
   }
+  /* 0328 수정 */
+  .option_wrap .container{
+    padding: 0;
+  }
+
 }
 @media screen and (max-width: 1080px) {
   .container .list_wrap .embassy_map .map .marker:hover button {
@@ -2388,6 +2396,10 @@ b {
   .element-item {
     width: 30%;
   }
+  /* 0328 수정 */
+  .element-item > span{
+    font-size: 1.125em;
+  }
 }
 @media screen and (max-width: 720px) {
   .sns_state {
@@ -2400,9 +2412,10 @@ b {
   .sns_state .container .tit_wrap {
     padding-top: 56px;
   }
+  /* 0328 수정 */
   .sns_state .container .tit_wrap h3.tit {
     color: #000;
-    font-size: 1.5em;
+    font-size: 1.5em !important;
   }
   .sns_state .container .tit_wrap .list_tab {
     display: none;
@@ -2802,21 +2815,25 @@ b {
 .ofiice_info_con .slide_wrap .office_slide .img_wrap img {
   width: 100%;
 }
+/* 0328 수정 */
 .ofiice_info_con .slide_wrap .slide_btn {
   position: absolute;
   width: 160px;
   height: 24px;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   left: 50%;
   transform: translateX(-50%);
   z-index: 18;
-  bottom: 3%;
+  bottom: 4%;
 }
+/* 0328 수정 */
 .ofiice_info_con .slide_wrap .slide_btn .swiper-button-next {
   width: 24px;
   height: 24px;
+  position: relative;
 }
 .ofiice_info_con .slide_wrap .slide_btn .swiper-button-next:after {
   content: "";
@@ -2825,9 +2842,11 @@ b {
   background: url(../images/office_next_btn.png);
   background-size: contain;
 }
+/* 0328 수정 */
 .ofiice_info_con .slide_wrap .slide_btn .swiper-button-prev {
   width: 24px;
   height: 24px;
+  position: relative;
 }
 .ofiice_info_con .slide_wrap .slide_btn .swiper-button-prev:after {
   content: "";
@@ -3220,18 +3239,26 @@ b {
 }
 
 @media screen and (max-width: 1200px) {
-  .sub_sns_state .option_wrap.RCA_office ul {
+  /* 0328 수정 */
+  /* .sub_sns_state .option_wrap.RCA_office ul {
     grid-template-columns: repeat(4, 1fr);
-  }
+  } */
+  /* 0328 수정 */
   .sub_sns_state .option_wrap.RCA_office ul li a.fs_09 {
     word-break: break-all;
+    line-height: 1.4;
   }
 }
 @media screen and (max-width: 1000px) {
-  .sub_sns_state .option_wrap.RCA_office ul {
+  /* 0328 수정 */
+  /* .sub_sns_state .option_wrap.RCA_office ul {
     grid-template-columns: repeat(3, 1fr);
-  }
+  } */
   .sub_sns_state .option_wrap.RCA_office ul li a.fs_09 {
+    font-size: 0.8em;
+  }
+  /* 0328 수정 */
+  .sub_sns_state .option_wrap ul li a.fs_09{
     font-size: 0.8em;
   }
 }
@@ -3239,8 +3266,11 @@ b {
   .sub_sns_state .option_wrap ul {
     grid-template-columns: repeat(4, 1fr);
   }
+  /* 0328 수정 */
   .sub_sns_state .option_wrap ul li a {
     font-size: 0.9em;
+    /* word-break: break-all; */
+    padding: 0 10px;
   }
   .sch_contents_wrap .sns_con .container .sch_continent_wrap ul {
     display: grid;
@@ -3259,9 +3289,9 @@ b {
   .sch_wrap .container .input_wrap > ul > li ul {
     gap: 10px 12px;
   }
+  /* 0328 수정 */
   .ofiice_info_con .slide_wrap .slide_btn {
-    bottom: 2%;
-    width: 130px;
+    width: 30%;
   }
   .ofiice_info_con .slide_wrap .slide_btn .swiper-button-next {
     width: 20px;
@@ -3271,13 +3301,32 @@ b {
     width: 20px;
     height: 20px;
   }
+  
 }
+
+@media screen and (max-width: 800px) {
+  /* 0328 수정 */
+  .sub_sns_state .option_wrap ul li a{
+    padding: 0 5px 0 7px;
+    gap: 8px;
+  }
+  /* 0328 수정 */
+  .sns_state .container .tit_wrap h3.tit{
+    font-size: 2.4em;
+  }
+}
+
 @media screen and (max-width: 740px) {
   .sch_contents_wrap .sns_con .container .sch_continent_wrap ul li a {
     font-size: 0.9em;
   }
+  /* 0328 수정 */
   .ofiice_info_con .slide_wrap .slide_btn {
-    bottom: 0;
+    bottom: 3.5%;
+  }
+  /* 0328 수정 */
+  .sns_state .container .tit_wrap h3.tit{
+    font-size: 2.3em;
   }
 }
 @media screen and (max-width: 720px) {
@@ -3563,37 +3612,13 @@ b {
   .sub_sns_state .container .select_wrap > ul.m_select_box li.select:last-child .nice-select::after {
     content: none;
   }
+  /* 0328 스크롤 수정 */
   .sub_sns_state .container .select_wrap > ul.m_select_box li.select:last-child .nice-select.wide .list {
     z-index: 20;
-  }
-  .sub_sns_state .option_wrap {
-    /* Track */
-    /* Handle */
-    /* Handle on hover */
-  }
-  .sub_sns_state .option_wrap::-webkit-scrollbar {
-    width: 4px;
-  }
-  .sub_sns_state .option_wrap::-webkit-scrollbar-track {
-    background: rgba(219, 219, 219, 0.5);
-  }
-  .sub_sns_state .option_wrap::-webkit-scrollbar-thumb {
-    background: rgba(177, 167, 167, 0.5);
-    border-radius: 16px;
-    overflow: hidden;
-  }
-  .sub_sns_state .option_wrap::-webkit-scrollbar-thumb:hover {
-    background: rgb(145, 143, 143);
-  }
-  .sub_sns_state .option_wrap.continent_option {
-    top: 185px;
-  }
-  .sub_sns_state .option_wrap.office_option {
-    top: 300px;
-    height: 368px;
+    height: 280px;
     overflow: auto;
-    box-shadow: -3px -4px 18px 0px rgba(0, 0, 0, 0.08);
   }
+ 
   .sub_sns_state .option_wrap ul {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3844,3 +3869,17 @@ b {
 .no-csspointerevents .nice-select.open .list {
   display: block;
 }/*# sourceMappingURL=mf_default.css.map */
+
+/* body::-webkit-scrollbar {
+  width: unset;
+}
+body::-webkit-scrollbar-thumb {
+  height: unset; 
+  background: #ddd;
+  
+  border-radius: unset;
+}
+
+body::-webkit-scrollbar-track {
+  background:#eee 
+} */
