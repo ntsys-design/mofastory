@@ -35,6 +35,7 @@
         <div class="tit_wrap">
           <h3 class="tit">통합검색</h3>
         </div>
+        <!-- 0329 검색조건 반응형 수정 -->
         <div class="input_wrap">
           <ul>
             <li>
@@ -43,10 +44,12 @@
                 <input type="text" name="search" id="search" placeholder="검색어를 입력하세요." value="베트남">
                 <button class="sch_search_btn"></button>
               </div>
-              <input type="checkbox" name="chck" id="chck">
-              <label for="chck" class="chck">결과 내 재검색</label>
+              <!-- 0329 결과 내 재검색 chck_wrap flex 태그 추가  -->
+              <div class="chck_wrap flex">
+                <input type="checkbox" name="chck" id="chck">
+                <label for="chck" class="chck">결과 내 재검색</label>
+              </div>
             </li>
-
             <li>
               <span>인기 검색어</span>
               <ul class="search_word">
@@ -57,19 +60,53 @@
                 <li><button><b>검색어명</b></button></li>
               </ul>
             </li>
-
             <li>
               <span>검색기간</span>
-              <ul>
-                <li><input type="radio" name="period" id="period01" checked><label for="period01">오늘</label></li>
-                <li><input type="radio" name="period" id="period02"><label for="period02">7일</label></li>
-                <li><input type="radio" name="period" id="period03"><label for="period03">1개월</label></li>
-                <li><input type="radio" name="period" id="period04"><label for="period04">3개월</label></li>
-                <li><input type="radio" name="period" id="period05"><label for="period05">6개월</label></li>
-                <li><input type="radio" name="period" id="period06"><label for="period06">1년</label></li>
-                <li><input type="radio" name="period" id="period07"><label for="period07">기간선택</label>
+              <ul class="sch_period">
+                <li>
+                  <!-- 0329 input을 label 안으로 이동 -->
+                  <label for="period01" class="on">
+                    <input type="radio" name="period" id="period01" checked>오늘
+                  </label>
+                </li>
+                <li>
+                  <!-- 0329 input을 label 안으로 이동 -->
+                  <label for="period02">
+                    <input type="radio" name="period" id="period02">7일
+                  </label>
+                </li>
+                <li>
+                  <!-- 0329 input을 label 안으로 이동 -->
+                  <label for="period03">
+                    <input type="radio" name="period" id="period03">1개월
+                  </label>
+                  </li>
+                <li>
+                  <!-- 0329 input을 label 안으로 이동 -->
+                  <label for="period04">
+                    <input type="radio" name="period" id="period04">3개월
+                  </label>
+                </li>
+                <li>
+                  <!-- 0329 input을 label 안으로 이동 -->
+                  <label for="period05">
+                    <input type="radio" name="period" id="period05">6개월
+                  </label>
+                </li>
+                <li>
+                  <!-- 0329 input을 label 안으로 이동 -->
+                  <label for="period06">
+                    <input type="radio" name="period" id="period06">1년
+                  </label>
+                </li>
+                <li>
+                  <!-- 0329 input을 label 안으로 이동 -->
+                  <label for="period07" class="period07">
+                    <input type="radio" name="period" id="period07">기간선택
+                  </label>
+                  <!--// 0329 input을 label 안으로 이동 -->
                   <label for="date01" class="hide">날짜</label>
-                  <input type="date" name="date01" id="date01" value=""> <span>~</span>
+                  <input type="date" name="date01" id="date01" value="2021-10-23"> <span>~</span>
                   <label for="date02" class="hide">날짜</label>
                   <input type="date" name="date02" id="date02" value="2021-10-23">
                 </li>
@@ -77,73 +114,24 @@
             </li>
             <li>
               <span>정렬순서</span>
-              <ul>
-                <li><input type="radio" name="order" id="order01" checked><label for="order01">최신순</label></li>
-                <li><input type="radio" name="order" id="order02"><label for="order02">정확도순</label></li>
-
-              </ul>
-            </li>
-          </ul>
-
-        </div>
-        <!-- 0322 모바일 검색 조건 -->
-        <div class="m_input_wrap">
-          <ul>
-            <li>
-                <div class="search_bar">
-                  <!-- 0328 label for, input name, input id m_search로 수정 -->
-                  <label for="m_search" class="hide">검색</label>
-                  <input type="text" name="m_search" id="m_search" placeholder="검색어를 입력하세요." value="베트남">
-                  <button class="sch_search_btn"></button>
-                </div>
-                <div class="chck_wrap flex">
-                  <!-- 0328 labe forl, input name, input id m_chck로 수정 -->
-                  <input type="checkbox" name="m_chck" id="m_chck">
-                  <label for="m_chck" class="chck">결과 내 재검색</label>
-                </div>
-              
-            </li>
-
-            <li>
-              <span>인기 검색어</span>
-              <ul class="search_word">
-                <li><button class="active"><b>검색어명</b></button></li>
-                <li><button><b>검색어명</b></button></li>
-                <li><button><b>검색어명</b></button></li>
-                <li><button><b>검색어명</b></button></li>
-                <li><button><b>검색어명</b></button></li>
-              </ul>
-            </li>
-
-            <li>
-              <span>검색기간</span>
-              <ul class="sch_period">
-                <li><button class="on">오늘</button></li>
-                <li><button>7일</button></li>
-                <li><button>1개월</button></li>
-                <li><button>3개월</button></li>
-                <li><button>6개월</button></li>
-                <li><button>1년</button></li>
+              <ul class="order">
+                <li class="on">
+                  <!-- 0329 input을 label 안으로 이동 -->
+                  <label for="order01">
+                    <input type="radio" name="order" id="order01" checked>최신순
+                  </label>
+                </li>
                 <li>
-                  <!-- 0328 label for, input name, input id m_date01로 수정 -->
-                  <label for="m_date01" class="hide">날짜</label>
-                  <input type="date" name="m_date01" id="m_date01" value="2021-03-14"> <span>~</span>
-                  <!-- 0328 label for, input name, input id m_date02로 수정 -->
-                  <label for="m_date02" class="hide">날짜</label>
-                  <input type="date" name="m_date02" id="m_date02" value="2021-03-14">
+                  <!-- 0329 input을 label 안으로 이동 -->
+                  <label for="order02">
+                    <input type="radio" name="order" id="order02">정확도순
+                  </label>
                 </li>
               </ul>
             </li>
-            <li>
-              <span>정렬순서</span>
-              <ul class="order">
-                <li class="on"><button>최신순</button></li>
-                <li><button>정확도순</button></li>
-              </ul>
-            </li>
           </ul>
         </div>
-        <!--// 0322 모바일 검색 조건 -->
+        <!-- //0329 검색조건 반응형 수정 -->
       </div>
     </div>
 

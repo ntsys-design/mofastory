@@ -285,10 +285,12 @@ $('.sch_continent li').on('click', function () {
 })
 
 // 모바일 통합검색 검색기간
-$('ul.sch_period li button').on('click',function(){
-  $('ul.sch_period li button').removeClass('on')
+// 0329 수정
+$('ul.sch_period li label').on('click',function(){
+  $('ul.sch_period li label').removeClass('on')
   $(this).addClass('on')
 })
+
 // 모바일 통합검색 정렬순서
 $('ul.order li').on('click',function(){
   $('ul.order li').removeClass('on')

@@ -2925,28 +2925,26 @@ b {
 .sch_wrap .container .tit_wrap .tit {
   text-align: center;
 }
-.sch_wrap .container .input_wrap,
-.sch_wrap .container .m_input_wrap {
+.sch_wrap .container .input_wrap {
   background: #F7F7F8;
   border-radius: 4px;
   padding: 34px 48px 40px;
 }
-.sch_wrap .container .input_wrap > ul > li,
-.sch_wrap .container .m_input_wrap > ul > li {
+
+.sch_wrap .container .input_wrap > ul > li{
   display: flex;
   align-items: center;
   width: 100%;
   padding-bottom: 24px;
+  position: relative;
 }
-.sch_wrap .container .input_wrap > ul > li .search_bar,
-.sch_wrap .container .m_input_wrap > ul > li .search_bar {
+.sch_wrap .container .input_wrap > ul > li .search_bar{
   width: 80%;
   display: flex;
   align-items: center;
   border-bottom: 2px solid #000;
 }
-.sch_wrap .container .input_wrap > ul > li .search_bar input[type=text],
-.sch_wrap .container .m_input_wrap > ul > li .search_bar input[type=text] {
+.sch_wrap .container .input_wrap > ul > li .search_bar input[type=text]{
   background: none;
   outline: 0;
   padding: 8px 10px;
@@ -2954,8 +2952,7 @@ b {
   font-size: 1.5em;
   color: #484B51;
 }
-.sch_wrap .container .input_wrap > ul > li .search_bar button,
-.sch_wrap .container .m_input_wrap > ul > li .search_bar button {
+.sch_wrap .container .input_wrap > ul > li .search_bar button {
   width: 32px;
   height: 32px;
   padding: 0;
@@ -2964,15 +2961,13 @@ b {
   margin: 8px;
   cursor: pointer;
 }
-.sch_wrap .container .input_wrap > ul > li .chck,
-.sch_wrap .container .m_input_wrap > ul > li .chck {
+.sch_wrap .container .input_wrap > ul > li .chck{
   color: #484B51;
   font-weight: 400;
   font-size: 1em;
   margin-right: 0;
 }
-.sch_wrap .container .input_wrap > ul > li input[type=checkbox],
-.sch_wrap .container .m_input_wrap > ul > li input[type=checkbox] {
+.sch_wrap .container .input_wrap > ul > li input[type=checkbox] {
   margin: 0 8px 0 32px;
   padding: 0;
   width: 20px;
@@ -2980,26 +2975,21 @@ b {
   background: url(../images/mf_chk_off.png);
   background-size: 100%;
 }
-.sch_wrap .container .input_wrap > ul > li input[type=checkbox]:checked,
-.sch_wrap .container .m_input_wrap > ul > li input[type=checkbox]:checked {
+.sch_wrap .container .input_wrap > ul > li input[type=checkbox]:checked{
   background: url(../images/mf_chk_on.png);
   background-size: 100%;
 }
-.sch_wrap .container .input_wrap > ul > li:last-child,
-.sch_wrap .container .m_input_wrap > ul > li:last-child {
+.sch_wrap .container .input_wrap > ul > li:last-child {
   padding-bottom: 0;
 }
 .sch_wrap .container .input_wrap > ul > li > label,
-.sch_wrap .container .input_wrap > ul > li > span,
-.sch_wrap .container .m_input_wrap > ul > li > label,
-.sch_wrap .container .m_input_wrap > ul > li > span {
+.sch_wrap .container .input_wrap > ul > li > span {
   min-width: 83px;
   font-weight: 500;
   font-size: 1.125em;
   margin-right: 40px;
 }
-.sch_wrap .container .input_wrap > ul > li select,
-.sch_wrap .container .m_input_wrap > ul > li select {
+.sch_wrap .container .input_wrap > ul > li select {
   padding: 0 16px;
   max-width: 380px;
   height: 36px;
@@ -3010,35 +3000,36 @@ b {
   border: 1px solid #DBDBDB;
   border-radius: 2px;
 }
-.sch_wrap .container .input_wrap > ul > li ul,
-.sch_wrap .container .m_input_wrap > ul > li ul {
+.sch_wrap .container .input_wrap > ul > li ul{
   display: flex;
   width: calc(100% - 107px);
   flex-wrap: wrap;
+  gap: 10px 24px;
+}
+
+.sch_wrap .container .input_wrap > ul > li ul.search_word{
   gap: 10px 16px;
 }
-.sch_wrap .container .input_wrap > ul > li ul li,
-.sch_wrap .container .m_input_wrap > ul > li ul li {
+
+.sch_wrap .container .input_wrap > ul > li ul li{
   display: flex;
   align-items: center;
 }
-.sch_wrap .container .input_wrap > ul > li ul li input,
-.sch_wrap .container .m_input_wrap > ul > li ul li input {
+.sch_wrap .container .input_wrap > ul > li ul li input {
   padding: 0;
 }
-.sch_wrap .container .input_wrap > ul > li ul li label,
-.sch_wrap .container .m_input_wrap > ul > li ul li label {
-  margin: 0 8px;
+.sch_wrap .container .input_wrap > ul > li ul li label{
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.sch_wrap .container .input_wrap > ul > li ul li button,
-.sch_wrap .container .m_input_wrap > ul > li ul li button {
+.sch_wrap .container .input_wrap > ul > li ul li button {
   padding: 6px 16px;
   color: #484B51;
   border-radius: 999px;
   background: #EBEEF0;
 }
-.sch_wrap .container .input_wrap > ul > li ul li input[type=radio],
-.sch_wrap .container .m_input_wrap > ul > li ul li input[type=radio] {
+.sch_wrap .container .input_wrap > ul > li ul li input[type=radio]{
   margin: 0;
   width: 20px;
   height: 20px;
@@ -3046,12 +3037,10 @@ b {
   background: #fff;
   border: 1px solid #DBDBDB;
 }
-.sch_wrap .container .input_wrap > ul > li ul li input[type=radio]:checked,
-.sch_wrap .container .m_input_wrap > ul > li ul li input[type=radio]:checked {
+.sch_wrap .container .input_wrap > ul > li ul li input[type=radio]:checked{
   background: #004FC7;
 }
-.sch_wrap .container .input_wrap > ul > li ul li input[type=date],
-.sch_wrap .container .m_input_wrap > ul > li ul li input[type=date] {
+.sch_wrap .container .input_wrap > ul > li ul li input[type=date] {
   margin-left: 4px;
   width: 151px;
   height: 36px;
@@ -3063,18 +3052,17 @@ b {
   position: relative;
   outline: 0;
 }
-.sch_wrap .container .input_wrap > ul > li ul li input[type=date]::-webkit-clear-button, .sch_wrap .container .input_wrap > ul > li ul li input[type=date]::-webkit-inner-spin-button,
-.sch_wrap .container .m_input_wrap > ul > li ul li input[type=date]::-webkit-clear-button,
-.sch_wrap .container .m_input_wrap > ul > li ul li input[type=date]::-webkit-inner-spin-button {
+#date01{
+  margin-left: 12px;
+}
+.sch_wrap .container .input_wrap > ul > li ul li input[type=date]::-webkit-clear-button, .sch_wrap .container .input_wrap > ul > li ul li input[type=date]::-webkit-inner-spin-button{
   display: none;
 }
-.sch_wrap .container .input_wrap > ul > li ul li input[type=date]::-webkit-calendar-picker-indicator,
-.sch_wrap .container .m_input_wrap > ul > li ul li input[type=date]::-webkit-calendar-picker-indicator {
+.sch_wrap .container .input_wrap > ul > li ul li input[type=date]::-webkit-calendar-picker-indicator{
   background: transparent;
   z-index: 1;
 }
-.sch_wrap .container .input_wrap > ul > li ul li input[type=date]::after,
-.sch_wrap .container .m_input_wrap > ul > li ul li input[type=date]::after {
+.sch_wrap .container .input_wrap > ul > li ul li input[type=date]::after {
   position: absolute;
   top: 50%;
   right: 12px;
@@ -3085,13 +3073,10 @@ b {
   transform: translateY(-50%);
   z-index: 0;
 }
-.sch_wrap .container .input_wrap > ul > li ul li span,
-.sch_wrap .container .m_input_wrap > ul > li ul li span {
+.sch_wrap .container .input_wrap > ul > li ul li span {
   padding: 0 8px;
 }
-.sch_wrap .container .m_input_wrap {
-  display: none;
-}
+
 
 .sch_contents_wrap .sns_con {
   margin-bottom: 80px;
@@ -3227,6 +3212,9 @@ b {
   align-items: center;
   gap: 12px;
 }
+.rst_ofc li a div{
+  line-height: 1;
+}
 .rst_ofc li a.fs_09 {
   font-size: 0.9em;
 }
@@ -3342,78 +3330,87 @@ b {
     text-align: left;
     font-size: 1.5em;
   }
+  
   .sch_wrap .container .input_wrap {
-    display: none;
-  }
-  .sch_wrap .container .m_input_wrap {
-    display: block;
     padding: 0;
     background: transparent;
   }
-  .sch_wrap .container .m_input_wrap > ul {
+  .sch_wrap .container .input_wrap > ul {
     background: #ffffff;
   }
-  .sch_wrap .container .m_input_wrap > ul > li {
+  .sch_wrap .container .input_wrap > ul > li {
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 0;
   }
-  .sch_wrap .container .m_input_wrap > ul > li .search_bar {
+  .sch_wrap .container .input_wrap > ul > li .search_bar {
     width: 100%;
   }
-  .sch_wrap .container .m_input_wrap > ul > li .search_bar input[type=text] {
+  .sch_wrap .container .input_wrap > ul > li .search_bar input[type=text] {
     padding: 18px 0 14px;
     font-weight: 400;
     font-size: 1.0625em;
     color: #000000;
   }
-  .sch_wrap .container .m_input_wrap > ul > li .search_bar button {
+  .sch_wrap .container .input_wrap > ul > li .search_bar button {
     width: 24px;
     height: 24px;
     background: url(../images/search_ico.png) no-repeat center;
   }
-  .sch_wrap .container .m_input_wrap > ul > li .chck_wrap {
+  .sch_wrap .container .input_wrap > ul > li .chck_wrap {
     width: 100%;
     justify-content: flex-end;
     padding: 10px 0 20px;
   }
-  .sch_wrap .container .m_input_wrap > ul > li input[type=checkbox] {
+  .sch_wrap .container .input_wrap > ul > li input[type=checkbox] {
     width: 16px;
     height: 16px;
   }
-  .sch_wrap .container .m_input_wrap > ul > li:first-child {
+  .sch_wrap .container .input_wrap > ul > li:first-child {
     position: relative;
     padding: 0 24px;
   }
-  .sch_wrap .container .m_input_wrap > ul > li:first-child:after {
+  .sch_wrap .container .input_wrap > ul > li:first-child:after{
     position: absolute;
     content: "";
-    width: calc(100% + 48px);
+    width: calc(100% + 136px);
     height: 1px;
     background: #EBEEF0;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .sch_wrap .container .m_input_wrap > ul > li span {
+  } 
+  
+  .sch_wrap .container .input_wrap > ul > li span {
     padding: 24px 0 16px;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul {
+  .sch_wrap .container .input_wrap > ul > li ul.search_word {
     width: 100%;
     flex-wrap: wrap;
     gap: 8px;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul li {
+  .sch_wrap .container .input_wrap > ul > li ul li {
     padding-right: 0;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.sch_period {
-    width: 320px;
+  /* 0329 수정 */
+  .sch_wrap .container .input_wrap > ul > li ul.sch_period {
+    width: 100%;
     gap: 8px 4px;
     justify-content: space-between;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.sch_period li button {
+  /* 0329 수정 */
+  .sch_wrap .container .input_wrap > ul > li ul.sch_period li{
+    width: calc((100% - 20px)/6);
+   
+  }
+  .sch_wrap .container .input_wrap > ul > li ul.sch_period li label input{
+    display: none;
+  }
+
+  /* 0329 수정 */
+  .sch_wrap .container .input_wrap > ul > li ul.sch_period li label {
     padding: 0;
-    width: 48px;
+    width: 100%;
     height: 36px;
     font-weight: 300;
     font-size: 0.875em;
@@ -3421,54 +3418,77 @@ b {
     border-radius: 2px;
     overflow: hidden;
     border: 1px solid #DDE1E4;
+    justify-content: center;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.sch_period li button.on {
+  .sch_wrap .container .input_wrap > ul > li ul.sch_period li label.period07{
+    display: none;
+  }
+  .sch_wrap .container .input_wrap > ul > li ul.sch_period li label.on {
     border: 1px solid transparent;
     background: #004FC7;
     color: #ffffff;
     font-weight: 500;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.sch_period li input[type=date] {
+  .sch_wrap .container .input_wrap > ul > li ul.sch_period li input[type=date] {
     border: 1px solid transparent;
     margin-left: 0;
+    width: 100%;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.sch_period li:last-child {
+  .sch_wrap .container .input_wrap > ul > li ul.sch_period li:last-child {
     border: 1px solid #DDE1E4;
     width: 100%;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.sch_period li span {
+  #date01{
+    margin-left: 0;
+  }
+  .sch_wrap .container .input_wrap > ul > li ul.sch_period li span {
     padding: 0;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.order {
+  .sch_wrap .container .input_wrap > ul > li ul.order {
     gap: 0;
+    width: 100%;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.order li {
+  .sch_wrap .container .input_wrap > ul > li ul.order li {
     width: 50%;
     border: 1px solid #DDE1E4;
     border-radius: 2px 0 0 2px;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.order li:first-child {
+  .sch_wrap .container .input_wrap > ul > li ul.order li:first-child {
     margin-right: -1px;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.order li:last-child {
+  .sch_wrap .container .input_wrap > ul > li ul.order li:last-child {
     border-left: 1px solid transparent;
     border-radius: 0 2px 2px 0;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.order li button {
+  .sch_wrap .container .input_wrap > ul > li ul.order li label {
     padding: 10px 0;
     width: 100%;
     border-radius: 0;
     color: #8C949E;
     background: #F7F7F8;
+    justify-content: center;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.order li.on {
+  .sch_wrap .container .input_wrap > ul > li ul.order li label input{
+    display: none;
+  }
+  .sch_wrap .container .input_wrap > ul > li ul.order li.on {
     border: 1px solid #484B51;
   }
-  .sch_wrap .container .m_input_wrap > ul > li ul.order li.on button {
+  .sch_wrap .container .input_wrap > ul > li ul.order li.on label {
     background: #ffffff;
     color: #484B51;
     font-weight: 600;
   }
+  .sch_wrap .container .input_wrap{
+    background: #ffffff;
+  }
+  .sch_wrap .container .input_wrap > ul >li{
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+ 
+
   .sch_contents_wrap {
     min-height: unset;
   }
