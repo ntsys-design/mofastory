@@ -3240,20 +3240,12 @@ b {
 
 @media screen and (max-width: 1200px) {
   /* 0328 수정 */
-  /* .sub_sns_state .option_wrap.RCA_office ul {
-    grid-template-columns: repeat(4, 1fr);
-  } */
-  /* 0328 수정 */
   .sub_sns_state .option_wrap.RCA_office ul li a.fs_09 {
     word-break: break-all;
     line-height: 1.4;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* 0328 수정 */
-  /* .sub_sns_state .option_wrap.RCA_office ul {
-    grid-template-columns: repeat(3, 1fr);
-  } */
   .sub_sns_state .option_wrap.RCA_office ul li a.fs_09 {
     font-size: 0.8em;
   }
