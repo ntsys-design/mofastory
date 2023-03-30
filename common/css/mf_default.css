@@ -3895,3 +3895,105 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background:#eee 
 } */
+
+/* 0330 푸터수정*/
+footer .container .ft_logo ul {
+  margin-left: 52px;
+  gap: 32px;
+}
+footer .container .ft_logo ul li {
+  font-weight: 300;
+  font-size: 0.875em;
+  color: #fff;
+  position: relative;
+  padding-right: 0;
+}
+footer .container .ft_logo ul li:nth-child(2) {
+  color: #AAB0B8;
+}
+footer .container .ft_logo ul li:last-child{
+  font-weight: 400;
+  font-size: 0.75em;
+  padding-left: 0;
+  color: #ffffff;
+}
+footer .container .ft_logo ul li::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  background: #79818C;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer .container .ft_logo ul li:last-child::before{
+  display: none;}
+footer .container .ft_logo ul li:last-child:after{
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  footer .container{
+    font-size: 15px;
+  }
+  footer .container .ft_logo ul {
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+footer .container{
+  font-size: 16px;
+}
+footer .container .ft_logo{
+  width: 100%;
+}
+  footer .container .ft_logo ul {
+    padding: 24px 0;
+    margin: 0;
+    gap:0 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+  }
+  footer .container .ft_logo ul li {
+    padding: 0;
+    text-align: center;
+  }
+  footer .container .ft_logo ul li:first-child{
+    width: 100%;
+  }
+  footer .container .ft_logo ul li::after {
+    display: none;
+  }
+  footer .container .ft_logo ul li:nth-child(2)::after{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 720px) {
+footer .container .ft_logo ul {
+  padding: 12px 0 16px;
+  gap: 0 16px;
+}
+footer .container .ft_logo ul li {
+  color: #000;
+  font-weight: 400;
+}
+footer .container .ft_logo ul li:nth-child(2) {
+  font-weight: 300;
+  color: #666666;
+}
+footer .container .ft_logo ul li:last-child {
+  color: #000;
+}
+footer .container .ft_logo ul li:nth-child(2):after {
+  display: block;
+  right: -8px;
+  width: 1px;
+  height: 10px;
+      background: #DDE1E4;
+}
+}
