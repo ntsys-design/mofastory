@@ -3997,3 +3997,8 @@ footer .container .ft_logo ul li:nth-child(2):after {
       background: #DDE1E4;
 }
 }
+
+/* 0331 수정 */
+#date01{
+  margin-left: 0;
+}
