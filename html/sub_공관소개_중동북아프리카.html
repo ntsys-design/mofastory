@@ -45,64 +45,20 @@
           <h3 class="tit">공관소개</h3>
         </div>
         <div class="select_wrap">
-          <ul>
-            <li>대륙 선택</li>
-            <li>공관 선택</li>
-          </ul>
           <ul class="select_box">
             <li class="select continent_sl">
+              <h4>대륙 선택</h4>
               <span>중동 북아프리카</span>
               <button class="down_btn"></button>
             </li>
             <li class="select office_sl">
+              <h4>공관 선택</h4>
               <span>
                 <div class="flag_2 flag32 ae"></div> 주두바이 총영사관
               </span>
               <button class="down_btn"></button>
             </li>
           </ul>
-          <!-- 0327 모바일 셀렉트 박스 추가 -->
-          <ul class="m_select_box">
-            <li class="select continent_sl">
-              <label for="m_continent">대륙선택</label>
-              <select name="m_continent" id="m_continent" class="wide">
-                <option value="">동북아시아</option>
-                <option value="" >동남아시아 서남아시아태평양</option>
-                <option value="">북미</option>
-                <option value="">중남미</option>
-                <option value="">유럽</option>
-                <option value="">사하라 이남 아프리카</option>
-                <option value=""selected>중동 북아프리카</option>
-                <option value="">러시아 중앙아시아</option>
-              </select>
-            </li>
-            <li class="select office_sl">
-              <label for="m_office_select">공관선택</label>
-                <select name="m_office_select" id="m_office_select" class="wide">
-              <option value="" selected>주두바이 총영사관</option>
-              <option value="">주레바논 대사관 </option>
-              <option value="">주리비아 대사관</option>
-              <option value="">주모로코 대사관</option>
-              <option value="">주바레인 대사관 </option>
-              <option value="">주사우디아라비아 대사관 </option>
-              <option value="">주아랍에미리트 대사관 </option>
-              <option value="">주알제리 대사관 </option>
-              <option value="">주예멘 대사관 </option>
-              <option value="">주오만 대사관 </option>
-              <option value="">주요르단 대사관 </option>
-              <option value="">주이라크 대사관 </option>
-              <option value="">주이란 대사관 </option>
-              <option value="">주이스라엘 대사관  </option>
-              <option value="">주이집트 대사관 </option>
-              <option value="">주젯다 총영사관 </option>
-              <option value="">주카타르 대사관 </option>
-              <option value="">주쿠웨이트 대사관 </option>
-              <option value="">주튀니지 대사관 </option>
-              <option value="">주팔레스타인 대표사무소 </option>
-                </select>
-            </li>
-          </ul>
-          <!--// 0327 모바일 셀렉트 박스 추가 -->
         </div>
       </div>
       <div class="option_container">
@@ -286,28 +242,7 @@
   <!-- 0327 nice select 추가 -->
   <script src="../common/js/jquery.nice-select.js"></script>
   <script src="../common/js/mf_publish.js"></script>
-   
-   <!-- 0327 script 추가 -->
-  <script>
-    $(document).ready(function(){
-  $('#m_continent').niceSelect();
-  $('#m_office_select').niceSelect();
-
-})
-// 720 이하 옵션
-$(window).resize(function(){
-  let wwd=$(this).width()
-  console.log(wwd)
-    if(wwd>721){
-      
-    }else{
-      $('.select_box li button').removeClass('up_btn')
-      $('.option_container .option_wrap').hide();
-      $('.dim').removeClass('on')
-    }
-  })
   
-  </script>
 </body>
 
 </html>

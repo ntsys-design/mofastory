@@ -4002,3 +4002,87 @@ footer .container .ft_logo ul li:nth-child(2):after {
 #date01{
   margin-left: 0;
 }
+
+/* 0417 sns현황 공관소개 셀렉트박스 수정 */
+.sub_sns_state .container .select_wrap > ul.select_box li.select{
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.sub_sns_state .container .select_wrap > ul.select_box li.select >*{
+  padding: 8px 4px;
+}
+.sub_sns_state .container .select_wrap > ul.select_box li.select h4{
+  width: 100%;
+  font-weight: 500;
+    color: #DBDBDB;
+    padding: 0;
+}
+@media screen and (max-width: 720px){
+  
+  .sub_sns_state .container .select_wrap > ul.select_box{
+    display: block;
+  }
+  .sub_sns_state .container .select_wrap > ul.select_box li.select h4{
+    color: #696E76;
+    font-weight: 400;
+  }
+  .sub_sns_state .container .select_wrap > ul.select_box li.select span{
+    color: #000000;
+    font-weight: 500;
+    font-size: 1em;
+  }
+  .sub_sns_state .container .select_wrap > ul.select_box li.select:first-child{
+    border-bottom: 1px solid #004FC7;
+    margin-bottom: 24px;
+  }
+  .sub_sns_state .container .select_wrap > ul.select_box li.select:first-child button{
+    background: url(../images/m_down_btn.png) no-repeat 99.5% center;
+  }
+  .sub_sns_state .container .select_wrap > ul.select_box li.select:last-child{
+    position: relative;
+  }
+  .sub_sns_state .container .select_wrap > ul.select_box li.select:last-child span{
+    width: 100%;
+    border-radius: 8px;
+    background: url(../images/m_slt_down.png) no-repeat 95% center #F5F5F5;
+    margin-top: 12px;
+    padding: 11.5px 12px 11.5px 16px;
+    font-weight: 400;
+    font-size: 0.85em;
+  }
+  .sub_sns_state .container .select_wrap > ul.select_box li.select:last-child button{
+    background: none;
+    position: absolute;
+    left: 92%;
+    bottom: 13%;
+  }
+  .sub_sns_state .container .select_wrap > ul.select_box li.select:last-child span .flag_2.flag32{
+    width: 24px;
+    height: 18px;
+  }
+  .sub_sns_state .option_wrap{
+    margin: 16px 0;
+    padding: 0 0 16px 0;
+  }
+  .sub_sns_state .option_wrap.continent_option{
+    position: absolute;
+    bottom: -176px;
+    height: 285px;
+
+  }
+  .sub_sns_state .option_wrap.office_option{
+    position: absolute;
+    bottom: -300px;
+    height: 300px;
+    overflow: auto;
+  }
+  .wrapper .dim{
+    top: 480px;
+  }
+}
+@media screen and (max-width: 500px){
+  .sub_sns_state .option_wrap.RCA_office ul{
+    grid-template-columns: repeat(1, 1fr)
+  }
+}

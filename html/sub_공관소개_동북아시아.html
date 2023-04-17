@@ -44,67 +44,28 @@
           <h3 class="tit">공관소개</h3>
         </div>
         <div class="select_wrap">
-          <ul>
+          <!-- 0417 대륙선택 공관선택 ul 삭제 -->
+          <!-- <ul>
             <li>대륙 선택</li>
             <li>공관 선택</li>
-          </ul>
+          </ul> -->
           <ul class="select_box">
             <li class="select continent_sl">
+              <!-- 0417 h4태그 추가 -->
+              <h4>대륙 선택</h4>
               <span>동북아시아</span>
               <button class="down_btn"></button>
             </li>
             <li class="select office_sl">
+              <!-- 0417 h4태그 추가 -->
+              <h4>공관 선택</h4>
               <span>
                 <div class="flag_2 flag32 jp"></div> 주고베 총영사관
               </span>
               <button class="down_btn"></button>
             </li>
           </ul>
-          <!-- 0327 모바일 셀렉트 박스 추가 -->
-          <ul class="m_select_box">
-            <li class="select continent_sl">
-              <label for="m_continent" >대륙선택</label>
-              <select name="m_continent" id="m_continent" class="wide">
-                <option value=""selected>동북아시아</option>
-                <option value="">동남아시아 서남아시아태평양</option>
-                <option value="">북미</option>
-                <option value="">중남미</option>
-                <option value="">유럽</option>
-                <option value="">사하라 이남 아프리카</option>
-                <option value="">중동 북아프리카</option>
-                <option value="">러시아 중앙아시아</option>
-              </select>
-            </li>
-            <li class="select office_sl">
-              <label for="m_office_select" >공관선택</label>
-                  <select name="m_office_select" id="m_office_select" class="wide">
-                    <option value="">주고베 총영사관</option>
-                    <option value="">주광저우 총영사관</option>
-                    <option value=""> 주나고야 총영사관</option>
-                    <option value=""> 주니가타 총영사관</option>
-                    <option value=""> 주다롄 출장소</option>
-                    <option value=""> 주몽골 대사관</option>
-                    <option value=""> 주삿포르 총영사관</option>
-                    <option value=""> 주상하이 총영사관</option>
-                    <option value=""> 주선양 총영사관</option>
-                    <option value=""> 주센다이 총영사관</option>
-                    <option value=""> 주시안 총영사관</option>
-                    <option value=""> 주오사카 총영사관</option>
-                    <option value=""> 주요코하마 총영사관</option>
-                    <option value=""> 주우한 총영사관</option>
-                    <option value=""> 주일본 대사관</option>
-                    <option value=""> 주중국 대사관</option>
-                    <option value=""> 주청두 총영사관</option>
-                    <option value=""> 주칭다오 총영사관</option>
-                    <option value=""> 주타이베이 대표부</option>
-                    <option value=""> 주홍콩 총영사관</option>
-                    <option value=""> 주후쿠오카 총영사관</option>
-                    <option value=""> 주히로시마 총영사관</option>
-                  </select>
-            </li>
-
-          </ul>
-          <!--// 0327 모바일 셀렉트 박스 추가 -->
+          <!--0417 모바일 셀렉트 박스 삭제 -->
         </div>
       </div>
       <div class="option_container">
@@ -340,26 +301,27 @@
   <script src="../common/js/mf_publish.js"></script>
 
   <!-- 0327 script 추가 -->
-  <script>
-    $(document).ready(function(){
-  $('#m_continent').niceSelect();
-  $('#m_office_select').niceSelect();
+  <!-- 0417 script 삭제 -->
+ <!-- <script>
+   $(document).ready(function(){
+ $('#m_continent').niceSelect();
+ $('#m_office_select').niceSelect();
 
-})
+}) 
 // 720 이하 옵션
 $(window).resize(function(){
-  let wwd=$(this).width()
-  console.log(wwd)
-    if(wwd>721){
-      
-    }else{
-      $('.select_box li button').removeClass('up_btn')
-      $('.option_container .option_wrap').hide();
-      $('.dim').removeClass('on')
-    }
-  })
+ let wwd=$(this).width()
+ console.log(wwd)
+   if(wwd>721){
+     
+   }else{
+     $('.select_box li button').removeClass('up_btn')
+     $('.option_container .option_wrap').hide();
+     $('.dim').removeClass('on')
+   }
+ }) 
 
-  </script>
+ </script> -->
 </body>
 
 </html>

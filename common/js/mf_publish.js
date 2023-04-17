@@ -297,8 +297,8 @@ $('ul.order li').on('click',function(){
   $(this).addClass('on')
 })
 
-// 720 이하 옵션
-$(window).resize(function(){
+// 720 이하 옵션 - 0417삭제
+/* $(window).resize(function(){
   let wwd=$(this).width()
   //console.log(wwd)
     if(wwd>721){
@@ -308,4 +308,4 @@ $(window).resize(function(){
       $('.option_container .option_wrap').hide();
       $('.dim').removeClass('on')
     }
-  })
+  }) */

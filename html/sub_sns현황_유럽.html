@@ -44,85 +44,19 @@
           <h3 class="tit">유럽 SNS 현황</h3>         
         </div>
         <div class="select_wrap">
-          <ul>
-            <li>대륙 선택</li>
-            <li>공관 선택</li>
-          </ul>
           <ul class="select_box">
             <li class="select continent_sl">
+              <h4>대륙 선택</h4>
               <span>유럽</span>
               <button class="down_btn"></button>
             </li>
             <li class="select office_sl">
+              <h4>공관 선택</h4>
               <span><div class="flag_2 flag32 ge"></div> 주조지아 대사관 트빌리시 분관</span>
               <button class="down_btn"></button>              
             </li>         
           </ul>
-          <!-- 0327 모바일 셀렉트 박스 추가 -->
-          <ul class="m_select_box">
-            <li class="select continent_sl">
-              <label for="m_continent">대륙선택</label>
-              <select name="m_continent" id="m_continent" class="wide">
-                <option value="">동북아시아</option>
-                <option value="" >동남아시아 서남아시아태평양</option>
-                <option value="">북미</option>
-                <option value="">중남미</option>
-                <option value=""selected>유럽</option>
-                <option value="">사하라 이남 아프리카</option>
-                <option value="">중동 북아프리카</option>
-                <option value="">러시아 중앙아시아</option>
-              </select>
-            </li>
-            <li class="select office_sl">
-              <label for="m_office_select">공관선택</label>
-                <select name="m_office_select" id="m_office_select" class="wide">
-                  <option value="">전체(41)</option>
-                  <option value=""> 주교황청 대사관</option>
-                  <option value=""> 주그리스 대사관</option>
-                  <option value=""> 주네덜란드 대사관</option>
-                  <option value=""> 주노르웨이 대사관 </option>
-                  <option value=""> 주덴마크 대사관 </option>
-                  <option value=""> 주독일 대사관 </option>
-                  <option value=""> 주라스팔마스 분관</option>
-                  <option value=""> 주라트비아 대사관</option>
-                  <option value=""> 주루마니아 대사관</option>
-                  <option value=""> 주밀라노 총영사관</option>
-                  <option value=""> 주바르셀로나 총영사관</option>
-                  <option value=""> 주벨기에 대사관</option>
-                  <option value=""> 주벨라루스 대사관</option>
-                  <option value=""> 주본 분관</option>
-                  <option value=""> 주불가리아 대사관</option>
-                  <option value=""> 주세르비아 대사관</option>
-                  <option value=""> 주스웨덴 대사관 </option>
-                  <option value=""> 주스위스 대사관</option>
-                  <option value=""> 주스페인 대사관</option>
-                  <option value=""> 주슬로바키아 대사관</option>
-                  <option value=""> 주아일랜드 대사관</option>
-                  <option value=""> 주아제르바이잔 대사관</option>
-                  <option value=""> 주영국 대사관</option>
-                  <option value=""> 주오스트리아 대사관</option>
-                  <option value="">주OECD 대표부</option>
-                  <option value=""> 주우크라이나 대사관</option>
-                  <option value="">주유네스코 대표부</option>
-                  <option value=""> 주이스탄불 총영사관</option>
-                  <option value=""> 주이탈리아 대사관</option>
-                  <option value=""> 주제네바 대표부</option>
-                  <option value=""selected> 주조지아 대사관 트빌리시 분관</option>
-                  <option value=""> 주체코 대사관</option>
-                  <option value=""> 주크로아티아 대사관</option>
-                  <option value=""> 주튀르키예 대사관</option>
-                  <option value=""> 주포르투갈 대사관</option>
-                  <option value=""> 주폴란드 대사관</option>
-                  <option value=""> 주프랑스 대사관</option>
-                  <option value=""> 주프랑크푸르트 총영사관</option>
-                  <option value="">주핀란드 대사관</option>
-                  <option value="">주함부르크 총영사관</option>
-                  <option value="">주헝가리 대사관</option>
-                </select>
-            </li>
-
-          </ul>
-          <!--// 0327 모바일 셀렉트 박스 추가 -->
+         
         </div>
       </div>
       <div class="option_container">
@@ -714,13 +648,7 @@
   <!-- 0327 nice select 추가 -->
   <script src="../common/js/jquery.nice-select.js"></script>
   <script src="../common/js/mf_publish.js"></script>
-  <!-- 0327 script 추가 -->
-  <script>
-    $(document).ready(function(){
-  $('#m_continent').niceSelect();
-  $('#m_office_select').niceSelect();
-})
-  </script>
+  
 </body>
 
 </html>

@@ -44,56 +44,20 @@
           <h3 class="tit">공관소개</h3>
         </div>
         <div class="select_wrap">
-          <ul>
-            <li>대륙 선택</li>
-            <li>공관 선택</li>
-          </ul>
           <ul class="select_box">
             <li class="select continent_sl">
+              <h4>대륙 선택</h4>
               <span>러시아 중앙아시아</span>
               <button class="down_btn"></button>
             </li>
             <li class="select office_sl">
+              <h4>공관 선택</h4>
               <span>
                 <div class="flag_2 flag32 ru"></div> 주러시아 대사관
               </span>
               <button class="down_btn"></button>
             </li>
           </ul>
-          <!-- 0327 모바일 셀렉트 박스 추가 -->
-          <ul class="m_select_box">
-            <li class="select continent_sl">
-              <label for="m_continent">대륙선택</label>
-              <select name="m_continent" id="m_continent" class="wide">
-                <option value="">동북아시아</option>
-                <option value="" >동남아시아 서남아시아태평양</option>
-                <option value="">북미</option>
-                <option value="">중남미</option>
-                <option value="">유럽</option>
-                <option value="">사하라 이남 아프리카</option>
-                <option value="">중동 북아프리카</option>
-                <option value=""selected>러시아 중앙아시아</option>
-              </select>
-            </li>
-            <li class="select office_sl">
-              <label for="m_office_select">공관선택</label>
-                <select name="m_office_select" id="m_office_select" class="wide">
-              <option value="" selected>주러시아 대사관</option>
-              <option value="">주블라디보스톡 총영사관 </option>
-              <option value="">주블라디보스톡 총영사관 유즈노사할린스크 출장소</option>
-              <option value="">주상트페테르부르크 총영사관</option>
-              <option value="">주알마티 총영사관</option>
-              <option value="">주이르쿠츠크 총영사관</option>
-              <option value="">주우즈베키스탄 대사관</option>
-              <option value="">주카자흐스탄 대사관</option>
-              <option value="">주키르기즈공화국 대사관</option>
-              <option value="">주타지키스탄 대사관</option>
-              <option value="">주투르크메니스탄 대사관</option>
-                </select>
-            </li>
-
-          </ul>
-          <!--// 0327 모바일 셀렉트 박스 추가 -->
         </div>
       </div>
       <div class="option_container">
@@ -102,12 +66,12 @@
             <ul class="option">
               <li><a href="./sub_공관소개_동북아시아.html">동북아시아</a></li>
               <li><a href="./sub_공관소개_동남아시아서남아시아태평양.html">동남아시아 서남아시아태평양</a></li>
-              <li class="on"><a href="./sub_공관소개_북미.html">북미</a></li>
+              <li><a href="./sub_공관소개_북미.html">북미</a></li>
               <li><a href="./sub_공관소개_중남미.html">중남미</a></li>
               <li><a href="./sub_공관소개_유럽.html">유럽</a></li>
               <li><a href="./sub_공관소개_사하라이남아프리카.html">사하라 이남 아프리카</a></li>
               <li><a href="./sub_공관소개_중동북아프리카.html">중동 북아프리카</a></li>
-              <li><a href="./sub_공관소개_러시아중앙아시아.html">러시아 중앙아시아</a></li>
+              <li class="on"><a href="./sub_공관소개_러시아중앙아시아.html">러시아 중앙아시아</a></li>
             </ul>
           </div>
         </div>
@@ -275,28 +239,6 @@
   <script src="../common/js/jquery.nice-select.js"></script>
   <script src="../common/js/mf_publish.js"></script>
 
-  <!-- 0327 script 추가 -->
-  <script>
-    $(document).ready(function(){
-  $('#m_continent').niceSelect();
-  $('#m_office_select').niceSelect();
-
-})
-// 720 이하 옵션
-$(window).resize(function(){
-  let wwd=$(this).width()
-  console.log(wwd)
-    if(wwd>721){
-      
-    }else{
-      $('.select_box li button').removeClass('up_btn')
-      $('.option_container .option_wrap').hide();
-      $('.dim').removeClass('on')
-    }
-  })
-  
-  </script>
-  
 </body>
 
 </html>

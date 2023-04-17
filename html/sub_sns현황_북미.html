@@ -43,16 +43,14 @@
           <h3 class="tit">북미 SNS 현황</h3>
         </div>
         <div class="select_wrap">
-          <ul>
-            <li>대륙 선택</li>
-            <li>공관 선택</li>
-          </ul>
           <ul class="select_box">
             <li class="select continent_sl">
+              <h4>대륙 선택</h4>
               <span>북미</span>
               <button class="down_btn"></button>
             </li>
             <li class="select office_sl">
+              <h4>공관 선택</h4>
               <span>
                 <div class="flag_2 flag32 us"></div> 주뉴욕 총영사관
               </span>
@@ -61,49 +59,7 @@
             </li>
 
           </ul>
-          <!-- 0327 모바일 셀렉트 박스 추가 -->
-          <ul class="m_select_box">
-            <li class="select continent_sl">
-              <label for="m_continent">대륙선택</label>
-              <select name="m_continent" id="m_continent" class="wide">
-                <option value="">동북아시아</option>
-                <option value="" >동남아시아 서남아시아태평양</option>
-                <option value=""selected>북미</option>
-                <option value="">중남미</option>
-                <option value="">유럽</option>
-                <option value="">사하라 이남 아프리카</option>
-                <option value="">중동 북아프리카</option>
-                <option value="">러시아 중앙아시아</option>
-              </select>
-            </li>
-            <li class="select office_sl">
-              <label for="m_office_select">공관선택</label>
-                <select name="m_office_select" id="m_office_select" class="wide">
-                  <option value="">전체(19) </option>
-                  <option value="" selected>주뉴욕 총영사관</option>
-                  <option value="">주뉴욕 총영사관 필라델피아 출장소</option>
-                  <option value=""> 주댈러스 출장소</option>
-                  <option value="">주로스앤젤레스 총영사관</option>
-                  <option value="">주몬트리올 총영사관</option>
-                  <option value="">주미국 대사관</option>
-                  <option value="">주밴쿠버 총영사관</option>
-                  <option value="">주보스턴 총영사관</option>
-                  <option value="">주샌프란시스코 총영사관</option>
-                  <option value="">주시애틀 총영사관</option>
-                  <option value="">주시카고 총영사관</option>
-                  <option value="">주애틀랜타 총영사관</option>
-                  <option value="">주앵커리지 출장소</option>
-                  <option value="">주유엔 대표부</option>
-                  <option value="">주캐나다 대사관</option>
-                  <option value="">주토론토 총영사관</option>
-                  <option value="">주하갓냐 출장소</option>
-                  <option value="">주호놀룰루 총영사관</option>
-                  <option value="">주휴스턴 총영사관</option>
-                </select>             
-            </li>
 
-          </ul>
-          <!--// 0327 모바일 셀렉트 박스 추가 -->
         </div>
       </div>
       <div class="option_container">
@@ -716,13 +672,7 @@
   <!-- 0327 nice select 추가 -->
   <script src="../common/js/jquery.nice-select.js"></script>
   <script src="../common/js/mf_publish.js"></script>
-  <!-- 0327 script 추가 -->
-  <script>
-    $(document).ready(function(){
-  $('#m_continent').niceSelect();
-  $('#m_office_select').niceSelect();
-})
-  </script>
+  
 </body>
 
 </html>
