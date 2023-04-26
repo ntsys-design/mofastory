@@ -4086,3 +4086,201 @@ footer .container .ft_logo ul li:nth-child(2):after {
     grid-template-columns: repeat(1, 1fr)
   }
 }
+
+/* 0426 메인페이지 수정 */
+.popular_contents .container .slide_tab .content_wrap .swiper-button-prev{
+  width: 64px;
+  height: 64px;
+  left: -90px;
+}
+.popular_contents .container .slide_tab .content_wrap .swiper-button-prev:after{
+  background-size: contain;
+}
+.popular_contents .container .slide_tab .content_wrap .swiper-button-next{
+  width: 64px;
+  height: 64px;
+  right: -90px;
+}
+.popular_contents .container .slide_tab .content_wrap .swiper-button-next:after{
+  background-size: contain;
+}
+.sns_list .sns_tab{
+  display: flex;
+  justify-content: space-between;
+}
+#new_pop_slt{
+  width: 102px;
+  height: 36px;
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  outline: 0;
+  font-size: 1em;
+  font-weight: 400;
+  background: url(../images/slt_down.png) no-repeat 98% center;
+  padding:0 16px;
+}
+.popular_contents .container .slide_tab .content_wrap .monthly_content > div a{
+  border-radius: unset;
+  overflow: unset;
+  position: unset;
+  padding-bottom: unset;
+}
+.popular_contents .container .slide_tab .content_wrap .monthly_content > div a .img_wrap{
+  border-radius: 16px;
+  width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60.5%;
+    max-width: 378px;
+
+}
+.popular_contents .container .slide_tab .content_wrap .monthly_content > div a span.office{
+  position: relative;
+  background: none;
+  padding: 0;
+  justify-content: center;
+  color: #000000;
+  font-size: 1.125em;
+ 
+}
+.popular_contents .container .slide_tab .content_wrap .monthly_content > div a span.office b{
+   font-weight: 400;
+}
+.popular_contents .container .slide_tab .content_wrap .monthly_content > div a span.flex{
+  background: none;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+}
+.popular_contents .container .slide_tab .content_wrap .swiper-slide .img_wrap:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  display: none;
+}
+.popular_contents .container .slide_tab .content_wrap .monthly_content > div a:hover:after{
+  display:none;
+}
+.popular_contents .container .slide_tab .content_wrap .swiper-slide a:hover .img_wrap:after{
+  display: block;
+}
+.popular_contents .container .slide_tab .content_wrap .swiper-slide a:hover .img_wrap .hover{
+  display: block;
+  position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    width: unset;
+}
+.popular_contents .container .slide_tab .content_wrap .swiper-slide a:hover .img_wrap .hover img{
+  width: 24px;height: 23px;
+  position: relative;
+}
+.container .list_wrap .embassy_list ul li:hover, .container .list_wrap .embassy_list ul li.on{
+  background: #ECEEFF;
+}
+@media screen and (max-width: 1420px){
+  .popular_contents .container .slide_tab .content_wrap .swiper-button-prev{
+    left: -30px;
+  }
+  .popular_contents .container .slide_tab .content_wrap .swiper-button-next{
+    right: -30px;
+  }
+}
+@media screen and (max-width: 1280px){
+  .popular_contents .container .slide_tab .content_wrap .swiper-button-prev{
+    width: 48px;
+    height: 48px;
+    left: -8px;
+  }
+  .popular_contents .container .slide_tab .content_wrap .swiper-button-next{
+    width: 48px;
+    height: 48px;
+    right: -8px;
+  }
+}
+@media screen and (max-width: 720px){
+  #new_pop_slt{
+    margin-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  #new_pop_slt{
+    padding: 0 5px;
+  }
+  .popular_contents .container .slide_tab .content_wrap .monthly_content > div a .img_wrap{
+    padding-bottom: 54%;
+  }
+}
+/* 0426 공관소개-공관보유 sns 수정 */
+.txt_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.txt_wrap ul.office_sns{
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.txt_wrap ul.office_sns li a{
+  width: 24px;
+  height: 24px;
+}
+.txt_wrap ul.office_sns li a.fb_ico{
+  background: url(../images/facebook_ico.png);
+  background-size: contain;
+}
+.txt_wrap ul.office_sns li a.twt_ico{
+  background: url(../images/twt_ico.png);
+  background-size: contain;
+}
+.txt_wrap ul.office_sns li a.insta_ico{
+  background: url(../images/insta_ico.png);
+  background-size: contain;
+}
+.txt_wrap ul.office_sns li a.ytb_ico{
+  background: url(../images/youtube_ico.png);
+  background-size: contain;
+}
+
+/* 404에러, 500에러 페이지 */
+.error{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20%;
+}
+.error_404{
+  margin-bottom: 16px;
+}
+.error h1{
+  font-weight: 600;
+  font-size:2.5em;
+  margin-bottom: 24px;
+}
+.error p{
+  font-weight: 400;
+  font-size: 1.125em;
+  margin-bottom: 56px;
+}
+.error button{
+  width: 252px;
+  height: 48px;
+  background: #004FC7;
+  border: 1px solid #C6CBD0;
+  border-radius: 4px;
+  font-size: 1.25em;
+  color: #ffffff;
+}

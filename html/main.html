@@ -272,36 +272,63 @@
               <div class="swiper-button-prev"></div>
             </div>
             <!--0322 이달의 우수사례 스와이퍼 슬라이드로 변경 -->
+            <!-- 0426 이달의 우수사례 공관명 위치 수정 -->
             <div class="content_wrap ">
               <div class="monthly_swiper">
                 <div class="monthly_content swiper-wrapper">
                   <div class="swiper-slide">
                     <a href="#" target="_blank">
-                      <img src="../common/images/monthly_1.png" alt="이달의 우수사례 이미지">
-                      <span class="flex">
-                        <!-- 0315 class sgp에서 sg 수정 -->
-                        <div class="flag_2 flag24 sg"></div>
-                        <!-- 0327 공관명 <b>태그 추가 -->
-                        <b>주싱가포르 대한민국대사관</b></span>
-                      <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div>
-                    </a>
+                      <!-- 0426 img_wrap 태그 추가 -->
+                      <div class="img_wrap">
+                        <img src="../common/images/monthly_1.png" alt="이달의 우수사례 이미지">
+                        <!-- 0426 hover 위치 변경, 보기 수정-->
+                        <div class="hover">
+                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
+                          </span>
+                        </div>
+                      </div>
+                      <!-- 0426 class office로 변경 -->
+                      <span class="office">
+                        <!-- 0426 국기삭제 -->
+                        <b>주싱가포르 대한민국대사관</b>
+                      </span>                      
+                    </a>                   
                   </div>
                   <div class="swiper-slide">
-                    <a href="#" target="_blank"><img src="../common/images/monthly_2.png" alt="이달의 우수사례 이미지">
-                      <!-- 0315 class  svk에서 sk 수정 -->
-                      <span class="flex"><div class="flag_2 flag24 sk"></div> 
-                        <!-- 0327 공관명 <b>태그 추가 -->
-                        <b>주슬로바키아대사관</b> </span>
-                      <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div>
-                    </a>
+                    <a href="#" target="_blank">
+                      <!-- 0426 img_wrap 태그 추가 -->
+                      <div class="img_wrap">
+                        <img src="../common/images/monthly_2.png" alt="이달의 우수사례 이미지">
+                        <!-- 0426 hover 위치 변경, 보기 수정-->
+                        <div class="hover">
+                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
+                          </span>
+                        </div>
+                      </div>
+                      <!-- 0426 class office로 변경 -->
+                      <span class="office">
+                        <!-- 0426 국기삭제 -->
+                        <b>주슬로바키아대사관</b>
+                      </span>                      
+                    </a>                   
                   </div>
                   <div class="swiper-slide">
-                    <a href="#" target="_blank"><img src="../common/images/monthly_3.png" alt="이달의 우수사례 이미지">
-                      <!-- 0315 class ndl에서 nl 수정 -->
-                      <span class="flex"><div class="flag_2 flag24 nl"></div> 
-                        <!-- 0327 공관명 <b>태그 추가 -->
-                        <b>주네덜란드 대한민국대사관</b></span>
-                      <div class="hover"><img src="../common/images/plus_btn.png" alt=""></div></a>
+                    <a href="#" target="_blank">
+                      <!-- 0426 img_wrap 태그 추가 -->
+                      <div class="img_wrap">
+                        <img src="../common/images/monthly_3.png" alt="이달의 우수사례 이미지">
+                        <!-- 0426 hover 위치 변경, 보기 수정-->
+                        <div class="hover">
+                          <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
+                          </span>
+                        </div>
+                      </div>
+                      <!-- 0426 class office로 변경 -->
+                      <span class="office">
+                        <!-- 0426 국기삭제 -->
+                        <b>주네덜란드 대한민국대사관</b>
+                      </span>                      
+                    </a>                   
                   </div>
                 </div>
                 <!-- <div class="swiper-pagination"></div>
@@ -329,6 +356,13 @@
                 <li><button class="insta_btn" data-filter=".insta"><span class="hide">instagram</span></button></li>
                 <li><button class="youtube_btn" data-filter=".yout"><span class="hide">youtube</span></button></li>
               </ul>
+              <!-- 0426 최신순 인기순 셀렉트박스 추가 -->
+              <label for="new_pop_slt" class="hide">최신순 인기순</label>
+              <select name="" id="new_pop_slt">
+                <option value="" selected="">최신순</option>
+                <option value="">인기순</option>               
+              </select>
+
             </div>
           </div>
         </div>
