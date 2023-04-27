@@ -1,7 +1,8 @@
 // 인기 콘텐츠 슬라이드
 // 0317 루프 삭제
+// 0427 인기콘텐츠 슬라이드 수정
 var swiper = new Swiper(".swiper.pop_content", {
-    slidesPerView: 2.2,
+    slidesPerView: 2.15,
     spaceBetween: 15.3,
   
     // loop: true,
@@ -15,11 +16,18 @@ var swiper = new Swiper(".swiper.pop_content", {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
+      401: {
+        slidesPerView: 2.5,
+        spaceBetween: 15.3,
+      },
       501: {
+        slidesPerView: 3.2,
+        spaceBetween: 15.3,
+      },
+      601: {
         slidesPerView: 3.5,
         spaceBetween: 15.3,
       },
-  
       721: {
         slidesPerView: 4,
         spaceBetween: 15.3,

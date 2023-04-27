@@ -27,14 +27,14 @@
         </div>
         <!-- 0324 검색창 logo_sch 에서 분리  -->
         <div class="search">
-            <label for="main_search" class="hide">검색</label>
-            <div class="search_bar">
+          <label for="main_search" class="hide">검색</label>
+          <div class="search_bar">
 
-              <button onclick="window.open('sub_통합검색.html')"></button>
-              <label for="main_search" class="hide">검색</label>
-              <input type="text" name="search" id="main_search" placeholder="검색어를 입력하세요 ">
-            </div>
+            <button onclick="window.open('sub_통합검색.html')"></button>
+            <label for="main_search" class="hide">검색</label>
+            <input type="text" name="search" id="main_search" placeholder="검색어를 입력하세요 ">
           </div>
+        </div>
         <!-- 0308 공관소개 페이지명 변경 -->
         <div class="info">
           <!-- 0314 sns 현황 추가 -->
@@ -60,11 +60,13 @@
           <div class="embassy_list embassy_map">
             <div class="map">
               <!-- 중동북아프리카 -->
-              <div class="marker middle_east_north_africa_marker" data-bg="../common/images/middle_east_north_africa.png">
+              <div class="marker middle_east_north_africa_marker"
+                data-bg="../common/images/middle_east_north_africa.png">
                 <button onclick="location.href='sub_sns현황_중동북아프리카.html'"></button>
               </div>
               <!-- 동남아시아 서남아시아 태평양 -->
-              <div class="marker southwest_asia_pacific_marker txt_2" data-bg="../common/images/southwest_asia_pacific.png">
+              <div class="marker southwest_asia_pacific_marker txt_2"
+                data-bg="../common/images/southwest_asia_pacific.png">
                 <button onclick="location.href='sub_sns현황_동남아시아서남아시아태평양.html'"></button>
               </div>
               <!-- 동북아시아 -->
@@ -96,7 +98,7 @@
           <div class="embassy_list">
             <ul>
               <li><a href="./sub_sns현황_동북아시아.html"><span>동북아시아</span></a></li>
-              <li><a href="./sub_sns현황_동남아시아서남아시아태평양.html"><span>동남아시아 
+              <li><a href="./sub_sns현황_동남아시아서남아시아태평양.html"><span>동남아시아
                     서남아시아태평양</span></a></li>
               <li><a href="./sub_sns현황_북미.html"><span>북미 </span></a></li>
               <li><a href="./sub_sns현황_중남미.html"><span>중남미</span></a></li>
@@ -108,16 +110,16 @@
           </div>
 
         </div>
-         <!--// 0308 페이지명 수정 -->
+        <!--// 0308 페이지명 수정 -->
       </div>
     </div>
 
     <div class="contents_wrap">
-      
+
       <div class="popular_contents">
-        
+
         <div class="container">
-      
+
           <div class="tit_wrap tabmenu">
             <h3 class="tit on"><a href="#">인기 콘텐츠</a></h3>
             <h3 class="tit"><a href="#">이달의 우수사례</a></h3>
@@ -291,8 +293,8 @@
                       <span class="office">
                         <!-- 0426 국기삭제 -->
                         <b>주싱가포르 대한민국대사관</b>
-                      </span>                      
-                    </a>                   
+                      </span>
+                    </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" target="_blank">
@@ -309,8 +311,8 @@
                       <span class="office">
                         <!-- 0426 국기삭제 -->
                         <b>주슬로바키아대사관</b>
-                      </span>                      
-                    </a>                   
+                      </span>
+                    </a>
                   </div>
                   <div class="swiper-slide">
                     <a href="#" target="_blank">
@@ -327,8 +329,8 @@
                       <span class="office">
                         <!-- 0426 국기삭제 -->
                         <b>주네덜란드 대한민국대사관</b>
-                      </span>                      
-                    </a>                   
+                      </span>
+                    </a>
                   </div>
                 </div>
                 <!-- <div class="swiper-pagination"></div>
@@ -339,7 +341,7 @@
             <!--//0322 이달의 우수사례 스와이퍼 슬라이드로 변경 -->
           </div>
         </div>
-      
+
       </div>
 
       <div class="sns_list sns_main">
@@ -347,6 +349,13 @@
           <div class="container">
             <div class="tit_wrap">
               <h3 class="tit">최신 SNS</h3>
+              <!-- 0427 모바일 등록순 인기순 버튼 -->
+            <div id="m_new_pop_slt">
+              <ul>
+                <li class="on"><button>등록순</button></li>
+                <li><button>인기순</button></li>
+              </ul>
+            </div>
             </div>
             <div class="sns_tab">
               <ul id="filters">
@@ -357,13 +366,14 @@
                 <li><button class="youtube_btn" data-filter=".yout"><span class="hide">youtube</span></button></li>
               </ul>
               <!-- 0426 최신순 인기순 셀렉트박스 추가 -->
-              <label for="new_pop_slt" class="hide">최신순 인기순</label>
+              <label for="new_pop_slt" class="hide">등록순 인기순</label>
               <select name="" id="new_pop_slt">
-                <option value="" selected="">최신순</option>
-                <option value="">인기순</option>               
+                <option value="" selected="">등록순</option>
+                <option value="">인기순</option>
               </select>
-
             </div>
+
+            
           </div>
         </div>
         <div class="sns_con">
@@ -381,7 +391,8 @@
                       </span>
                     </div>
                   </div>
-                  <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다. 브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은
+                  <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다. 브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바
+                    성은
                     9-18세기까지 지배세력들의 거처로 사용되었습니다.</p>
                 </a>
                 <div class="like_wrap">
@@ -389,7 +400,7 @@
                     <div class="icon fb_ico"></div>
                     <div class="date">12월 26일</div>
                   </div>
-                  <div class="like flex"><span class="heart">  </span> 350
+                  <div class="like flex"><span class="heart"> </span> 350
                   </div>
                 </div>
               </div>
@@ -404,7 +415,7 @@
                       </span>
                     </div>
                   </div>
-                  
+
                   <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다.</p>
                 </a>
                 <div class="like_wrap">
@@ -468,13 +479,13 @@
                   <div class="flag us"></div>주뉴욕총영사관
                 </span>
                 <a href="#" target="_blank">
-                <div class="img_wrap"><img src="../common/images/new_sns_5.png" alt="최신 sns 이미지">
-                  <div class="hover">
-                    <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                    </span>
+                  <div class="img_wrap"><img src="../common/images/new_sns_5.png" alt="최신 sns 이미지">
+                    <div class="hover">
+                      <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
+                      </span>
+                    </div>
                   </div>
-                </div>
-                
+
                   <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다.</p>
                 </a>
                 <div class="like_wrap">
@@ -524,7 +535,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="element-item fb">
                 <span class="flex">
                   <div class="flag us"></div>주시애틀총영사관
@@ -598,10 +609,10 @@
                 <a href="#" target="_blank">
                   <div class="img_wrap"><img src="../common/images/new_sns_10.png" alt="최신 sns 이미지">
                     <div class="hover">
-                    <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
-                    </span>
+                      <span class="flex">보기 <img src="../common/images/arrow_btn.png" alt="보기 아이콘">
+                      </span>
+                    </div>
                   </div>
-                                </div>
                   <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다.</p>
                 </a>
                 <div class="like_wrap">
@@ -668,7 +679,8 @@
                       </span>
                     </div>
                   </div>
-                  <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다. 브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은
+                  <p>브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바 성은 9-18세기까지 지배세력들의 거처로 사용되었습니다. 브라티슬라바 시가 한눈에 보이는 고지에 지어진 브라티슬라바
+                    성은
                     9-18세기까지 지배세력들의 거처로 사용되었습니다.</p>
                 </a>
                 <div class="like_wrap">
@@ -843,7 +855,7 @@
           <img src="../common/images/ft_logo.png" alt="푸터 로고 ">
           <!-- 0321 모바일 로고 추가 -->
           <img src="../common/images/m_ft_logo.png" alt="모바일 푸터 로고 " class="m_ft_logo">
-          
+
           <ul class="flex">
             <li>서울시 종로구 사직로 8길 60</li>
             <li>Email. mofastory@mofa.go.kr</li>
@@ -873,46 +885,51 @@
   <!-- 0327 script 추가 -->
   <script>
     // 이달의 우수사례 
- // 모바일에서만 슬라이드
- var ww = $(window).width();
- var swiperAw = undefined;
+    // 모바일에서만 슬라이드
+    var ww = $(window).width();
+    var swiperAw = undefined;
 
- function initSwiper() {
+    function initSwiper() {
 
-   if (ww <= 720 && swiperAw == undefined) {
-     swiperAw = new Swiper(".monthly_swiper", {
-       slidesPerView: 1.2,
-       spaceBetween: 16,
-       watchSlidesProgress: true, setWrapperSize: true,
-    
-       breakpoints: {
-        401: {
-          slidesPerView: 1.5,
+      if (ww <= 720 && swiperAw == undefined) {
+        swiperAw = new Swiper(".monthly_swiper", {
+          slidesPerView: 1.2,
           spaceBetween: 16,
-        },
-        501: {
-          slidesPerView: 1.8,
-          spaceBetween: 16,
-        },
-        601: {
-          slidesPerView: 2.2,
-          spaceBetween: 16,
-        },
+          watchSlidesProgress: true, setWrapperSize: true,
+
+          breakpoints: {
+            401: {
+              slidesPerView: 1.5,
+              spaceBetween: 16,
+            },
+            501: {
+              slidesPerView: 1.8,
+              spaceBetween: 16,
+            },
+            601: {
+              slidesPerView: 2.2,
+              spaceBetween: 16,
+            },
+          }
+        });
+      } else if (ww > 720 && swiperAw != undefined) {
+        swiperAw.destroy();
+        swiperAw = undefined;
       }
-     });
-   } else if (ww > 720 && swiperAw != undefined) {
-     swiperAw.destroy();
-     swiperAw = undefined;
-   }
- }
+    }
 
- initSwiper();
+    initSwiper();
 
- $(window).on('resize', function () {
-   ww = $(window).width();
-   initSwiper();
- });
+    $(window).on('resize', function () {
+      ww = $(window).width();
+      initSwiper();
+    });
 
+    //  0427 최신 sns 등록순 인기순
+    $('#m_new_pop_slt ul li').on('click', function () {
+      $('#m_new_pop_slt ul li').removeClass('on')
+      $(this).addClass('on')
+    })
   </script>
 </body>
 
