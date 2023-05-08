@@ -4390,3 +4390,28 @@ ul.m_office_sns li a.ytb_ico{
     padding: 0 16px;
   }
 }
+
+/* 0508 통합검색 공관소개 수정 */
+.rst_ofc {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.rst_ofc li a{
+  width: unset;
+}
+@media screen and (max-width: 1080px){
+  .rst_ofc {
+    grid-template-columns: repeat(4, 1fr);
+  } 
+}
+@media screen and (max-width: 720px){
+  .rst_ofc {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px){
+  .rst_ofc {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

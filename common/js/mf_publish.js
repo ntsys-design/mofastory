@@ -77,6 +77,8 @@ $(document).ready(function () {
 
   var $container = $('.isotope').isotope({
     itemSelector: '.element-item',
+    // 0508 수정
+    layoutMode: 'masonry',
     masonry: {
       gutter: 32,
     horizontalOrder: true,
